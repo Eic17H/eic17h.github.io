@@ -118,10 +118,22 @@
         </div>
     </div>
     <script>
+        var inputbox1 = document.getElementById("input1")
+        var inputbox2 = document.getElementById("input2")
+        inputbox1.addEventListener("keydown", function (e) {
+            if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+                doThis();
+            }
+        });
+        inputbox2.addEventListener("keydown", function (e) {
+            if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+                doThis();
+            }
+        });
         function doThis(){
+            let input1 = inputbox1.value;
+            let input2 = inputbox2.value;
             let box = document.getElementById("output")
-            let input1 = document.getElementById("input1").value
-            let input2 = document.getElementById("input2").value
             let sentence = "<div class=\"sotto\">" + check(input1, input2) + "</div>";
             box.innerHTML = sentence + box.innerHTML;
             getCookie();
