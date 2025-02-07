@@ -109,7 +109,7 @@
             let box = document.getElementById("output")
             let input1 = document.getElementById("input1").value
             let input2 = document.getElementById("input2").value
-            box.innerHTML += "<div class=\"sotto\">" + check(input1, input2) + "</div>"
+            box.innerHTML = "<div class=\"sotto\">" + check(input1, input2) + "</div>" + box.innerHTML;
         }
         function generate(){
             let out = "(aa)";
