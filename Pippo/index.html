@@ -87,9 +87,12 @@
             border-radius: 8px;
             box-shadow: 0 25px 25px 0 rgba(0,0,0,.35);
         }
+        .history{
+            font-size: 100%;
+        }
     </style>
 </head>
-<body>
+<body onload="getCookie()">
     <br>
     <div class="gruppo">
         <div class="sopra">
@@ -105,12 +108,38 @@
     <br>
     <div class="gruppo" id="output">
     </div>
+    <br><br><br><br>
+    <div class="gruppo">
+        <div class="sopra history">
+            <span class="liNi">Pippo è:</span> <br> <span id="è"></span>
+        </div>
+        <div class="sopra history">
+            <span class="liNiAla">ma non è:</span> <br> <span id="nonè"></span>
+        </div>
+    </div>
     <script>
         function doThis(){
             let box = document.getElementById("output")
             let input1 = document.getElementById("input1").value
             let input2 = document.getElementById("input2").value
-            box.innerHTML = "<div class=\"sotto\">" + check(input1, input2) + "</div>" + box.innerHTML;
+            let sentence = "<div class=\"sotto\">" + check(input1, input2) + "</div>";
+            box.innerHTML = sentence + box.innerHTML;
+            getCookie();
+        }
+        function getCookie(){
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            let est = document.getElementById("è");
+            let nonest = document.getElementById("nonè");
+            est.innerHTML = "";
+            nonest.innerHTML = "";
+            for(let i = 0; i <ca.length; i++) {
+                let c = ca[i];
+                let that = c.split("=")
+                console.log(that)
+                if(that[1]=="true") est.innerHTML += that[0] + "<br>"
+                else nonest.innerHTML += that[0] + "<br>"
+            }
         }
         function generate(){
             let out = "(aa)";
@@ -162,6 +191,8 @@
             }
         }
         function check(liNi, liNiAla){
+            document.cookie = liNi + "=" + rule(liNi) + ";"
+            document.cookie = liNiAla + "=" + rule(liNiAla) + ";"
             let out = "";
             out += frase(liNi, liNiAla);
             return out;
