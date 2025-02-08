@@ -210,8 +210,8 @@
             }
         }
         function check(liNi, liNiAla){
-            document.cookie = liNi + "=" + rule(liNi) + ";"
-            document.cookie = liNiAla + "=" + rule(liNiAla) + ";"
+            document.cookie = liNi + "=" + rule(liNi) + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT"
+            document.cookie = liNiAla + "=" + rule(liNiAla) + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT"
             let out = "";
             out += frase(liNi, liNiAla);
             return out;
