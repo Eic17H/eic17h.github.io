@@ -152,12 +152,13 @@
             let nonest = document.getElementById("nonè");
             est.innerHTML = "";
             nonest.innerHTML = "";
-            for(let i = 0; i <ca.length; i++) {
+            for(let i = 0; i < ca.length; i++) {
                 let c = ca[i];
                 let that = c.split("=")
                 //console.log(that)
                 if(that[1]=="true") est.innerHTML += that[0] + "<br>"
                 else nonest.innerHTML += that[0] + "<br>"
+                document.cookie = that[0] + "=" + that[1] + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT"
             }
         }
         function generate(){
