@@ -64,8 +64,8 @@
             display: flex;
             flex-wrap: wrap;
             margin-top: 0;
-            margin-right: -0.75rem;
-            margin-left: -0.75rem;
+            margin-right: 0.75rem;
+            margin-left: 0.75rem;
             box-sizing: border-box;
             text-align: center;
             align-content: center;
@@ -94,6 +94,7 @@
 </head>
 <body onload="getCookie()">
     <br>
+    <!-- Pippo è ___ ma non è ___ -->
     <div class="gruppo">
         <div class="sopra">
             Pippo è <br> <input type="text" id="input1" value="tutto">
@@ -102,13 +103,17 @@
             ma non è <br> <input type="text" id="input2" value="niente">
         </div>
     </div>
+    <!-- Tasto invio -->
     <div class="gruppo">
         <button onclick="doThis()">INVIA</button>
     </div>
     <br>
-    <div class="gruppo" id="output">
-    </div>
+    <!-- Risposta -->
+    <div class="gruppo" id="output" style="font-size: 150%;"></div>
+    <!-- Lista di risposte precedenti -->
+    <div class="gruppo" id="frasi"></div>
     <br><br><br><br>
+    <!-- Parole note -->
     <div class="gruppo">
         <div class="sopra history">
             <span class="liNi">Pippo è:</span> <br> <span id="è"></span>
@@ -133,9 +138,11 @@
         function doThis(){
             let input1 = inputbox1.value;
             let input2 = inputbox2.value;
-            let box = document.getElementById("output")
+            let output = document.getElementById("output")
+            let frasi = document.getElementById("frasi")
             let sentence = "<div class=\"sotto\">" + check(input1, input2) + "</div>";
-            box.innerHTML = sentence + box.innerHTML;
+            frasi.innerHTML = output.innerHTML + frasi.innerHTML
+            output.innerHTML = sentence;
             getCookie();
         }
         function getCookie(){
