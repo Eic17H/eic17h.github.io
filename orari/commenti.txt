@@ -1,0 +1,79 @@
+commenti eliminati dal js e mai committati, per tenerli
+
+// Quello che manca adesso è poter cambiare giorno
+        // Conviene fare un object che contiene un campo per giorno della settimana, e ciascun giorno è un array
+        // Quindi la funzione non è carica--- ANZI Sì CAZZO CHE serve separare le persone, bel casino altrimenti
+        // AAAAAAAAAAAAA
+        // Però ci sono quasi
+        /**
+         * Il file JSON ha solo una lista di lezioni
+         * Metti che questa è la lezione:
+         *      "Persona" : "Lorenzo";
+         *      "Materia" : "Programmazione 2";
+         *      "Aula" : "Aula Magna di Matematica";
+         *      "Giorno" : "Lunedì";
+         *      "Inizio" : "174";
+         *      "Fine" : "195"
+         * In JS, io ho l'oggetto lezioni:
+         * {
+         *      "Lunedì":{
+         *          "Lorenzo": [
+         *              {
+         *                  "Persona" : "Lorenzo";
+         *                  "Materia" : "Programmazione 2";
+         *                  "Aula" : "Aula Magna di Matematica";
+         *                  "Inizio" : "174";
+         *                  "Fine" : "195"
+         *              }
+         *          ]
+         *      }
+         * }
+         * E così via
+         * Lo so che è ridondante mettere la persona dentro e fuori, ma mi rende più leggibile il codice e me ne frego
+         * Quindi essenzialmente ho input[], e ho lezione che è input[i]
+         * lezioni.(lezione.giorno).(lezione.persona) = {
+         *                  "Persona" : lezione.persona;
+         *                  "Materia" : lezione.materia;
+         *                  "Aula" : lezione.aula;
+         *                  "Inizio" : lezione.inizio;
+         *                  "Fine" : lezione.fine
+         *      }
+         * E poi questi array li leggo come ho già implementato
+        */
+
+
+
+        /*
+            let _inizioLezTemporary = oraInizio
+            let _fineLezTemporary = 14*12+30/5
+            let x = document.getElementById("col-Lorenzo")
+            x.innerHTML += "<div style=\"height: " + 100*(_fineLezTemporary-_inizioLezTemporary)/(oraFine-oraInizio) + "%;\"></div>\n"
+            _inizioLezTemporary = _fineLezTemporary
+            _fineLezTemporary = 16*12+15/5
+            x.innerHTML += "<div style=\"height: " + 100*(_fineLezTemporary-_inizioLezTemporary)/(oraFine-oraInizio) + "%; background-color: red;\">Aula Magna di Matematica</div>\n"
+            _inizioLezTemporary = _fineLezTemporary
+            _fineLezTemporary = 16*12+30/5
+            x.innerHTML += "<div style=\"height: " + 100*(_fineLezTemporary-_inizioLezTemporary)/(oraFine-oraInizio) + "%;\"></div>\n"
+            _inizioLezTemporary =  _fineLezTemporary
+            _fineLezTemporary = 18*12+15/5
+            x.innerHTML += "<div style=\"height: " + 100*(_fineLezTemporary-_inizioLezTemporary)/(oraFine-oraInizio) + "%; background-color: red;\">Aula Magna di Matematica</div>\n"
+            // ultima cosa che rimane da fare: leggere i dati dal json e fare un loop che fa questa cosa per ogni lezione ah e i giorni della settimana
+            /**
+             * La logica è questa:
+             * Leggo il JSON in input, ma lo separo in 7 oggetti, uno per giorno della settimana
+             * Quindi la gerarchia è questa: tutto.giorno.persona[]
+             * Quello che faccio è questo:
+             *      Imposto come fine_del_precedente l'inizio della giornata
+             *      Scorro l'array
+             *          Se l'inizio dell'elemento corrente è uguale alla fine_del_precedente, aggiungo
+             *              Altrimenti, aggiungo lo spazio vuoto necessario e poi l'elemento corrente
+             *          Poi imposto come fine_del_precedente la fine del precedente (ma va)
+             *      Finito, copro anche lo spazio vuoto fino alla fine della giornata
+             *      
+             *      Come aggiungo gli spazi vuoti e pieni?
+             *      Per lo spazio vuoto, passo come inizio la fine del precedente, e come fine l'inizio del corrente
+             *      Per lo spazio pieno, passo come inizio l'inizio del corrente, e come fine la fine del corrente
+             *      Lo passo a una funzione che usa le costanti di inizio e fine giornata per sapere la proporzione e poi restituisce un'altezza
+             * 
+             * Esempio:
+            */

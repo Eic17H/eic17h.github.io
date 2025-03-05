@@ -1,0 +1,89 @@
+
+:root{
+    --n-persone: 5;
+    --h-sel: 5vh;
+    --w-col: calc(95vw / var(--n-persone));
+    --h-sewi-col: 10vh;
+    --h-col: calc(95vh - var(--h-sewi-col) - var(--h-sel));
+}
+body{
+    align-items: center;
+}
+.poki-col{
+    display: flex;
+}
+.poki-col-wan{
+    display: inline;
+    width: 100%;
+}
+.sewi-col{
+    width: auto;
+    height: var(--h-sewi-col);
+    margin: auto;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    background-color: grey;
+    font-size: calc(min(5cqh,3cqw));
+    font-weight: bold;
+}
+.poki-main-col{
+    display: flex;
+}
+.main-col{
+    width: auto;
+    height: var(--h-col);
+    margin: auto;
+    background-color: lightgray;
+}
+.nome-col{
+    margin: auto;
+    font-size: auto;
+}
+.divisore{
+    width: 2vw;
+    background-color: black;
+}
+.dividendo{
+    height: 0.5vw;
+    background-color: black;
+}
+.selettore{
+    height: fit-content;
+    min-height: var(--h-sel);
+    display: flex;
+}
+.aula{
+    font-size: 2cqh;
+    font-weight: bold;
+}
+.materia{
+    font-size: 2cqh;
+    font-style: italic;
+}
+.lezione{
+    font-size: 2cqh;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,.35);
+    margin: 0 0.3vw;
+}
+.orario.lezione{
+    border-radius: 0px;
+}
+.Orario{
+    max-width: fit-content;
+}
+.orario{
+    font-size: 2cqh;
+}
+body{
+    background-color: white;
+}
+.main-col.orario{
+    background-color: darkgrey;
+}
+.noshadow{
+    box-shadow: 0 0 0 0 rgba(0,0,0,.35);
+}

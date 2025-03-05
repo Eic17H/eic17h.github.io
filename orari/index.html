@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orari</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="./style.css" media="screen"/>
+    <style>
+    </style>
+</head>
+<body onload="loadDataOggi()">
+
+    <!--TODO: generare con del codice-->
+    <div class="selettore">
+        <div style="margin-right: auto;">
+            <button onclick="checkboxesHideShow('Lorenzo')">Lorenzo</button>
+            <button onclick="checkboxesHideShow('Alessio')">Alessio</button>
+            <button onclick="checkboxesHideShow('Swami')">Swami</button>
+            <button onclick="checkboxesHideShow('Zanzu')">Zanzu</button>
+            <button onclick="checkboxesHideShow('Giacomo')">Giacomo</button>
+            <button onclick="checkboxesHideShow('Sara')">Sara</button>
+            <button onclick="checkboxesHideShow('Tommaso')">Tommaso</button>
+            <button onclick="checkboxesHideShow('Andry')">Andry</button>
+        </div>
+        
+        <div style="margin-left: auto; text-align: right;">
+            <button onclick="loadData('Lunedì')">Lunedì</button>
+            <button onclick="loadData('Martedì')">Martedì</button>
+            <button onclick="loadData('Mercoledì')">Mercoledì</button>
+            <button onclick="loadData('Giovedì')">Giovedì</button>
+            <button onclick="loadData('Venerdì')">Venerdì</button>
+        </div>
+    </div>
+
+    <div class="dividendo"></div>
+    <div class="poki-col">
+        <div class="divisore"></div>
+        
+        <!--TODO: non realizzare con la stessa struttura delle lezioni-->
+        <div class="poki-col-wan Orario">
+            <div class="sewi-col"><p class="nome-col"></p></div>
+            <div class="main-col orario" id="col-Orario">
+            </div>
+        </div>
+        <div class="divisore"></div>
+
+        <!--TODO: generare con del codice, tutti quanti-->
+
+        <div class="poki-col-wan Lorenzo">
+            <div class="sewi-col"><p class="nome-col">Lorenzo</p></div>
+            <div class="main-col" id="col-Lorenzo">
+            </div>
+        </div>
+        <div class="divisore Lorenzo"></div>
+
+        <div class="poki-col-wan Alessio">
+            <div class="sewi-col"><p class="nome-col">Alessio</p></div>
+            <div class="main-col" id="col-Alessio"></div>
+        </div>
+        <div class="divisore Alessio"></div>
+
+        <div class="poki-col-wan Swami">
+            <div class="sewi-col"><p class="nome-col">Swami</p></div>
+            <div class="main-col" id="col-Swami"></div>
+        </div>
+        <div class="divisore Swami"></div>
+
+        <div class="poki-col-wan Giacomo">
+            <div class="sewi-col"><p class="nome-col">Giacomo</p></div>
+            <div class="main-col" id="col-Giacomo"></div>
+        </div>
+        <div class="divisore Giacomo"></div>
+
+        <div class="poki-col-wan Zanzu">
+            <div class="sewi-col"><p class="nome-col">Zanzu</p></div>
+            <div class="main-col" id="col-Zanzu"></div>
+        </div>
+        <div class="divisore Zanzu"></div>
+        
+        <div class="poki-col-wan Sara">
+            <div class="sewi-col"><p class="nome-col">Sara</p></div>
+            <div class="main-col" id="col-Sara"></div>
+        </div>
+        <div class="divisore Sara"></div>
+        
+        <div class="poki-col-wan Tommaso">
+            <div class="sewi-col"><p class="nome-col">Tommaso</p></div>
+            <div class="main-col" id="col-Tommaso"></div>
+        </div>
+        <div class="divisore Tommaso"></div>
+        
+        <div class="poki-col-wan Andry">
+            <div class="sewi-col"><p class="nome-col">Andry</p></div>
+            <div class="main-col" id="col-Andry"></div>
+        </div>
+        <div class="divisore Andry"></div>
+    </div>
+    
+    <div class="dividendo"></div>
+
+    <script src="dati.js"></script>
+    <script src="costanti.js"></script>
+    <script src="time.js"></script>
+    <script src="loadData.js"></script>
+    <script src="visualizzatore.js"></script>
+    <script src="estetica.js"></script>
+    <script>
+    </script>
+</body>
+</html>

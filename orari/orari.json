@@ -1,0 +1,34 @@
+[
+    {
+        "Persona": "Lorenzo",
+        "Materia": "Programmazione 2",
+        "Aula": "Aula Magna di Matematica",
+        "Giorno": "Lunedì",
+        "Inizio": "174",
+        "Fine": "195"
+    },
+    {
+        "Persona": "Lorenzo",
+        "Materia": "Reti di Calcolatori",
+        "Aula": "Aula Magna di Matematica",
+        "Giorno": "Lunedì",
+        "Inizio": "198",
+        "Fine": "219"
+    },
+    {
+        "Persona": "Lorenzo",
+        "Materia": "Programmazione 2",
+        "Aula": "Aula Magna di Matematica",
+        "Giorno": "Martedì",
+        "Inizio": "174",
+        "Fine": "195"
+    },
+    {
+        "Persona": "Lorenzo",
+        "Materia": "Calcolo Scientifico e Metodi Numerici",
+        "Aula": "Aula Magna di Matematica",
+        "Giorno": "Martedì",
+        "Inizio": "198",
+        "Fine": "219"
+    }
+]
