@@ -24,7 +24,7 @@ body{
     display: flex;
     text-align: center;
     background-color: grey;
-    font-size: calc(min(5cqh,3cqw));
+    font-size: calc(min(7cqh,5cqw));
     font-weight: bold;
 }
 .poki-main-col{
