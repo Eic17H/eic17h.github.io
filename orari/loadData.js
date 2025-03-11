@@ -1,5 +1,6 @@
 function loadDataOggi(){
     let d = new Date();
+    console.log("Giorno della settimana: "+d.getDay())
     switch(d.getDay()){
         case 2: loadData("Martedì");
         break;
@@ -21,6 +22,7 @@ function loadData(oggi){
     console.log(datiRaw)
     let g = document.getElementById("giornoSettimana")
     g.innerHTML = oggi.charAt(0) + oggi.charAt(1)
+    console.log("Indicatore giorno settimana: " + g.innerHTML);
     let dati = {}
     let obj = {}
     for(i in datiRaw){
