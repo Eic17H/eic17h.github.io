@@ -1,5 +1,17 @@
 function loadDataOggi(){
-    loadData("Lunedì")
+    let d = new Date();
+    switch(d.getDay()){
+        case 2: loadData("Martedì");
+        break;
+        case 3: loadData("Mercoledì");
+        break;
+        case 4: loadData("Giovedì");
+        break;
+        case 5: loadData("Venerdì");
+        break;
+        default: loadData("Lunedì");
+        break;
+    }
 }
 
 function loadData(oggi){
@@ -7,6 +19,8 @@ function loadData(oggi){
     let datiRaw = getDati()
     console.log("datiRaw:")
     console.log(datiRaw)
+    let g = document.getElementById("giornoSettimana")
+    g.innerHTML = oggi.charAt(0) + oggi.charAt(1)
     let dati = {}
     let obj = {}
     for(i in datiRaw){
