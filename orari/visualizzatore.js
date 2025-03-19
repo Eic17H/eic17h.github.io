@@ -27,6 +27,7 @@ function faiColonne(){
 
 function checkboxesHideShow(name){
     let x = document.getElementsByClassName(name);
+    if(x.length==0) return
     console.log(x);
     for(let i=0; i<x.length; i++){
         console.log("x[i] = " + x[i])
