@@ -9,14 +9,14 @@
 body{
     align-items: center;
 }
-.poki-col{
+.tutte-le-colonne{
     display: flex;
 }
-.poki-col-wan{
+.una-colonna{
     display: inline;
     width: 100%;
 }
-.sewi-col{
+.testa-colonna{
     width: auto;
     height: var(--h-sewi-col);
     margin: auto;
@@ -27,10 +27,7 @@ body{
     font-size: calc(min(7cqh,5cqw));
     font-weight: bold;
 }
-.poki-main-col{
-    display: flex;
-}
-.main-col{
+.corpo-colonna{
     width: auto;
     height: var(--h-col);
     margin: auto;
@@ -40,11 +37,11 @@ body{
     margin: auto;
     font-size: auto;
 }
-.divisore{
+.divisore-vert{
     width: 2vw;
     background-color: black;
 }
-.dividendo{
+.divisore-hori{
     height: 0.5vw;
     background-color: black;
 }
@@ -81,7 +78,7 @@ body{
 body{
     background-color: white;
 }
-.main-col.orario{
+.corpo-colonna.orario{
     background-color: darkgrey;
 }
 .noshadow{
