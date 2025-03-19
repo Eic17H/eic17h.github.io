@@ -1,4 +1,17 @@
+function getCookie(){
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let cookieArrayString = decodedCookie.split("; ")
+    // Ha un array del tipo "nome=bool"
+    // Separa con =, quindi "nome" va in [0] e "bool" va in [1]
+    // Se [1] è false, allora la colonna di [0] va spenta
+    for(let i=0; i<cookieArrayString.length; i++){
+        if(cookieArrayString[i].split("=")[1] == "false")
+            checkboxesHideShow(cookieArrayString[i].split("=")[0])
+    }
+}
+
 function loadDataOggi(){
+    getCookie();
     let d = new Date();
     console.log("Giorno della settimana: "+d.getDay())
     switch(d.getDay()){

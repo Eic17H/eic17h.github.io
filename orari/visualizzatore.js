@@ -6,6 +6,9 @@ function checkboxesHideShow(name){
         if(x[i].style.display == "none") x[i].style.display="inline"
         else x[i].style.display = "none";
     }
+    let cuchi
+    if(x[0].style.display == "none") cuchi=false; else cuchi=true;
+    document.cookie = name + "=" + cuchi + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT"
 }
 
 function aggiungiLezione(lezione){
