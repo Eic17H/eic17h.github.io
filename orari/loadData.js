@@ -1,13 +1,13 @@
 function getCookie(){
+    faiColonne()
     let decodedCookie = decodeURIComponent(document.cookie);
     let cookieArrayString = decodedCookie.split("; ")
     // Ha un array del tipo "nome=bool"
     // Separa con =, quindi "nome" va in [0] e "bool" va in [1]
     // Se [1] è false, allora la colonna di [0] va spenta
     for(let i=0; i<cookieArrayString.length; i++){
-        if(cookieArrayString[i].split("=")[1] == "false"){
+        if(cookieArrayString[i].split("=")[1] == "false")
             checkboxesHideShow(cookieArrayString[i].split("=")[0])
-        }
         document.cookie = cookieArrayString[i].split("=")[0] + "=" + cookieArrayString[i].split("=")[1] + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT"
     }
 }

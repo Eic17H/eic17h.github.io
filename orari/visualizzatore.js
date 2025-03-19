@@ -1,3 +1,30 @@
+function faiColonna(nome){
+    let x = document.getElementById("tutte-le-colonne")
+    x.innerHTML += ""
+        + "<div class=\"una-colonna "+nome+"\">"
+            + "<div class=\"testa-colonna\"><p class=\"nome-col\">"+nome+"</p></div>"
+            + "<div class=\"corpo-colonna\" id=\"col-"+nome+"\">"
+            + "</div>"
+        + "</div>"
+        + "<div class=\"divisore-vert "+nome+"\"></div>"
+    
+    let y = document.getElementById("pulsanti-persone")
+    y.innerHTML += "<button onclick=\"checkboxesHideShow('"+nome+"')\">"+nome+"</button>"
+}
+
+function faiColonne(){
+    // TODO: fare le colonne in automatico capendole dal file dei dati
+    // TODO: far decidere all'utente (e salvare in un cookie) un ordine custom
+    faiColonna("Lorenzo")
+    faiColonna("Alessio")
+    faiColonna("Swami")
+    faiColonna("Giacomo")
+    faiColonna("Zanzu")
+    faiColonna("Sara")
+    faiColonna("Tommaso")
+    faiColonna("Andry")
+}
+
 function checkboxesHideShow(name){
     let x = document.getElementsByClassName(name);
     console.log(x);

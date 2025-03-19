@@ -10,18 +10,9 @@
     </style>
 </head>
 <body onload="loadDataOggi()">
-
-    <!--TODO: generare con del codice-->
+    
     <div class="selettore">
-        <div style="margin-right: auto;">
-            <button onclick="checkboxesHideShow('Lorenzo')">Lorenzo</button>
-            <button onclick="checkboxesHideShow('Alessio')">Alessio</button>
-            <button onclick="checkboxesHideShow('Swami')">Swami</button>
-            <button onclick="checkboxesHideShow('Giacomo')">Giacomo</button>
-            <button onclick="checkboxesHideShow('Zanzu')">Zanzu</button>
-            <button onclick="checkboxesHideShow('Sara')">Sara</button>
-            <button onclick="checkboxesHideShow('Tommaso')">Tommaso</button>
-            <button onclick="checkboxesHideShow('Andry')">Andry</button>
+        <div style="margin-right: auto;" id="pulsanti-persone">
         </div>
         
         <div style="margin-left: auto; text-align: right;">
@@ -34,7 +25,7 @@
     </div>
 
     <div class="divisore-hori"></div>
-    <div class="tutte-le-colonne">
+    <div class="tutte-le-colonne" id="tutte-le-colonne">
         <div class="divisore-vert"></div>
         
         <!--TODO: non realizzare con la stessa struttura delle lezioni-->
@@ -47,56 +38,8 @@
 
         <!--TODO: generare con del codice, tutti quanti-->
 
-        <div class="una-colonna Lorenzo">
-            <div class="testa-colonna"><p class="nome-col">Lorenzo</p></div>
-            <div class="corpo-colonna" id="col-Lorenzo">
-            </div>
-        </div>
-        <div class="divisore-vert Lorenzo"></div>
-
-        <div class="una-colonna Alessio">
-            <div class="testa-colonna"><p class="nome-col">Alessio</p></div>
-            <div class="corpo-colonna" id="col-Alessio"></div>
-        </div>
-        <div class="divisore-vert Alessio"></div>
-
-        <div class="una-colonna Swami">
-            <div class="testa-colonna"><p class="nome-col">Swami</p></div>
-            <div class="corpo-colonna" id="col-Swami"></div>
-        </div>
-        <div class="divisore-vert Swami"></div>
-
-        <div class="una-colonna Giacomo">
-            <div class="testa-colonna"><p class="nome-col">Giacomo</p></div>
-            <div class="corpo-colonna" id="col-Giacomo"></div>
-        </div>
-        <div class="divisore-vert Giacomo"></div>
-
-        <div class="una-colonna Zanzu">
-            <div class="testa-colonna"><p class="nome-col">Zanzu</p></div>
-            <div class="corpo-colonna" id="col-Zanzu"></div>
-        </div>
-        <div class="divisore-vert Zanzu"></div>
         
-        <div class="una-colonna Sara">
-            <div class="testa-colonna"><p class="nome-col">Sara</p></div>
-            <div class="corpo-colonna" id="col-Sara"></div>
-        </div>
-        <div class="divisore-vert Sara"></div>
-        
-        <div class="una-colonna Tommaso">
-            <div class="testa-colonna"><p class="nome-col">Tommaso</p></div>
-            <div class="corpo-colonna" id="col-Tommaso"></div>
-        </div>
-        <div class="divisore-vert Tommaso"></div>
-        
-        <div class="una-colonna Andry">
-            <div class="testa-colonna"><p class="nome-col">Andry</p></div>
-            <div class="corpo-colonna" id="col-Andry"></div>
-        </div>
-        <div class="divisore-vert Andry"></div>
     </div>
-    
     <div class="divisore-hori"></div>
 
     <script src="dati.js"></script>
