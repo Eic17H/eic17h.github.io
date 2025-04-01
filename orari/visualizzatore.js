@@ -53,7 +53,7 @@ case 'Reti di Calcolatori Ex': return 'RdC-Ex'; break;
 case 'Fondamenti di Programmazione Web': return 'FPW'; break;
 case 'Programmazione 2 Ex': return 'PR2-Ex'; break;
 case 'Cinese 2 Ex': return 'Cmn2-Ex'; break;
-case 'Com. e Gior. nell'Età Contemp.': return 'ComGior'; break;
+case 'Com. e Gior. nell\'Età Contemp.': return 'ComGior'; break;
 case 'Cinese 2': return 'Cmn2'; break;
 case 'Teoria e Tecnica del Ling. Cinem.': return 'TTLingCin'; break;
 case 'Cinese B2': return 'CmnB2'; break;
