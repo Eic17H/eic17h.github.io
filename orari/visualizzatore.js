@@ -68,6 +68,7 @@ case 'Litologia e Geologia': return 'LitGeo'; break;
 case 'Geometria e Algebra': return 'GeomAlg'; break;
 case 'Disegno Ex': return 'Disegno'; break;
 case 'Fisica 1': return 'Fis1'; break;
+default: return ''; break;
 }
 }
 
