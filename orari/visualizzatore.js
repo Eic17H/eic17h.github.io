@@ -77,9 +77,10 @@ return nome;
 }
 
 function aggiungiLezioneAbbr(lezione){
-lezione.materia = abbreviaMaterie(lezione.materia)
-lezione.aula = abbreviaAule(lezione.aula)
-aggiungiLezione(lezione)
+let lezioneNew = lezione
+lezioneNew.materia = abbreviaMaterie(lezione.materia)
+lezioneNew.aula = abbreviaAule(lezione.aula)
+aggiungiLezione(lezioneNew)
 }
 
 function aggiungiLezione(lezione){
