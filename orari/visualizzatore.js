@@ -1,8 +1,11 @@
 function faiColonna(nome){
+    let nomeNew
+    if(schermoPiccolo) nomeNew = nome.substring(0, 3) + "."
+    else nomeNew = nome
     let x = document.getElementById("tutte-le-colonne")
     x.innerHTML += ""
         + "<div class=\"una-colonna "+nome+"\">"
-            + "<div class=\"testa-colonna\"><p class=\"nome-col\">"+nome+"</p></div>"
+            + "<div class=\"testa-colonna\"><p class=\"nome-col\">"+nomeNew+"</p></div>"
             + "<div class=\"corpo-colonna\" id=\"col-"+nome+"\">"
             + "</div>"
         + "</div>"

@@ -77,7 +77,7 @@ function leggiPersona(persona){
         }
         // E poi aggiungo la lezione vera e propria
         
-        if(screen.width < 1000) aggiungiLezioneAbbr(persona[i])
+        if(schermoPiccolo) aggiungiLezioneAbbr(persona[i])
         else aggiungiLezione(persona[i])
         finePrec = persona[i].fine
     }
