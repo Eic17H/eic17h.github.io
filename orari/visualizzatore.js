@@ -70,7 +70,7 @@ function abbreviaMaterie(nome){
         case 'Geometria e Algebra': return 'GeomAlg';
         case 'Disegno Ex': return 'Disegno';
         case 'Fisica 1': return 'Fis1';
-        default: return '';
+        default: return nome;
     }
 }
 
@@ -80,9 +80,9 @@ function abbreviaAule(nome){
         ["Matematica", "Matem."],
         ["Laboratorio", "Lab"],
         [/ ex .*$/, ""],
-        ["Aula Magna", "A. Magna"],
+        ["Aula Magna", "A. Mag."],
         ["Aula Confucio", "Confucio"],
-        ["Lingue", "Ling."]
+        ["Lingue", "L."]
     ]
     let i
     for(i in regexRules) nome = nome.replace(regexRules[i][0], regexRules[i][1])
