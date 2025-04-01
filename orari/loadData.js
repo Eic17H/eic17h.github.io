@@ -76,7 +76,9 @@ function leggiPersona(persona){
             aggiungiVuoto(finePrec, persona[i].inizio, persona[i].persona)
         }
         // E poi aggiungo la lezione vera e propria
-        aggiungiLezione(persona[i])
+        
+        if(screen.width < 1000) aggiungiLezioneAbbr(persona[i])
+        else aggiungiLezione(persona[i])
         finePrec = persona[i].fine
     }
 }
