@@ -39,6 +39,48 @@ function checkboxesHideShow(name){
     document.cookie = name + "=" + cuchi + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT"
 }
 
+function abbreviaMaterie(nome){
+switch(nome){
+case 'Traduzione Inglese 1': return 'TrEng1'; break;
+case 'Inglese 2 Ex': return 'Eng2-Ex'; break;
+case 'Tedesco 2 Ex': return 'Deu2-Ex'; break;
+case 'Traduzione Tedesca 1': return 'TrDeu1'; break;
+case 'Programmazione 2': return 'PR2'; break;
+case 'Reti di Calcolatori': return 'RdC'; break;
+case 'Calcolo Scientifico e Metodi Numerici': return 'CSMN'; break;
+case 'Fondamenti di Programmazione Web Ex': return 'FPW-Ex'; break;
+case 'Reti di Calcolatori Ex': return 'RdC-Ex'; break;
+case 'Fondamenti di Programmazione Web': return 'FPW'; break;
+case 'Programmazione 2 Ex': return 'PR2-Ex'; break;
+case 'Cinese 2 Ex': return 'Cmn2-Ex'; break;
+case 'Com. e Gior. nell'Età Contemp.': return 'ComGior'; break;
+case 'Cinese 2': return 'Cmn2'; break;
+case 'Teoria e Tecnica del Ling. Cinem.': return 'TTLingCin'; break;
+case 'Cinese B2': return 'CmnB2'; break;
+case 'Didat. dei Proc. Educativi e Formativi': return 'DPEF'; break;
+case 'Linguistica Italiana 2': return 'LingIta2'; break;
+case 'Linguistica Italiana 1': return 'LingIta1'; break;
+case 'Spagnolo 1 Ex': return 'Spa1-Ex'; break;
+case 'Spagnolo 1': return 'Spa1'; break;
+case 'Inglese 1 Ex': return 'Eng1-Ex'; break;
+case 'Inglese 1': return 'Eng1'; break;
+case 'Litologia e Geologia': return 'LitGeo'; break;
+case 'Geometria e Algebra': return 'GeomAlg'; break;
+case 'Disegno Ex': return 'Disegno'; break;
+case 'Fisica 1': return 'Fis1'; break;
+}
+}
+
+function abbreviaAule(nome){
+return nome;
+}
+
+function aggiungiLezioneAbbr(lezione){
+lezione.materia = abbreviaMaterie(lezione.materia)
+lezione.aula = abbreviaAule(lezione.aula)
+aggiungiLezione(lezione)
+}
+
 function aggiungiLezione(lezione){
     let x = document.getElementById("col-" + lezione.persona)
     let noShadow = ""
