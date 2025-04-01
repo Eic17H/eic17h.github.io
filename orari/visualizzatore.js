@@ -85,7 +85,8 @@ function abbreviaAule(nome){
         [/ ex .*$/, ""],
         ["Aula Magna", "A. Mag."],
         ["Aula Confucio", "Confucio"],
-        ["Lingue", "L."]
+        ["Lingue", "L."],
+        ["-", "&#8209;"]
     ]
     let i
     for(i in regexRules) nome = nome.replace(regexRules[i][0], regexRules[i][1])
