@@ -38,7 +38,7 @@ function checkboxesHideShow(name){
     if(x[0].style.display == "none") cuchi=false; else cuchi=true;
     document.cookie = name + "=" + cuchi + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT"
 }
-
+/*
 function abbreviaMaterie(nome){
 switch(nome){
 case 'Traduzione Inglese 1': return 'TrEng1'; break;
@@ -81,7 +81,7 @@ let lezioneNew = lezione
 lezioneNew.materia = abbreviaMaterie(lezione.materia)
 lezioneNew.aula = abbreviaAule(lezione.aula)
 aggiungiLezione(lezioneNew)
-}
+}*/
 
 function aggiungiLezione(lezione){
     let x = document.getElementById("col-" + lezione.persona)
