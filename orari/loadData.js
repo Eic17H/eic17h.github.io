@@ -36,6 +36,10 @@ function loadDataOggi(){
 }
 
 function loadData(oggi){
+    let orar = document.getElementById("col-Orario")
+    for(let i = 8; i <= 19; i++){
+        orar.innerHTML += "<div class=\"lezione noshadow aula\" style=\"height:"+cinqueMinuti*12+"%; max-height:"+cinqueMinuti*12+"%; background-color: #00000000;\">"+String(i).padStart(2, '0')+"</div>"
+    }
     // Ok questa cosa funziona per leggere il nome dei campi dalla stringa
     
     let b = document.getElementById("button-"+oggi)
@@ -51,11 +55,6 @@ function loadData(oggi){
     let datiRaw = getDati()
     console.log("datiRaw:")
     console.log(datiRaw)
-
-    // Impostare giorno della settimana corrente
-    let g = document.getElementById("giornoSettimana")
-    g.innerHTML = oggi.charAt(0) + oggi.charAt(1)
-    console.log("Indicatore giorno settimana: " + g.innerHTML);
 
     // Svuotiamo tutte le colonne a quanto pare
     // Creiamo un oggetto vuoto per ogni giorno della settimana

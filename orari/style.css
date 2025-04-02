@@ -1,13 +1,12 @@
 
 :root{
-    --n-persone: 8;
-    --h-sel: 5vh;
-    --w-col: calc(95vw / var(--n-persone));
-    --h-sewi-col: 10vh;
-    --h-col: calc(93vh - var(--h-sewi-col) - var(--h-sel));
+    --h-sel: 6cqh;
+    --h-sewi-col: 10cqh;
+    --h-col: calc(97cqh - var(--h-sewi-col) - var(--h-sel));
 }
 body{
     align-items: center;
+    margin: 0;
 }
 .tutte-le-colonne{
     display: flex;
@@ -88,4 +87,9 @@ body{
 }
 #pulsanti-giorni>button{
     width:20%
+}
+
+.selezionato{
+    color: darkblue;
+    font-weight: bold;
 }
