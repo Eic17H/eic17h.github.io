@@ -22,9 +22,12 @@ body{
     align-items: center;
     display: flex;
     text-align: center;
-    background-color: grey;
+    background: linear-gradient(to bottom, gray 40%, lightgray);
     font-size: calc(min(7cqh,5cqw));
     font-weight: bold;
+}
+.Orario > .testa-colonna{
+    background: darkgray;
 }
 .corpo-colonna{
     width: auto;
@@ -52,7 +55,7 @@ body{
     font-size: 2cqh;
     align-content: center;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 0px 0px 20px 20px;
     box-shadow: 0 25px 25px 0 rgba(0,0,0,.35);
     margin: 0 0.3vw;
 }
@@ -92,4 +95,14 @@ body{
 .selezionato{
     color: darkblue;
     font-weight: bold;
+}
+
+#col-Orario > .aula{
+    align-items: start;
+    display: flex;
+}
+
+.orasingola{
+    position: relative;
+    top: 5.5px;
 }
