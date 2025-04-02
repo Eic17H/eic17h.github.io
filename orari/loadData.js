@@ -1,3 +1,8 @@
+function init(){
+    faiPulsantiGiorni()
+    loadDataOggi()
+}
+
 function getCookie(){
     faiColonne()
     let decodedCookie = decodeURIComponent(document.cookie);

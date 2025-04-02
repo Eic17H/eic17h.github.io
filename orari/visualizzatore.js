@@ -1,3 +1,15 @@
+function faiPulsantiGiorni(){
+    let giorni = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì"]
+    let y = document.getElementById("pulsanti-giorni")
+    let i, nome, nomeNew
+    for(i in giorni){
+        nome = giorni[i]
+        if(schermoPiccolo) nomeNew = nome.substring(0, 2) + ""
+        else nomeNew = nome
+        y.innerHTML += "<button onclick=\"loadData('"+nome+"')\">"+nomeNew+"</button>"
+    }
+}
+
 function faiColonna(nome){
     let nomeNew
     if(schermoPiccolo) nomeNew = nome.substring(0, 3) + "."
@@ -12,7 +24,7 @@ function faiColonna(nome){
         + "<div class=\"divisore-vert "+nome+"\"></div>"
     
     let y = document.getElementById("pulsanti-persone")
-    y.innerHTML += "<button onclick=\"checkboxesHideShow('"+nome+"')\">"+nome+"</button>"
+    y.innerHTML += "<button onclick=\"checkboxesHideShow('"+nome+"')\">"+nomeNew+"</button>"
 }
 
 function faiColonne(){
