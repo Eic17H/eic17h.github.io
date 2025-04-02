@@ -1,4 +1,11 @@
 @media only screen and (min-width: 1000px) {
+    .schermogrande{
+        visibility: visible;
+    }
+    .schermopiccolo{
+        visibility: hidden;
+        font-size: 0px;
+    }
     .aula{
         font-size: 2cqh;
         font-weight: bold;
@@ -13,6 +20,13 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .schermogrande{
+        visibility: hidden;
+        font-size: 0px;
+    }
+    .schermopiccolo{
+        visibility: visible;
+    }
     .aula{
         font-size: 1.8cqh;
         font-weight: bold;

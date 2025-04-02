@@ -105,33 +105,45 @@ function abbreviaAule(nome){
     return nome;
 }
 
-function aggiungiLezioneGenerale(lezione, color){
-    let x = document.getElementById("col-" + lezione.persona)
-    let noShadow = ""
-    if(lezione.materia == "") noShadow = "noshadow"
-    x.innerHTML += "<div class=\"lezione " + noShadow + "\" style=\"height: " + (lezione.fine - lezione.inizio)*cinqueMinuti + "%; max-height: " + (lezione.fine - lezione.inizio)*cinqueMinuti + "%; background-color:" + color + "\"><span class=\"aula\">" + lezione.aula + "</span><br><span class=\"materia\">" + lezione.materia + "</span><br><span class =\"orario\">" + orariox(lezione) + "</span></div>\n"
-}
-
-/**
- * TODO:
- * Invece di fare così, fai cosà:
- * <div #questacosa>
- *      <div .grande></div>
- *      <div .piccolo></div>
- * </div>
- * @media computer: grande=shown, piccolo=hidden
- * @media telefono: grande=hidden, piccolo=shown
- */
-function aggiungiLezioneAbbr(lezione){
-    let color = colore(lezione.aula)
-    let lezioneNew = lezione
-    lezioneNew.materia = abbreviaMaterie(lezione.materia)
-    lezioneNew.aula = abbreviaAule(lezione.aula)
-    aggiungiLezioneGenerale(lezioneNew, color)
-}
-
 function aggiungiLezione(lezione){
-    aggiungiLezioneGenerale(lezione, colore(lezione.aula))
+    let str = ""
+    // <div>
+    str += "<div class=\""
+        str += "lezione "
+        if(lezione.materia == "") str += "noshadow"
+        str += "\" "
+    str += "style=\""
+        str += "height: "
+            str += (lezione.fine - lezione.inizio)*cinqueMinuti + "%; "
+        str += "max-height: "
+            str += (lezione.fine - lezione.inizio)*cinqueMinuti + "%; "
+        str += "background-color: "
+            str += colore(lezione.aula)
+        str += "\""
+    str += ">"
+
+        // <span>
+        str += "<span class=\"aula\">"
+            str += "<span class =\"schermogrande\">"+lezione.aula+"</span>"
+            str += "<span class =\"schermopiccolo\">"+abbreviaAule(lezione.aula)+"</span>"
+        str += "</span>"
+        str += "<br>"
+
+        // <span>
+        str += "<span class=\"materia\">"
+            str += "<span class =\"schermogrande\">"+lezione.materia+"</span>"
+            str += "<span class =\"schermopiccolo\">"+abbreviaMaterie(lezione.materia)+"</span>"
+        str += "</span>"
+        str += "<br>"
+
+        // <span>
+        str += "<span class=\"orario\">"
+        str += orariox(lezione)
+        str += "</span>"
+    
+    str += "</div>\n"
+    let x = document.getElementById("col-" + lezione.persona)
+    x.innerHTML += str
 }
 
 function aggiungiVuoto(inizio, fine, persona){
