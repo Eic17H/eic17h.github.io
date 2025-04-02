@@ -19,6 +19,9 @@
     .orario{
         font-size: 2cqh;
     }
+    .lezione{
+        border-radius: 0px 0px 20px 20px;
+    }
 }
 
 @media only screen and (max-width: 728px) {
@@ -43,5 +46,8 @@
     .orario{
         font-size: 1.5cqh;
         font-weight: bold;
+    }
+    .lezione{
+        border-radius: 20px;
     }
 }
