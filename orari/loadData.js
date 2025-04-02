@@ -37,22 +37,32 @@ function loadDataOggi(){
 
 function loadData(oggi){
     // Ok questa cosa funziona per leggere il nome dei campi dalla stringa
+    
+    let dati={}, obj={}, i, j, x
+
+    // Lettura dati
     let datiRaw = getDati()
     console.log("datiRaw:")
     console.log(datiRaw)
+
+    // Impostare giorno della settimana corrente
     let g = document.getElementById("giornoSettimana")
     g.innerHTML = oggi.charAt(0) + oggi.charAt(1)
     console.log("Indicatore giorno settimana: " + g.innerHTML);
-    let dati = {}
-    let obj = {}
+
+    // Svuotiamo tutte le colonne a quanto pare
+    // Creiamo un oggetto vuoto per ogni giorno della settimana
     for(i in datiRaw){
-        let x = document.getElementById("col-" + datiRaw[i].persona)
+        x = document.getElementById("col-" + datiRaw[i].persona)
         x.innerHTML = ""
         dati[datiRaw[i].giorno] = {}
     }
+    // Per ogni giorno della settimana, creiamo un array vuoto per ogni persona
     for(i in datiRaw){
         dati[datiRaw[i].giorno][datiRaw[i].persona] = []
     }
+
+    // Adesso convertiamo i dati nel formato che ci serve
     console.log("dati:")
     console.log(dati)
     for(i in datiRaw){
@@ -67,22 +77,28 @@ function loadData(oggi){
         // Aggiungiamo obj all'array
         dati[datiRaw[i].giorno][datiRaw[i].persona].push(obj)
     }
+
     // Ordiniamo le lezioni per orario di inizio
     for(i in dati) for(j in dati[i]) dati[i][j].sort((a,b) => (a.inizio-b.inizio))
     for(i in dati[oggi]) leggiPersona(dati[oggi][i])
 }
 
 function leggiPersona(persona){
+    // La prima lezione (o vuoto) parte dall'inizio
     let finePrec = oraInizio
+    
+    // Scorre l'array delle lezioni
     for(let i=0; i<persona.length; i++){
-        // Se c'è tempo libero, aggiungi
+        // Se c'è tempo libero, aggiungi un vuoto
         if(persona[i].inizio != finePrec){  
             console.log(persona[i])
             aggiungiVuoto(finePrec, persona[i].inizio, persona[i].persona)
         }
+
         // E poi aggiungo la lezione vera e propria
-        
         aggiungiLezione(persona[i])
+
+        // La prossima parte dalla fine di questa
         finePrec = persona[i].fine
     }
 }

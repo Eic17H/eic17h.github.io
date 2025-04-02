@@ -1,10 +1,10 @@
 
 :root{
-    --n-persone: 5;
+    --n-persone: 8;
     --h-sel: 5vh;
     --w-col: calc(95vw / var(--n-persone));
     --h-sewi-col: 10vh;
-    --h-col: calc(95vh - var(--h-sewi-col) - var(--h-sel));
+    --h-col: calc(93vh - var(--h-sewi-col) - var(--h-sel));
 }
 body{
     align-items: center;
@@ -48,7 +48,6 @@ body{
 .selettore{
     height: fit-content;
     min-height: var(--h-sel);
-    display: flex;
 }
 .lezione{
     font-size: 2cqh;
@@ -75,4 +74,18 @@ body{
 }
 #giornoSettimana{
     font-size: 50%;
+}
+
+#pulsanti-persone{
+    width:100%
+}
+#pulsanti-persone>button{
+    width:12.5%
+}
+
+#pulsanti-giorni{
+    width:100%
+}
+#pulsanti-giorni>button{
+    width:20%
 }
