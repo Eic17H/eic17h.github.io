@@ -1,0 +1,30 @@
+@media only screen and (min-width: 1000px) {
+    .aula{
+        font-size: 2cqh;
+        font-weight: bold;
+    }
+    .materia{
+        font-size: 2cqh;
+        font-style: italic;
+    }
+    .orario{
+        font-size: 2cqh;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .aula{
+        font-size: 1.8cqh;
+        font-weight: bold;
+    }
+    .materia{
+        font-size: 1.5cqh;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .orario{
+        font-size: 1.5cqh;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
