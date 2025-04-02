@@ -82,8 +82,7 @@ function leggiPersona(persona){
         }
         // E poi aggiungo la lezione vera e propria
         
-        if(schermoPiccolo) aggiungiLezioneAbbr(persona[i])
-        else aggiungiLezione(persona[i])
+        aggiungiLezione(persona[i])
         finePrec = persona[i].fine
     }
 }
