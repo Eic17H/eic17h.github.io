@@ -4,27 +4,25 @@ function faiPulsantiGiorni(){
     let i, nome, nomeNew
     for(i in giorni){
         nome = giorni[i]
-        if(schermoPiccolo) nomeNew = nome.substring(0, 2) + ""
-        else nomeNew = nome
-        y.innerHTML += "<button onclick=\"loadData('"+nome+"')\">"+nomeNew+"</button>"
+        nomeNew = nome.substring(0, 2) + ""
+        y.innerHTML += "<button onclick=\"loadData('"+nome+"')\">"+"<span class=\"schermogrande\">"+nome+"</span><span class=\"schermopiccolo\">"+nomeNew+"</span></button>"
     }
 }
 
 function faiColonna(nome){
-    let nomeNew
-    if(schermoPiccolo) nomeNew = nome.substring(0, 3) + "."
-    else nomeNew = nome
+    nomeNew = nome.substring(0, 3) + "."
     let x = document.getElementById("tutte-le-colonne")
     x.innerHTML += ""
         + "<div class=\"una-colonna "+nome+"\">"
-            + "<div class=\"testa-colonna\"><p class=\"nome-col\">"+nomeNew+"</p></div>"
+            + "<div class=\"testa-colonna schermogrande\"><p class=\"nome-col\">"+nome+"</p></div>"
+            + "<div class=\"testa-colonna schermopiccolo\"><p class=\"nome-col\">"+nomeNew+"</p></div>"
             + "<div class=\"corpo-colonna\" id=\"col-"+nome+"\">"
             + "</div>"
         + "</div>"
         + "<div class=\"divisore-vert "+nome+"\"></div>"
     
     let y = document.getElementById("pulsanti-persone")
-    y.innerHTML += "<button onclick=\"checkboxesHideShow('"+nome+"')\">"+nomeNew+"</button>"
+    y.innerHTML += "<button onclick=\"checkboxesHideShow('"+nome+"')\">"+"<span class=\"schermogrande\">"+nome+"</span><span class=\"schermopiccolo\">"+nomeNew+"</span></button>"
 }
 
 function faiColonne(){

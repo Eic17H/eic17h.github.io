@@ -5,6 +5,8 @@
     .schermopiccolo{
         visibility: hidden;
         font-size: 0px;
+        height: 0px;
+        width: 0px;
     }
     .aula{
         font-size: 2cqh;
@@ -23,6 +25,8 @@
     .schermogrande{
         visibility: hidden;
         font-size: 0px;
+        height: 0px;
+        width: 0px;
     }
     .schermopiccolo{
         visibility: visible;
