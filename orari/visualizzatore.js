@@ -106,10 +106,13 @@ function abbreviaAule(nome){
 }
 
 function aggiungiLezioneGenerale(lezione, color){
+    let classePicc
+    if(schermoPiccolo) classePicc = " schermopiccolo"
+    else classePicc = ""
     let x = document.getElementById("col-" + lezione.persona)
     let noShadow = ""
     if(lezione.materia == "") noShadow = "noshadow"
-    x.innerHTML += "<div class=\"lezione " + noShadow + "\" style=\"height: " + (lezione.fine - lezione.inizio)*cinqueMinuti + "%; max-height: " + (lezione.fine - lezione.inizio)*cinqueMinuti + "%; background-color:" + color + "\"><span class=\"aula\">" + lezione.aula + "</span><br><span class=\"materia\">" + lezione.materia + "</span><br><span class =\"orario\">" + orariox(lezione) + "</span></div>\n"
+    x.innerHTML += "<div class=\"lezione"+classePicc+" " + noShadow + "\" style=\"height: " + (lezione.fine - lezione.inizio)*cinqueMinuti + "%; max-height: " + (lezione.fine - lezione.inizio)*cinqueMinuti + "%; background-color:" + color + "\"><span class=\"aula"+classePicc+"\">" + lezione.aula + "</span><br><span class=\"materia"+classePicc+"\">" + lezione.materia + "</span><br><span class =\"orario"+classePicc+"\">" + orariox(lezione) + "</span></div>\n"
 }
 
 function aggiungiLezioneAbbr(lezione){

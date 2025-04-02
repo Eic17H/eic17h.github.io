@@ -66,14 +66,28 @@ body{
     box-shadow: 0 25px 25px 0 rgba(0,0,0,.35);
     margin: 0 0.3vw;
 }
+.orario{
+    font-size: 2cqh;
+}
+.aula.schermopiccolo{
+    font-size: 1.8cqh;
+    font-weight: bold;
+}
+.materia.schermopiccolo{
+    font-size: 1.5cqh;
+    font-style: italic;
+    font-weight: bold;
+}
+.orario.schermopiccolo{
+    font-size: 1.5cqh;
+    font-style: italic;
+    font-weight: bold;
+}
 .orario.lezione{
     border-radius: 0px;
 }
 .Orario{
     max-width: fit-content;
-}
-.orario{
-    font-size: 2cqh;
 }
 body{
     background-color: white;
