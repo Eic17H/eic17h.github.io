@@ -38,7 +38,14 @@ function loadDataOggi(){
 function loadData(oggi){
     // Ok questa cosa funziona per leggere il nome dei campi dalla stringa
     
+    let b = document.getElementById("button-"+oggi)
+    let a = document.getElementsByClassName("button-giorno")
+
     let dati={}, obj={}, i, j, x
+
+    console.log("ccccccc")
+    for(i = 0; i<a.length; i++) if(a[i].classList.contains("selezionato")) a[i].classList.remove("selezionato")
+    b.classList.add("selezionato")
 
     // Lettura dati
     let datiRaw = getDati()

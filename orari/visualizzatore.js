@@ -5,7 +5,7 @@ function faiPulsantiGiorni(){
     for(i in giorni){
         nome = giorni[i]
         nomeNew = nome.substring(0, 2) + ""
-        y.innerHTML += "<button onclick=\"loadData('"+nome+"')\">"+"<span class=\"schermogrande\">"+nome+"</span><span class=\"schermopiccolo\">"+nomeNew+"</span></button>"
+        y.innerHTML += "<button class=\"button-giorno\" id=\"button-"+nome+"\" onclick=\"loadData('"+nome+"')\">"+"<span class=\"schermogrande\">"+nome+"</span><span class=\"schermopiccolo\">"+nomeNew+"</span></button>"
     }
 }
 
