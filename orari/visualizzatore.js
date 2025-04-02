@@ -10,7 +10,7 @@ function faiPulsantiGiorni(){
 }
 
 function faiColonna(nome){
-    nomeNew = nome.substring(0, 3) + "."
+    let nomeNew = nome.substring(0, 3) + "."
     let x = document.getElementById("tutte-le-colonne")
     x.innerHTML += ""
         + "<div class=\"una-colonna "+nome+"\">"
