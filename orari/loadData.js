@@ -78,7 +78,8 @@ function loadData(oggi){
             materia: datiRaw[i].materia,
             aula: datiRaw[i].aula,
             inizio: datiRaw[i].inizio,
-            fine: datiRaw[i].fine
+            fine: datiRaw[i].fine,
+            giorno: datiRaw[i].giorno
         }
         // Aggiungiamo obj all'array
         dati[datiRaw[i].giorno][datiRaw[i].persona].push(obj)
