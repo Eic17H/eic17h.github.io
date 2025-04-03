@@ -90,10 +90,10 @@ function abbreviaAule(nome){
         ["A.M. di ", ""],
         ["Matematica", "Matem."],
         ["Laboratorio", "Lab"],
+        ["Laboratorio Lingue", "Lab"],
         [/ ex .*$/, ""],
         ["Aula Magna", "A. Mag."],
         ["Aula Confucio", "Confucio"],
-        ["Lingue", "L."],
         ["-", "&#8209;"]
     ]
     let i
