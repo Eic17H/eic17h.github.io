@@ -41,10 +41,10 @@ function colore(aula){
         "L_TB ex Z",
         "N_3A ex Lidia",
     ]
-    if(palazzoDelleScienze.includes(aula)) return "#FF3E9B"
-    if(campusAresu.includes(aula)) return "#F9DB47"
+    if(palazzoDelleScienze.includes(aula)) return "var(--red)"
+    if(campusAresu.includes(aula)) return "var(--yellow)"
     if(orario.includes(aula)) return "#00000000"
-    if(altro.includes(aula)) return "darkgrey"
-    if(ingegneria.includes(aula)) return "#88D398"
+    if(altro.includes(aula)) return "var(--darkgrey)"
+    if(ingegneria.includes(aula)) return "var(--green)"
     return "#00000000"
 }

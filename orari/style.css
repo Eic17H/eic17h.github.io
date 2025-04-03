@@ -3,10 +3,35 @@
     --h-sel: 6cqh;
     --h-sewi-col: 10cqh;
     --h-col: calc(97cqh - var(--h-sewi-col) - var(--h-sel));
+
+    --light-white: #FBFBFB;
+    --white: #C8C8CD;
+    --dark-white: #87878C;
+    --light-gray: #3A3A40;
+    --gray: #2E2E34;
+    --dark-gray: #28282D;
+    --black: #000000;
+    --red: #D6363F;
+    --yellow: #CA9654;
+    --greenish: #8DB85E;
+    --green: #43A25A;
+    --blue: #5865F2;
+}
+@font-face {
+    font-family: Predefinito;
+    src: url(./Inter-VariableFont_opsz\,wght.ttf);
+}
+* {
+    font-family: Predefinito, sans-serif;
+}
+html{
+    background-color: black;
 }
 body{
     align-items: center;
     margin: 0;
+    background-color: var(--dark-gray);
+    color: var(--light-white);
 }
 .tutte-le-colonne{
     display: flex;
@@ -22,18 +47,18 @@ body{
     align-items: center;
     display: flex;
     text-align: center;
-    background: linear-gradient(to bottom, gray 40%, lightgray);
+    background: linear-gradient(to bottom, var(--dark-gray) 40%, var(--light-gray));
     font-size: calc(min(7cqh,5cqw));
     font-weight: bold;
 }
 .Orario > .testa-colonna{
-    background: darkgray;
+    background: var(--dark-gray);
 }
 .corpo-colonna{
     width: auto;
     height: var(--h-col);
     margin: auto;
-    background-color: lightgray;
+    background-color: var(--light-gray);
 }
 .nome-col{
     margin: auto;
@@ -49,7 +74,8 @@ body{
 }
 .selettore{
     height: fit-content;
-    min-height: var(--h-sel);
+    max-height: var(--h-sel);
+    background-color: var(--dark-gray);
 }
 .lezione{
     font-size: 2cqh;
@@ -57,6 +83,7 @@ body{
     text-align: center;
     box-shadow: 0 25px 25px 0 rgba(0,0,0,.35);
     margin: 0 0.3vw;
+    color: var(--black)
 }
 .orario.lezione{
     border-radius: 0px;
@@ -68,7 +95,7 @@ body{
     background-color: white;
 }
 .corpo-colonna.orario{
-    background-color: darkgrey;
+    background-color: var(--dark-gray);
 }
 .noshadow{
     box-shadow: 0 0 0 0 rgba(0,0,0,.35);
@@ -78,27 +105,45 @@ body{
 }
 
 #pulsanti-persone{
-    width:100%
+    width:100%;
+    height: fit-content;
 }
 #pulsanti-persone>button{
     width:12.5%
 }
 
 #pulsanti-giorni{
-    width:100%
+    width:100%;
+    height: fit-content;
 }
 #pulsanti-giorni>button{
     width:20%
 }
 
+button{
+    background-color: var(--dark-gray);
+    color: var(--light-white);
+    border: 0px;
+}
+
+button:hover{
+    background-color: var(--light-gray);
+    font-weight: bold;
+}
+
 .selezionato{
-    color: darkblue;
+    background-color: var(--light-gray);
+    color: var(--blue);
     font-weight: bold;
 }
 
 #col-Orario > .aula{
     align-items: start;
     display: flex;
+}
+
+#col-Orario > .lezione{
+    color: var(--light-white)
 }
 
 .orasingola{
