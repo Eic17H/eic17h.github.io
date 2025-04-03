@@ -150,3 +150,7 @@ button:hover{
     position: relative;
     top: 5.5px;
 }
+
+.corrente{
+    color: var(--light-white);
+}

@@ -104,11 +104,15 @@ function abbreviaAule(nome){
 }
 
 function aggiungiLezione(lezione){
+    let d = new Date()
+    let adesso = d.getHours()*12+d.getMinutes()/5
     let str = ""
     // <div>
     str += "<div class=\""
-        str += "lezione "
-        if(lezione.materia == "") str += "noshadow"
+        str += "lezione"
+        if(lezione.materia == "") str += " noshadow"
+        if(lezione.inizio<=adesso && lezione.fine>=adesso) str += " corrente"
+        console.log(adesso)
         str += "\" "
     str += "style=\""
         str += "height: "
