@@ -24,7 +24,6 @@ function getCookie(){
 function loadDataOggi(){
     getCookie();
     let d = new Date();
-    console.log("Giorno della settimana: "+d.getDay())
     switch(d.getDay()){
         case 2: loadData("Martedì");
         break;
@@ -47,7 +46,6 @@ function loadData(oggi){
 
     let dati={}, obj={}, i, j, x
 
-    console.log("ccccccc")
     for(i = 0; i<a.length; i++) if(a[i].classList.contains("selezionato")) a[i].classList.remove("selezionato")
     b.classList.add("selezionato")
 
@@ -69,8 +67,6 @@ function loadData(oggi){
     }
 
     // Adesso convertiamo i dati nel formato che ci serve
-    console.log("dati:")
-    console.log(dati)
     for(i in datiRaw){
         // Copiamo i dati da datiRaw a obj
         obj = {
@@ -84,6 +80,8 @@ function loadData(oggi){
         // Aggiungiamo obj all'array
         dati[datiRaw[i].giorno][datiRaw[i].persona].push(obj)
     }
+    console.log("dati:")
+    console.log(dati)
 
     // Ordiniamo le lezioni per orario di inizio
     for(i in dati) for(j in dati[i]) dati[i][j].sort((a,b) => (a.inizio-b.inizio))
@@ -98,7 +96,6 @@ function leggiPersona(persona){
     for(let i=0; i<persona.length; i++){
         // Se c'è tempo libero, aggiungi un vuoto
         if(persona[i].inizio != finePrec){  
-            console.log(persona[i])
             aggiungiVuoto(finePrec, persona[i].inizio, persona[i].persona)
         }
 

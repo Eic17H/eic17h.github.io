@@ -41,9 +41,7 @@ function faiColonne(){
 function checkboxesHideShow(name){
     let x = document.getElementsByClassName(name);
     if(x.length==0) return
-    console.log(x);
     for(let i=0; i<x.length; i++){
-        console.log("x[i] = " + x[i])
         if(x[i].style.display == "none") x[i].style.display="inline"
         else x[i].style.display = "none";
     }
@@ -121,7 +119,6 @@ function aggiungiLezione(lezione){
         str += "lezione"
         if(lezione.materia == "") str += " noshadow"
         if(lezione.inizio<=adesso && lezione.fine>=adesso && oggi==lezione.giorno) str += " corrente"
-        console.log(adesso)
         str += "\" "
     str += "style=\""
         str += "height: "
