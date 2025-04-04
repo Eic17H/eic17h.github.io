@@ -68,7 +68,7 @@ function abbreviaMaterie(nome){
         case 'Cinese 2 Ex': return 'Cmn2-Ex';
         case 'Com. e Gior. nell\'Età Contemp.': return 'ComGior';
         case 'Cinese 2': return 'Cmn2';
-        case 'Teoria e Tecnica del Ling. Cinem.': return 'TTLingCin';
+        case 'Teoria e Tecnica del Ling. Cinem.': return 'Cinema';
         case 'Cinese B2': return 'CmnB2';
         case 'Didat. dei Proc. Educativi e Formativi': return 'DPEF';
         case 'Linguistica Italiana 2': return 'LingIta2';
@@ -89,11 +89,11 @@ function abbreviaAule(nome){
     let regexRules = [
         ["A.M. di ", ""],
         ["Matematica", "Matem."],
+        ["Laboratorio Lingue", "Lab"],
         ["Laboratorio", "Lab"],
         [/ ex .*$/, ""],
         ["Aula Magna", "A. Mag."],
         ["Aula Confucio", "Confucio"],
-        ["Lingue", "L."],
         ["-", "&#8209;"]
     ]
     let i
