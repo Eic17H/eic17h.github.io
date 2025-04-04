@@ -40,6 +40,11 @@ function loadDataOggi(){
 
 function loadData(oggi){
     // Ok questa cosa funziona per leggere il nome dei campi dalla stringa
+
+    let colonne = document.getElementsByClassName("una-colonna")
+    for(let i=0; i<colonne.length; i++){
+        if(colonne[i].classList.contains("occupato")) colonne[i].classList.remove("occupato");
+    }
     
     let b = document.getElementById("button-"+oggi)
     let a = document.getElementsByClassName("button-giorno")

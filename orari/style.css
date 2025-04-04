@@ -154,3 +154,7 @@ button:hover{
 .corrente{
     color: var(--light-white);
 }
+
+.occupato > .testa-colonna > .nome-col{
+    font-style: italic;
+}

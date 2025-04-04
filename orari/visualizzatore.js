@@ -153,6 +153,11 @@ function aggiungiLezione(lezione){
     str += "</div>\n"
     let x = document.getElementById("col-" + lezione.persona)
     x.innerHTML += str
+    if(lezione.inizio<=adesso && lezione.fine>=adesso && oggi==lezione.giorno){
+        let h = document.getElementsByClassName("una-colonna "+lezione.persona)
+        h[0].classList.add("occupato")
+        console.log(h[0])
+    }
 }
 
 function aggiungiVuoto(inizio, fine, persona){
