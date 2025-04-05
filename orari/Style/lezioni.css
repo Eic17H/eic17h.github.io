@@ -1,0 +1,12 @@
+.corrente{
+    color: var(--light-white);
+}
+
+.lezione{
+    font-size: 2cqh;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,.35);
+    margin: 0 0.3vw;
+    color: var(--black)
+}

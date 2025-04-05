@@ -1,0 +1,28 @@
+#col-Orario > .aula{
+    align-items: start;
+    display: flex;
+}
+
+#col-Orario > .lezione{
+    color: var(--light-white)
+}
+
+.orasingola{
+    position: relative;
+    top: 5.5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.corpo-colonna.orario{
+    background-color: var(--dark-gray);
+}
+
+.orario.lezione{
+    border-radius: 0px;
+}
+
+.Orario{
+    max-width: fit-content;
+}

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Predefinito;
+    src: url(../Assets/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    font-family: Predefinito, sans-serif;
+}

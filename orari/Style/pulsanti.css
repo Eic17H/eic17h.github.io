@@ -1,0 +1,33 @@
+#pulsanti-persone{
+    width:100%;
+    height: fit-content;
+}
+
+#pulsanti-persone>button{
+    width:12.5%
+}
+
+#pulsanti-giorni{
+    width:100%;
+    height: fit-content;
+}
+#pulsanti-giorni>button{
+    width:20%
+}
+
+button{
+    background-color: var(--dark-gray);
+    color: var(--light-white);
+    border: 0px;
+}
+
+button:hover{
+    background-color: var(--light-gray);
+    font-weight: bold;
+}
+
+.selezionato{
+    background-color: var(--light-gray);
+    color: var(--blue);
+    font-weight: bold;
+}

@@ -1,0 +1,38 @@
+
+:root{
+    --h-sel: 6cqh;
+    --h-sewi-col: 10cqh;
+    --h-col: calc(97cqh - var(--h-sewi-col) - var(--h-sel));
+}
+html{
+    background-color: black;
+}
+body{
+    align-items: center;
+    margin: 0;
+    background-color: var(--dark-gray);
+    color: var(--light-white);
+}
+
+.divisore-vert{
+    width: 2vw;
+    background-color: black;
+}
+.divisore-hori{
+    height: 0.5vw;
+    background-color: black;
+}
+.selettore{
+    height: fit-content;
+    max-height: var(--h-sel);
+    background-color: var(--dark-gray);
+}
+body{
+    background-color: white;
+}
+.noshadow{
+    box-shadow: 0 0 0 0 rgba(0,0,0,.35);
+}
+#giornoSettimana{
+    font-size: 50%;
+}
