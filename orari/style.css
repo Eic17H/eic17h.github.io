@@ -19,7 +19,7 @@
 }
 @font-face {
     font-family: Predefinito;
-    src: url(./Inter-VariableFont_opsz\,wght.ttf);
+    src: url(./Assets/Inter-VariableFont_opsz\,wght.ttf);
 }
 * {
     font-family: Predefinito, sans-serif;
