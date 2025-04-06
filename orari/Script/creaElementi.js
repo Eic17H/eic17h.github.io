@@ -75,6 +75,7 @@ function aggiungiLezione(lezione){
     
     str += "</div>\n"
     let x = document.getElementById("col-" + lezione.persona)
+    if(x == null) return
     x.innerHTML += str
     if(lezione.inizio<=adesso && lezione.fine>=adesso && oggi==lezione.giorno){
         let h = document.getElementsByClassName("una-colonna "+lezione.persona)

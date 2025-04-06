@@ -1,10 +1,11 @@
 #pulsanti-persone{
     width:100%;
     height: fit-content;
+    display: flex;
 }
 
 #pulsanti-persone>button{
-    width:12.5%
+    width: 100%;
 }
 
 #pulsanti-giorni{
