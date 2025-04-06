@@ -23,7 +23,7 @@ function loadData(oggi){
     // Creiamo un oggetto vuoto per ogni giorno della settimana
     for(i in datiRaw){
         x = document.getElementById("col-" + datiRaw[i].persona)
-        x.innerHTML = ""
+        if(x != null) x.innerHTML = ""
         dati[datiRaw[i].giorno] = {}
     }
     // Per ogni giorno della settimana, creiamo un array vuoto per ogni persona
