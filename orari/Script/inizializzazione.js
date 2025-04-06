@@ -46,7 +46,7 @@ function faiColonne(){
     faiColonna("Swami")
     faiColonna("Giacomo")
     faiColonna("Zanzu")
-    faiColonna("Sara")
-    faiColonna("Tommaso")
-    faiColonna("Andry")
+    //faiColonna("Sara")
+    //faiColonna("Tommaso")
+    //faiColonna("Andry")
 }

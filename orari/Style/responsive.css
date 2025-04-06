@@ -1,4 +1,4 @@
-@media only screen and (min-width: 728px) {
+@media only screen and (orientation: landscape) {
     .schermogrande{
         visibility: visible;
     }
@@ -24,7 +24,7 @@
     }
 }
 
-@media only screen and (max-width: 728px) {
+@media only screen and (orientation: portrait) {
     .schermogrande{
         visibility: hidden;
         font-size: 0px;
