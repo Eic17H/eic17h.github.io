@@ -41,6 +41,10 @@ function colore(aula){
         "L_TB ex Z",
         "N_3A ex Lidia",
     ]
+    let olbia = [
+        "Aula 1 Olbia"
+    ]
+    if(olbia.includes(aula)) return "var(--blue)"
     if(palazzoDelleScienze.includes(aula)) return "var(--red)"
     if(campusAresu.includes(aula)) return "var(--yellow)"
     if(orario.includes(aula)) return "#00000000"

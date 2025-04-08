@@ -29,12 +29,16 @@ function abbreviaMaterie(nome){
         case 'Geometria e Algebra': return 'GeomAlg';
         case 'Disegno Ex': return 'Disegno';
         case 'Fisica 1': return 'Fis1';
+        case 'Fondamenti di Informatica': return 'FDI';
+        case 'Tecnologia dei Materiali': return 'TDM';
+        case 'Fisica 2': return 'Fis2';
         default: return nome;
     }
 }
 
 function abbreviaAule(nome){
     let regexRules = [
+        [/.*Olbia/, "Olbia"],
         ["A.M. di ", ""],
         ["Matematica", "Matem."],
         ["Laboratorio Lingue", "Lab"],

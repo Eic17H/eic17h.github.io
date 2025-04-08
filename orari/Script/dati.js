@@ -57,7 +57,16 @@ function getDati(){
 {persona: "Zanzu",materia: "Litologia e Geologia",aula: "L_TB ex Z",giorno: "Mercoledì",inizio: 96,fine: 132},
 {persona: "Zanzu",materia: "Geometria e Algebra",aula: "L_TB ex Z",giorno: "Mercoledì",inizio: 132,fine: 156},
 {persona: "Zanzu",materia: "Fisica 1",aula: "L_TB ex Z",giorno: "Mercoledì",inizio: 180,fine: 216},
-{persona: "Zanzu",materia: "Fisica 1",aula: "L_TB ex Z",giorno: "Giovedì",inizio: 96,fine: 132},    
+{persona: "Zanzu",materia: "Fisica 1",aula: "L_TB ex Z",giorno: "Giovedì",inizio: 96,fine: 132},
+{persona: "Danilo",materia: "Geometria e Algebra",aula: "Aula 1 Olbia",giorno: "Lunedì",inizio: 132,fine: 156},
+{persona: "Danilo",materia: "Fondamenti di Informatica",aula: "Aula 1 Olbia",giorno: "Lunedì",inizio: 180,fine: 216},
+{persona: "Danilo",materia: "Fondamenti di Informatica",aula: "Aula 1 Olbia",giorno: "Martedì",inizio: 108,fine: 144},
+{persona: "Danilo",materia: "Geometria e Algebra",aula: "Aula 1 Olbia",giorno: "Martedì",inizio: 168,fine: 192},
+{persona: "Danilo",materia: "Tecnologia dei Materiali",aula: "Aula 1 Olbia",giorno: "Mercoledì",inizio: 120,fine: 156},
+{persona: "Danilo",materia: "Tecnologia dei Materiali",aula: "Aula 1 Olbia",giorno: "Mercoledì",inizio: 180,fine: 218},
+{persona: "Danilo",materia: "Geometria e Algebra",aula: "Aula 1 Olbia",giorno: "Giovedì",inizio: 120,fine: 156},
+{persona: "Danilo",materia: "Fisica 2",aula: "Aula 1 Olbia",giorno: "Giovedì",inizio: 180,fine: 218},    
+{persona: "Danilo",materia: "Fisica 2",aula: "Aula 1 Olbia",giorno: "Venerdì",inizio: 108,fine: 156},    
 ];
     return out;
 }
