@@ -6,11 +6,11 @@ function abbreviaMaterie(nome){
         case 'Tedesco 2': return 'Deu2';
         case 'Traduzione Tedesca 1': return 'TrDeu1';
         case 'Programmazione 2': return 'PR2';
-        case 'Reti di Calcolatori': return 'RdC';
+        case 'Reti di Calcolatori': return 'Reti';
         case 'Calcolo Scientifico e Metodi Numerici': return 'CSMN';
         case 'Calcolo Scientifico e Metodi Numerici Ex': return 'CSMN-Ex';
         case 'Fondamenti di Programmazione Web Ex': return 'FPW-Ex';
-        case 'Reti di Calcolatori Ex': return 'RdC-Ex';
+        case 'Reti di Calcolatori Ex': return 'Reti-Ex';
         case 'Fondamenti di Programmazione Web': return 'FPW';
         case 'Programmazione 2 Ex': return 'PR2-Ex';
         case 'Cinese 2 Ex': return 'Cmn2-Ex';
