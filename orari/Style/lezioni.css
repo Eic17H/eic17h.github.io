@@ -10,3 +10,7 @@
     margin: 0 0.3vw;
     color: var(--black)
 }
+
+.lezione.noshadow{
+    visibility: hidden;
+}
