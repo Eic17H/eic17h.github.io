@@ -1,12 +1,9 @@
 @media only screen and (orientation: landscape) {
     .schermogrande{
-        visibility: visible;
+        display: inherit;
     }
     .schermopiccolo{
-        visibility: hidden;
-        font-size: 0px;
-        height: 0px;
-        width: 0px;
+        display: none;
     }
     .aula{
         font-size: 2cqh;
@@ -26,13 +23,10 @@
 
 @media only screen and (orientation: portrait) {
     .schermogrande{
-        visibility: hidden;
-        font-size: 0px;
-        height: 0px;
-        width: 0px;
+        display: none;
     }
     .schermopiccolo{
-        visibility: visible;
+        display: inherit;
     }
     .aula{
         font-size: 1.8cqh;
