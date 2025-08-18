@@ -1,68 +1,14 @@
 function getDati(){
     let out = [
-        {persona: "Alessio",materia: "Traduzione Inglese 1",aula: "Aula 7",giorno: "Lunedì",inizio: 140,fine: 158},
-{persona: "Alessio",materia: "Inglese 2 Ex",aula: "Aula 3",giorno: "Martedì",inizio: 121,fine: 139},
-{persona: "Alessio",materia: "Tedesco 2 Ex",aula: "Laboratorio C",giorno: "Martedì",inizio: 140,fine: 158},
-{persona: "Alessio",materia: "Traduzione Inglese 1",aula: "Aula 7",giorno: "Mercoledì",inizio: 121,fine: 139},
-{persona: "Alessio",materia: "Inglese 2 Ex",aula: "Laboratorio Lingue A1",giorno: "Mercoledì",inizio: 178,fine: 196},
-{persona: "Alessio",materia: "Traduzione Tedesca 1",aula: "Laboratorio 1",giorno: "Giovedì",inizio: 102,fine: 120},
-{persona: "Alessio",materia: "Traduzione Inglese 1",aula: "Aula Magna",giorno: "Giovedì",inizio: 121,fine: 139},
-{persona: "Alessio",materia: "Tedesco 2",aula: "Aula 13",giorno: "Giovedì",inizio: 140,fine: 158},
-{persona: "Alessio",materia: "Tedesco 2 Ex",aula: "Aula 6",giorno: "Giovedì",inizio: 216,fine: 234},
-{persona: "Alessio",materia: "Traduzione Tedesca 1",aula: "Laboratorio 1",giorno: "Venerdì",inizio: 121,fine: 139},
-{persona: "Alessio",materia: "Traduzione Tedesca 1",aula: "Laboratorio 1",giorno: "Venerdì",inizio: 140,fine: 158},
-{persona: "Lorenzo",materia: "Programmazione 2",aula: "A.M. di Matematica",giorno: "Lunedì",inizio: 174,fine: 195},
-{persona: "Lorenzo",materia: "Reti di Calcolatori",aula: "A.M. di Matematica",giorno: "Lunedì",inizio: 198,fine: 219},
-{persona: "Lorenzo",materia: "Programmazione 2",aula: "A.M. di Matematica",giorno: "Martedì",inizio: 174,fine: 195},
-{persona: "Lorenzo",materia: "Fondamenti di Programmazione Web Ex",aula: "Laboratorio T",giorno: "Mercoledì",inizio: 134,fine: 162},
-{persona: "Lorenzo",materia: "Fondamenti di Programmazione Web",aula: "A.M. di Matematica",giorno: "Giovedì",inizio: 174,fine: 195},
-{persona: "Lorenzo",materia: "Reti di Calcolatori",aula: "A.M. di Matematica",giorno: "Giovedì",inizio: 198,fine: 219},
-{persona: "Lorenzo",materia: "Programmazione 2 Ex",aula: "Laboratorio T",giorno: "Venerdì",inizio: 174,fine: 204},
-{persona: "Swami",materia: "Inglese 2 Ex",aula: "Aula 2",giorno: "Lunedì",inizio: 140,fine: 158},
-{persona: "Swami",materia: "Cinese 2 Ex",aula: "Aula 4",giorno: "Lunedì",inizio: 178,fine: 196},
-{persona: "Swami",materia: "Com. e Gior. nell'Età Contemp.",aula: "Aula Magna",giorno: "Martedì",inizio: 158,fine: 177},
-{persona: "Swami",materia: "Cinese 2",aula: "Aula 4",giorno: "Martedì",inizio: 178,fine: 196},
-{persona: "Swami",materia: "Teoria e Tecnica del Ling. Cinem.",aula: "Aula Magna",giorno: "Mercoledì",inizio: 102,fine: 120},
-{persona: "Swami",materia: "Inglese 2 Ex",aula: "Laboratorio C",giorno: "Mercoledì",inizio: 158,fine: 177},
-{persona: "Swami",materia: "Com. e Gior. nell'Età Contemp.",aula: "Aula Magna",giorno: "Mercoledì",inizio: 216,fine: 234},
-{persona: "Swami",materia: "Teoria e Tecnica del Ling. Cinem.",aula: "Aula 2",giorno: "Giovedì",inizio: 140,fine: 158},
-{persona: "Swami",materia: "Cinese 2 Ex",aula: "Aula 11",giorno: "Venerdì",inizio: 197,fine: 215},
-{persona: "Swami",materia: "Cinese B2",aula: "Aula Confucio",giorno: "Lunedì",inizio: 210,fine: 234},
-{persona: "Swami",materia: "Cinese B2",aula: "Aula Confucio",giorno: "Giovedì",inizio: 210,fine: 234},
-{persona: "Sara",materia: "Didat. dei Proc. Educativi e Formativi",aula: "ignoto",giorno: "Lunedì",inizio: 142,fine: 169},
-{persona: "Sara",materia: "Didat. dei Proc. Educativi e Formativi",aula: "ignoto",giorno: "Mercoledì",inizio: 142,fine: 169},
-{persona: "Tommaso",materia: "???",aula: "ignoto",giorno: "Lunedì",inizio: 108,fine: 140},
-{persona: "Tommaso",materia: "???",aula: "ignoto",giorno: "Martedì",inizio: 108,fine: 140},
-{persona: "Tommaso",materia: "???",aula: "ignoto",giorno: "Giovedì",inizio: 108,fine: 140},
-{persona: "Tommaso",materia: "???",aula: "ignoto",giorno: "Venerdì",inizio: 108,fine: 140},
-{persona: "Giacomo",materia: "Linguistica Italiana 2",aula: "Aula 7",giorno: "Martedì",inizio: 140,fine: 158},
-{persona: "Giacomo",materia: "Inglese 1 Ex",aula: "Aula 9",giorno: "Martedì",inizio: 158,fine: 177},
-{persona: "Giacomo",materia: "Linguistica Italiana 1",aula: "Aula Magna",giorno: "Martedì",inizio: 178,fine: 196},
-{persona: "Giacomo",materia: "Linguistica Italiana 2",aula: "Aula 7",giorno: "Mercoledì",inizio: 140,fine: 158},
-{persona: "Giacomo",materia: "Linguistica Italiana 1",aula: "Aula Magna",giorno: "Mercoledì",inizio: 158,fine: 177},
-{persona: "Giacomo",materia: "Spagnolo 1 Ex",aula: "Aula 3",giorno: "Mercoledì",inizio: 197,fine: 215},
-{persona: "Giacomo",materia: "Spagnolo 1",aula: "Aula Magna",giorno: "Giovedì",inizio: 140,fine: 158},
-{persona: "Giacomo",materia: "Spagnolo 1 Ex",aula: "Aula 3",giorno: "Giovedì",inizio: 197,fine: 215},
-{persona: "Giacomo",materia: "Inglese 1 Ex",aula: "Laboratorio Lingue A1",giorno: "Venerdì",inizio: 102,fine: 120},
-{persona: "Giacomo",materia: "Spagnolo 1 Ex",aula: "Laboratorio C",giorno: "Venerdì",inizio: 178,fine: 196},
-{persona: "Zanzu",materia: "Litologia e Geologia",aula: "I_IA ex AB",giorno: "Lunedì",inizio: 96,fine: 132},
-{persona: "Zanzu",materia: "Geometria e Algebra",aula: "L_TB ex Z",giorno: "Lunedì",inizio: 132,fine: 156},
-{persona: "Zanzu",materia: "Disegno Ex",aula: "N_3A ex Lidia",giorno: "Lunedì",inizio: 180,fine: 237},
-{persona: "Zanzu",materia: "Geometria e Algebra",aula: "L_TB ex Z",giorno: "Martedì",inizio: 132,fine: 156},
-{persona: "Zanzu",materia: "Fisica 1",aula: "L_TB ex Z",giorno: "Martedì",inizio: 204,fine: 228},
-{persona: "Zanzu",materia: "Litologia e Geologia",aula: "L_TB ex Z",giorno: "Mercoledì",inizio: 96,fine: 132},
-{persona: "Zanzu",materia: "Geometria e Algebra",aula: "L_TB ex Z",giorno: "Mercoledì",inizio: 132,fine: 156},
-{persona: "Zanzu",materia: "Fisica 1",aula: "L_TB ex Z",giorno: "Mercoledì",inizio: 180,fine: 216},
-{persona: "Zanzu",materia: "Fisica 1",aula: "L_TB ex Z",giorno: "Giovedì",inizio: 96,fine: 132},
-{persona: "Danilo",materia: "Geometria e Algebra",aula: "Aula 1 Olbia",giorno: "Lunedì",inizio: 132,fine: 156},
-{persona: "Danilo",materia: "Fondamenti di Informatica",aula: "Aula 1 Olbia",giorno: "Lunedì",inizio: 180,fine: 216},
-{persona: "Danilo",materia: "Fondamenti di Informatica",aula: "Aula 1 Olbia",giorno: "Martedì",inizio: 108,fine: 144},
-{persona: "Danilo",materia: "Geometria e Algebra",aula: "Aula 1 Olbia",giorno: "Martedì",inizio: 168,fine: 192},
-{persona: "Danilo",materia: "Tecnologia dei Materiali",aula: "Aula 1 Olbia",giorno: "Mercoledì",inizio: 120,fine: 156},
-{persona: "Danilo",materia: "Tecnologia dei Materiali",aula: "Aula 1 Olbia",giorno: "Mercoledì",inizio: 180,fine: 218},
-{persona: "Danilo",materia: "Geometria e Algebra",aula: "Aula 1 Olbia",giorno: "Giovedì",inizio: 120,fine: 156},
-{persona: "Danilo",materia: "Fisica 2",aula: "Aula 1 Olbia",giorno: "Giovedì",inizio: 180,fine: 218},    
-{persona: "Danilo",materia: "Fisica 2",aula: "Aula 1 Olbia",giorno: "Venerdì",inizio: 108,fine: 156},    
+        "{persona: ""Lorenzo"", materia: ""Interazione Uomo-Macchina"", aula: ""Aula Magna di Matematica"", giorno: ""Lunedì"", inizio: 132, fine: 189},"
+"{persona: ""Lorenzo"", materia: ""Interazione Uomo-Macchina"", aula: ""Laboratorio T"", giorno: ""Lunedì"", inizio: 198, fine: 204},"
+"{persona: ""Lorenzo"", materia: ""Basi di Dati"", aula: ""Aula Magna di Matematica"", giorno: ""Martedì"", inizio: 108, fine: 165},"
+"{persona: ""Lorenzo"", materia: ""Basi di Dati"", aula: ""Laboratorio T"", giorno: ""Martedì"", inizio: 132, fine: 186},"
+"{persona: ""Lorenzo"", materia: ""Basi di Dati"", aula: ""Aula Magna di Matematica"", giorno: ""Mercoledì"", inizio: 108, fine: 165},"
+"{persona: ""Lorenzo"", materia: ""Linguaggi di Programmazione"", aula: ""Aula Magna di Matematica"", giorno: ""Mercoledì"", inizio: 132, fine: 189},"
+"{persona: ""Lorenzo"", materia: ""Linguaggi di Programmazione"", aula: ""Laboratorio T"", giorno: ""Mercoledì"", inizio: 198, fine: 204},"
+"{persona: ""Lorenzo"", materia: ""Linguaggi di Programmazione"", aula: ""Aula Magna di Matematica"", giorno: ""Giovedì"", inizio: 108, fine: 165},"
+"{persona: ""Lorenzo"", materia: ""Linguaggi di Programmazione"", aula: ""Laboratorio T"", giorno: ""Giovedì"", inizio: 132, fine: 186},"
 ];
     return out;
 }
