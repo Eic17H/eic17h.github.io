@@ -35,6 +35,14 @@ function abbreviaMaterie(nome){
         case 'Interazione Uomo-Macchina': return 'IUM';
         case 'Basi di Dati': return 'BdD';
         case 'Linguaggi di Programmazione': return 'LdP';
+        case 'Russo 1 Ex': return 'Rus1-Ex';
+        case 'Russo 1': return 'Rus1';
+        case 'Laboratorio Cinese Ex': return 'LabCmn-Ex';
+        case 'Laboratorio Cinese': return 'LabCmn';
+        case 'Inglese Ex': return 'Eng-Ex';
+        case 'Inglese': return 'Eng';
+        case 'English Language and Communication Skills': return 'EngSkill';
+        case 'Linguaggi dello Spettacolo': return 'Spett';
         default: return nome;
     }
 }
