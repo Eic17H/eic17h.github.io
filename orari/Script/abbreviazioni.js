@@ -32,6 +32,9 @@ function abbreviaMaterie(nome){
         case 'Fondamenti di Informatica': return 'FDI';
         case 'Tecnologia dei Materiali': return 'TDM';
         case 'Fisica 2': return 'Fis2';
+        case 'Interazione Uomo-Macchina': return 'IUM';
+        case 'Basi di Dati': return 'BdD';
+        case 'Linguaggi di Programmazione': return 'LdP';
         default: return nome;
     }
 }
