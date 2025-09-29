@@ -43,8 +43,18 @@ function abbreviaMaterie(nome){
         case 'Inglese': return 'Eng';
         case 'English Language and Communication Skills': return 'EngSkill';
         case 'Linguaggi dello Spettacolo': return 'Spett';
-        default: return nome;
+        case 'Tedesco 3 Ex': return 'Deu3-Ex';
+        case 'Tedesco 3': return 'Deu3';
+        case 'Inglese 3 Ex': return 'Eng3-Ex';
+        case 'Filologia Germanica': return 'FilGem';
+        case 'Mediazione Orale Inglese': return 'MedEng';
     }
+    let regexRules = [
+        [/.*\/.*/, "..."]
+    ]
+    let i
+    for(i in regexRules) nome = nome.replace(regexRules[i][0], regexRules[i][1])
+    return nome;
 }
 
 function abbreviaAule(nome){
@@ -58,6 +68,8 @@ function abbreviaAule(nome){
         [/ ex .*$/, ""],
         ["Aula Magna", "A. Mag."],
         ["Aula Confucio", "Confucio"],
+        [/.*\/.*/, "..."],
+        ["Didattica a Distanza", "DaD"],
         ["-", "&#8209;"]
     ]
     let i

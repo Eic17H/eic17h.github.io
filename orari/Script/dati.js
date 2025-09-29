@@ -20,7 +20,18 @@ function getDati() {
         {persona: "Swami",materia: "English Language and Communication Skills",aula: "Aula 7",giorno: "Mercoledì",inizio: 158,fine: 177},
         {persona: "Swami",materia: "Linguaggi dello Spettacolo",aula: "Aula 9",giorno: "Mercoledì",inizio: 178,fine: 196},
         {persona: "Swami",materia: "Laboratorio Cinese",aula: "Aula 4",giorno: "Giovedì",inizio: 121,fine: 139},
-        {persona: "Swami",materia: "Russo 1 Ex",aula: "Aula 6",giorno: "Giovedì",inizio: 178,fine: 196},
+        {persona: "Swami",materia: "Russo 1 Ex",aula: "Aula 6",giorno: "Giovedì",inizio: 178,fine: 196},{persona: "Alessio",materia: "Tedesco 3 Ex",aula: "Aula 3",giorno: "Lunedì",inizio: 140,fine: 158},
+        {persona: "Alessio",materia: "Inglese 3 Ex",aula: "Aula Magna",giorno: "Lunedì",inizio: 197,fine: 215},
+        {persona: "Alessio",materia: "Filologia Germanica / Tedesco 3",aula: "Aula 11 / Aula 2",giorno: "Martedì",inizio: 121,fine: 139},
+        {persona: "Alessio",materia: "Tedesco 3 Ex",aula: "Aula 3",giorno: "Martedì",inizio: 178,fine: 196},
+        {persona: "Alessio",materia: "???",aula: "Aula Magna",giorno: "Mercoledì",inizio: 158,fine: 177},
+        {persona: "Alessio",materia: "Inglese 3 Ex",aula: "Aula 7",giorno: "Mercoledì",inizio: 178,fine: 196},
+        {persona: "Alessio",materia: "Tedesco 3 Ex",aula: "Aula 3",giorno: "Mercoledì",inizio: 197,fine: 215},
+        {persona: "Alessio",materia: "Filologia Germanica",aula: "Aula 11",giorno: "Giovedì",inizio: 121,fine: 139},
+        {persona: "Alessio",materia: "Inglese 3 Ex",aula: "Laboratorio Lingue A1",giorno: "Giovedì",inizio: 197,fine: 215},
+        {persona: "Alessio",materia: "Mediazione Orale Inglese",aula: "Didattica a Distanza",giorno: "Venerdì",inizio: 197,fine: 215},
+        {persona: "Alessio",materia: "Mediazione Orale Inglese",aula: "Didattica a Distanza",giorno: "Venerdì",inizio: 216,fine: 234},
+
 
     ];
     return out;

@@ -34,7 +34,9 @@ function colore(aula){
         "19:00"
     ]
     let altro = [
-        "ignoto"
+        "ignoto",
+        "...",
+        "Didattica a Distanza"
     ]
     let ingegneria = [
         "I_IA ex AB",
@@ -44,11 +46,12 @@ function colore(aula){
     let olbia = [
         "Aula 1 Olbia"
     ]
+    if(aula.match(/.*\/.*/)) return "var(--dark-white)"
     if(olbia.includes(aula)) return "var(--blue)"
     if(palazzoDelleScienze.includes(aula)) return "var(--red)"
     if(campusAresu.includes(aula)) return "var(--yellow)"
     if(orario.includes(aula)) return "#00000000"
-    if(altro.includes(aula)) return "var(--darkgrey)"
+    if(altro.includes(aula)) return "var(--dark-white)"
     if(ingegneria.includes(aula)) return "var(--green)"
-    return "#00000000"
+    return "var(--darkgrey)"
 }
