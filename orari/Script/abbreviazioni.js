@@ -56,6 +56,7 @@ function abbreviaAule(nome){
         ["Laboratorio Lingue", "Lab"],
         [/ ex .*$/, ""],
         ["Aula Magna di", "A.Mag."],
+        ["Aula Magna", "A.Mag."],
         ["Aula Confucio", "Confucio"],
         [/.*\/.*/, "..."],
         ["Didattica a Distanza", "DaD"],
