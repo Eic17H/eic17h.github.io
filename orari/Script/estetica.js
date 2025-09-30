@@ -1,4 +1,7 @@
 function colore(aula){
+    let aulaCosta = [
+        "Aula Costa"
+    ]
     let palazzoDelleScienze = [
         "Aula Magna di Matematica",
         "Laboratorio T",
@@ -48,6 +51,7 @@ function colore(aula){
         "Aula 1 Olbia"
     ]
     if(aula.match(/.*\/.*/)) return "var(--dark-white)"
+    if(aulaCosta.includes(aula)) return "var(--orange)"
     if(olbia.includes(aula)) return "var(--blue)"
     if(palazzoDelleScienze.includes(aula)) return "var(--red)"
     if(campusAresu.includes(aula)) return "var(--yellow)"
