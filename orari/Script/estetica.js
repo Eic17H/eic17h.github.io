@@ -17,7 +17,8 @@ function colore(aula){
         "Aula 13",
         "Aula 6",
         "Aula Confucio",
-        "Aula 9"
+        "Aula 9",
+        "Aula 8"
     ]
     let orario = [
         "08:00",
