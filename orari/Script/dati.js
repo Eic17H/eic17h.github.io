@@ -37,8 +37,15 @@ function getDati() {
         {persona: "Alessio",materia: "Mediazione Orale Inglese",aula: "Aula 7",giorno: "Giovedì",inizio: 216,fine: 234},
         {persona: "Alessio",materia: "Mediazione Orale Inglese",aula: "Didattica a Distanza",giorno: "Venerdì",inizio: 197,fine: 215},
         {persona: "Alessio",materia: "Mediazione Orale Inglese",aula: "Didattica a Distanza",giorno: "Venerdì",inizio: 216,fine: 234},
-
-
+        {persona: "Vargiu",materia: "Programmazione 1",aula: "Aula Costa",giorno: "Lunedì",inizio: 174,fine: 195},
+        {persona: "Vargiu",materia: "Fondamenti di Informatica",aula: "Aula Costa",giorno: "Lunedì",inizio: 198,fine: 219},
+        {persona: "Vargiu",materia: "Analisi Matematica",aula: "Aula Costa",giorno: "Martedì",inizio: 108,fine: 129},
+        {persona: "Vargiu",materia: "Programmazione 1 Ex",aula: "Laboratorio T",giorno: "Martedì",inizio: 174,fine: 204},
+        {persona: "Vargiu",materia: "Fondamenti di Informatica",aula: "Aula Costa",giorno: "Mercoledì",inizio: 174,fine: 195},
+        {persona: "Vargiu",materia: "Analisi Matematica",aula: "Aula Costa",giorno: "Giovedì",inizio: 132,fine: 153},
+        {persona: "Vargiu",materia: "Programmazione 1 Ex",aula: "Laboratorio T",giorno: "Giovedì",inizio: 174,fine: 204},
+        {persona: "Vargiu",materia: "Programmazione 1",aula: "Aula Costa",giorno: "Venerdì",inizio: 108,fine: 129},
+        {persona: "Vargiu",materia: "Analisi Matematica",aula: "Aula Costa",giorno: "Venerdì",inizio: 132,fine: 153},
     ];
     return out;
 }

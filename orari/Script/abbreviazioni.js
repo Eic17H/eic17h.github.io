@@ -16,8 +16,10 @@ function abbreviaMaterie(nome){
         case 'Linguaggi dello Spettacolo': return 'Spett';
         case 'Filologia Germanica': return 'FilGem';
         case 'Mediazione Orale Inglese': return 'MedEng';
+        case 'Analisi Matematica': return 'Analisi';
     }
     let regexRules = [
+        ["Programmazione 1", "PR1"],
         ["Programmazione 2", "PR2"],
         ["Reti di Calcolatori", "Reti"],
         ["Calcolo Scientifico e Metodi Numerici", "CSMN"],
@@ -42,6 +44,7 @@ function abbreviaMaterie(nome){
 
 function abbreviaAule(nome){
     let regexRules = [
+        ["Aula Costa", "Costa"],
         [/.*Olbia/, "Olbia"],
         ["A.M. di ", ""],
         ["Matematica", "Mat."],
