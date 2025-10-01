@@ -46,6 +46,19 @@ function getDati() {
         {persona: "Vargiu",materia: "Programmazione 1 Ex",aula: "Laboratorio T",giorno: "Giovedì",inizio: 174,fine: 204},
         {persona: "Vargiu",materia: "Programmazione 1",aula: "Aula Costa",giorno: "Venerdì",inizio: 108,fine: 129},
         {persona: "Vargiu",materia: "Analisi Matematica",aula: "Aula Costa",giorno: "Venerdì",inizio: 132,fine: 153},
+        {persona: "Zanzu",materia: "Fisica 2",aula: "L_TB - Aula Z",giorno: "Lunedì",inizio: 126,fine: 150},
+        {persona: "Zanzu",materia: "Scienza delle Costruzioni",aula: "L_TB - Aula Z",giorno: "Lunedì",inizio: 150,fine: 162},
+        {persona: "Zanzu",materia: "Scienza delle Costruzioni",aula: "D1_TA - Aula DIGITA",giorno: "Martedì",inizio: 114,fine: 138},
+        {persona: "Zanzu",materia: "Fisica 2",aula: "L_TA - Aula V",giorno: "Martedì",inizio: 138,fine: 162},
+        {persona: "Zanzu",materia: "Analisi Matematica 2",aula: "L_TB - Aula Z",giorno: "Martedì",inizio: 180,fine: 204},
+        {persona: "Zanzu",materia: "Fisica Tecnica Ambientale",aula: "I_1E - Aula L",giorno: "Martedì",inizio: 204,fine: 228},
+        {persona: "Zanzu",materia: "Scienza delle Costruzioni",aula: "I_1D - Aula M",giorno: "Mercoledì",inizio: 102,fine: 126},
+        {persona: "Zanzu",materia: "Fisica 2",aula: "L_TB - Aula Z",giorno: "Mercoledì",inizio: 126,fine: 162},
+        {persona: "Zanzu",materia: "Analisi Matematica 2",aula: "L_TB - Aula Z",giorno: "Mercoledì",inizio: 180,fine: 216},
+        {persona: "Zanzu",materia: "Scienza delle Costruzioni",aula: "D1_TA - Aula DIGITA",giorno: "Giovedì",inizio: 126,fine: 162},
+        {persona: "Zanzu",materia: "Fisica Tecnica Ambientale",aula: "D1_TA - Aula DIGITA",giorno: "Giovedì",inizio: 180,fine: 204},
+        {persona: "Zanzu",materia: "Fisica Tecnica Ambientale",aula: "I_1D - Aula M",giorno: "Venerdì",inizio: 102,fine: 126},
+        {persona: "Zanzu",materia: "Analisi Matematica 2",aula: "I_TA - Aula CD",giorno: "Venerdì",inizio: 126,fine: 162},
     ];
     return out;
 }

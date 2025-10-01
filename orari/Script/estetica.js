@@ -57,6 +57,7 @@ function colore(aula){
     if(campusAresu.includes(aula)) return "var(--yellow)"
     if(orario.includes(aula)) return "#00000000"
     if(altro.includes(aula)) return "var(--dark-white)"
+    if(aula.match(/.(.?)_.(.?).*/)) return "var(--green)"
     if(ingegneria.includes(aula)) return "var(--green)"
     return "var(--darkgrey)"
 }

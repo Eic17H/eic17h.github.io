@@ -17,6 +17,10 @@ function abbreviaMaterie(nome){
         case 'Filologia Germanica': return 'FilGem';
         case 'Mediazione Orale Inglese': return 'MedEng';
         case 'Analisi Matematica': return 'Analisi';
+        case 'Analisi Matematica 1': return 'Analisi 1';
+        case 'Analisi Matematica 2': return 'Analisi 2';
+        case 'Scienza delle Costruzioni': return 'SciCos';
+        case 'Fisica Tecnica Ambientale': return 'FTA';
     }
     let regexRules = [
         ["Programmazione 1", "PR1"],
@@ -43,6 +47,7 @@ function abbreviaMaterie(nome){
 }
 
 function abbreviaAule(nome){
+    let loggers = nome
     let regexRules = [
         ["Aula Costa", "Costa"],
         [/.*Olbia/, "Olbia"],
@@ -57,10 +62,14 @@ function abbreviaAule(nome){
         ["Aula Confucio", "Confucio"],
         [/.*\/.*/, "..."],
         ["Didattica a Distanza", "DaD"],
-        ["-", "&#8209;"]
+        [/(.(.?)_.(.?)) - Aula (.).+/, "$1 ($4.)"],
+        [/(.(.?)_.(.?)) - Aula (.)/, "$1 ($4)"],
+        ["-", "&#8209;"],
     ]
     let i
     for(i in regexRules) nome = nome.replace(regexRules[i][0], regexRules[i][1])
+    loggers += " !!!!! " + nome
+    console.log(loggers)
     return nome;
 }
 

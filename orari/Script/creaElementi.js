@@ -41,6 +41,7 @@ function aggiungiLezione(lezione){
     // <div>
     str += "<div class=\""
         str += "lezione"
+        if(lezione.fine - lezione.inizio <= 15) str += " lezioneCorta"
         if(lezione.materia == "") str += " noshadow"
         if(lezione.inizio<=adesso && lezione.fine>=adesso && oggi==lezione.giorno) str += " corrente"
         str += "\" "
