@@ -22,11 +22,6 @@ body{
     height: 0.5vw;
     background-color: black;
 }
-.selettore{
-    height: fit-content;
-    max-height: var(--h-sel);
-    background-color: var(--dark-gray);
-}
 body{
     background-color: white;
 }

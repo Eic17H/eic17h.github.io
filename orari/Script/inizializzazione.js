@@ -17,7 +17,7 @@ function getCookie(){
     for(let i=0; i<cookieArrayString.length; i++){
         if(cookieArrayString[i].split("=")[1] == "false")
             checkboxesHideShow(cookieArrayString[i].split("=")[0])
-        document.cookie = cookieArrayString[i].split("=")[0] + "=" + cookieArrayString[i].split("=")[1] + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT"
+        document.cookie = cookieArrayString[i].split("=")[0] + "=" + cookieArrayString[i].split("=")[1] + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
     }
 }
 

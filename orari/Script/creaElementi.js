@@ -22,7 +22,7 @@ function faiColonna(nome){
         + "<div class=\"divisore-vert "+nome+"\"></div>"
     
     let y = document.getElementById("pulsanti-persone")
-    y.innerHTML += "<button onclick=\"checkboxesHideShow('"+nome+"')\">"+"<span class=\"schermogrande\">"+nome+"</span><span class=\"schermopiccolo\">"+nomeNew+"</span></button>"
+    //y.innerHTML += "<button onclick=\"checkboxesHideShow('"+nome+"')\">"+"<span class=\"schermogrande\">"+nome+"</span><span class=\"schermopiccolo\">"+nomeNew+"</span></button>"
 }
 
 function aggiungiLezione(lezione){

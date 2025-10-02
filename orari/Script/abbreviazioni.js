@@ -21,6 +21,7 @@ function abbreviaMaterie(nome){
         case 'Analisi Matematica 2': return 'Analisi 2';
         case 'Scienza delle Costruzioni': return 'SciCos';
         case 'Fisica Tecnica Ambientale': return 'FTA';
+        case 'Teoria e Storia della Traduzione 1': return 'TeoStoTr1';
     }
     let regexRules = [
         ["Programmazione 1", "PR1"],
@@ -32,13 +33,14 @@ function abbreviaMaterie(nome){
         ["Basi di Dati", "BD"],
         ["Linguaggi di Programmazione", "LiP"],
         [/.*\/.*/, "..."],
-        [/Tedesco(( )([0-9]))?/, "Deu$3"],
-        [/Cinese(( )([0-9]))?/, "Cmn$3"],
-        [/Inglese(( )([0-9]))?/, "Eng$3"],
-        [/Spagnolo(( )([0-9]))?/, "Spa$3"],
-        [/Russo(( )([0-9]))?/, "Rus$3"],
+        [/Tedesc.(( )([0-9]))?/, "Deu$3"],
+        [/Cines.(( )([0-9]))?/, "Cmn$3"],
+        [/Ingles.(( )([0-9]))?/, "Eng$3"],
+        [/Spagnol.(( )([0-9]))?/, "Spa$3"],
+        [/Russ.(( )([0-9]))?/, "Rus$3"],
         [/Traduzione (.*)/, "Tr$1"],
         [/Laboratorio (.*)/, "Lab$1"],
+        [/Letteratura (.*)/, "Let$1"],
         [/(.+) Ex/, "$1-Ex"],
     ]
     let i

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>Orari - Menù</title>
+    <link rel="shortcut icon" type="image/png" href="../Assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../Style/colonne.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../Style/colori.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../Style/font.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../Style/lezioni.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../Style/orario.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../Style/pulsanti.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../Style/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../Style/responsive.css" media="screen"/>
+    <style>
+        button.attivo {
+            background-color: green;
+        }
+        button {
+            height: 200%;
+            font-size: 200%;
+            background-color: red;
+        }
+        button:hover {
+            background-color: lightcoral;
+        }
+        button:hover.attivo {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body onload="initMenu()">
+
+    <div id="pulsanti-persone" style="display:block;"></div>
+    
+    <script src="../Script/interazione.js?v=20251001T131954"></script>
+    <script src="../Script/abbreviazioni.js?v=20251001T131954"></script>
+    <script>
+        function usaPulsante(nome) {
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let cookieArrayString = decodedCookie.split("; ")
+            // Ha un array del tipo "nome=bool"
+            // Separa con =, quindi "nome" va in [0] e "bool" va in [1]
+            // Se [1] è false, allora la colonna di [0] va spenta
+            let cuchi
+            for(let i=0; i<cookieArrayString.length; i++){
+                if(cookieArrayString[i].split("=")[0] == nome){
+                    if(cookieArrayString[i].split("=")[1] == "false") cuchi = "true"; else cuchi = "false";
+                    document.cookie = nome + "=" + cuchi + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
+                    coloraPulsante(nome+"="+cuchi)
+                    return
+                }
+            }
+            document.cookie = nome + "=" + "false   " + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
+            coloraPulsante(nome+"=false")
+        }
+
+        function coloraPulsante(cookieString) {
+            if(cookieString.split("=")[1] == "true") document.getElementById("pulsante"+cookieString.split("=")[0]).classList.add("attivo")
+            else document.getElementById("pulsante"+cookieString.split("=")[0]).classList.remove("attivo")
+        }
+
+        function initMenu() {
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let cookieArrayString = decodedCookie.split("; ")
+            let persone = ["Lorenzo", "Alessio", "Swami", "Giacomo", "Zanzu", "Vargiu"]
+            for(i in persone) {
+                let nome = persone[i]
+                let nomeNew = nome.substring(0, 3) + "."
+                let y = document.getElementById("pulsanti-persone")
+                y.innerHTML += "<button id=\"pulsante"+nome+"\" onclick=\"usaPulsante('"+nome+"')\">"+"<span class=\"schermogrande\">"+nome+"</span><span class=\"schermopiccolo\">"+nomeNew+"</span></button>"
+                coloraPulsante(nome+"=true")
+            }
+            for(let i=0; i<cookieArrayString.length; i++){
+                coloraPulsante(cookieArrayString[i])
+            }
+        }
+    </script>
+</body>
+</html>
