@@ -11,5 +11,5 @@ function checkboxesHideShow(name){
 }
 
 function apriOpzioni() {
-    window.location.href = "/menu"
+    window.location.href = "./menu"
 }
