@@ -47,7 +47,7 @@
             let cuchi
             for(let i=0; i<cookieArrayString.length; i++){
                 if(cookieArrayString[i].split("=")[0] == nome){
-                    if(cookieArrayString[i].split("=")[1] == "false") cuchi = "true"; else cuchi = "false";
+                    if(cookieArrayString[i].split("=")[1] == "true") cuchi = "false"; else cuchi = "true";
                     document.cookie = nome + "=" + cuchi + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
                     coloraPulsante(nome+"="+cuchi)
                     return
