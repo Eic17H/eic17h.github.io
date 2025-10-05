@@ -57,7 +57,7 @@ function getDati() {
         {persona: "Giacomo",materia: "Letteratura Inglese 1",aula: "Aula 7",giorno: "Lunedì",inizio: 121,fine: 139},
         {persona: "Giacomo",materia: "Letteratura Spagnola 1",aula: "Aula Magna",giorno: "Lunedì",inizio: 140,fine: 158},
         {persona: "Giacomo",materia: "Inglese 2",aula: "Aula Magna",giorno: "Lunedì",inizio: 158,fine: 177},
-        {persona: "Giacomo",materia: "Spagnolo 2 Ex",aula: "Laboratorio C",giorno: "Lunedì",inizio: 201,fine: 215},
+        {persona: "Giacomo",materia: "Spagnolo 2 Ex",aula: "Laboratorio C",giorno: "Lunedì",inizio: 197,fine: 215},
         {persona: "Giacomo",materia: "Teoria e Storia della Traduzione 1",aula: "Aula Magna",giorno: "Lunedì",inizio: 216,fine: 234},
         {persona: "Giacomo",materia: "Inglese 2 Ex",aula: "Aula 7",giorno: "Martedì",inizio: 121,fine: 139},
         {persona: "Giacomo",materia: "Letteratura Spagnola 1",aula: "Aula 3",giorno: "Martedì",inizio: 140,fine: 158},
