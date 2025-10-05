@@ -5,7 +5,8 @@ function oraNumero(input){
     return "" + String(ora).padStart(2,'0') + ":" + String(minuto).padStart(2,'0') + ""
 }
 
+// inizio ZWSP - ZWSP fine
 function orariox(input){
-    if(input.materia!="") return oraNumero(input.inizio) + "-" + oraNumero(input.fine)
+    if(input.materia!="") return oraNumero(input.inizio) + "-​" + oraNumero(input.fine)
     else return ""
 }
