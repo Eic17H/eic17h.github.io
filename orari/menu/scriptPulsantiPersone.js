@@ -41,3 +41,9 @@ function initMenu() {
         coloraPulsante(cookieArrayString[i])
     }
 }
+
+function resetCookies() {
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let cookieArrayString = decodedCookie.split("; ")
+    for(let i in cookieArrayString) document.cookie = cookieArrayString[i].split('=')[0] + "=" + "true" + ";" + "expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/"
+}
