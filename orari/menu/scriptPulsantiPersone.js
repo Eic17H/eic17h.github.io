@@ -31,7 +31,7 @@ function initMenu() {
     let decodedCookie = decodeURIComponent(document.cookie);
     console.log(decodedCookie)
     let cookieArrayString = decodedCookie.split("; ")
-    let persone = ["Lorenzo", "Alessio", "Swami", "Giacomo", "Zanzu", "Vargiu"]
+    let persone = ["Lorenzo", "Alessio", "Swami", "Giacomo", "Zanzu", "Vargiu", "Davide"]
     let personeCookie = {}
     for(let i in cookieArrayString) {
         personeCookie[cookieArrayString[i].split("=")[0]] = cookieArrayString[i].split("=")[1]
@@ -39,6 +39,7 @@ function initMenu() {
     for(let i in persone) {
         let nome = persone[i]
         let nomeNew = nome.substring(0, 3) + "."
+        if(nome.length<=3) nomeNew = nome
         let y = document.getElementById("pulsanti-persone")
         y.innerHTML += "<button id=\"pulsante"+nome+"\" onclick=\"usaPulsante('"+nome+"')\">"+nome+"</span></button>"
         coloraPulsante(nome + "=" + (personeCookie[nome] ?? true))

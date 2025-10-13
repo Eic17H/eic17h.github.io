@@ -67,6 +67,18 @@ function getDati() {
         {persona: "Giacomo",materia: "Letteratura Inglese 1",aula: "Aula 7",giorno: "Mercoledì",inizio: 197,fine: 215},
         {persona: "Giacomo",materia: "Letteratura Inglese 1",aula: "Aula 7",giorno: "Venerdì",inizio: 121,fine: 139},
         {persona: "Giacomo",materia: "Spagnolo 2 Ex",aula: "Laboratorio C",giorno: "Venerdì",inizio: 197,fine: 215},
+        {persona: "Davide",materia: "Sistemi Operativi Ex",aula: "Laboratorio T",giorno: "Lunedì",inizio: 204,fine: 234},
+        {persona: "Davide",materia: "Automi e Linguaggi Formali",aula: "Aula Magna di Matematica",giorno: "Martedì",inizio: 132,fine: 153},
+        {persona: "Davide",materia: "Sistemi Operativi",aula: "Aula Magna di Matematica",giorno: "Martedì",inizio: 174,fine: 195},
+        {persona: "Davide",materia: "Sistemi Operativi Ex",aula: "Laboratorio T",giorno: "Mercoledì",inizio: 135,fine: 165},
+        {persona: "Davide",materia: "Sistemi Operativi",aula: "Aula Magna di Matematica",giorno: "Mercoledì",inizio: 174,fine: 195},
+        {persona: "Davide",materia: "Automi e Linguaggi Formali",aula: "Aula Magna di Matematica",giorno: "Giovedì",inizio: 132,fine: 153},
+        {persona: "Davide",materia: "Dati e Modelli",aula: "Aula Magna di Matematica",giorno: "Giovedì",inizio: 174,fine: 195},
+        {persona: "Davide",materia: "Diritto",aula: "Aula Magna di Matematica",giorno: "Giovedì",inizio: 195,fine: 216},
+        {persona: "Davide",materia: "Automi e Linguaggi Formali",aula: "Aula Magna di Matematica",giorno: "Venerdì",inizio: 132,fine: 153},
+        {persona: "Davide",materia: "Dati e Modelli",aula: "Aula Magna di Matematica",giorno: "Venerdì",inizio: 174,fine: 195},
+        {persona: "Davide",materia: "Diritto",aula: "Aula Magna di Matematica",giorno: "Venerdì",inizio: 195,fine: 216},
+
     ];
     return out;
 }

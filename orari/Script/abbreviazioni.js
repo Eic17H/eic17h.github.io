@@ -22,8 +22,13 @@ function abbreviaMaterie(nome){
         case 'Scienza delle Costruzioni': return 'SciCos';
         case 'Fisica Tecnica Ambientale': return 'FTA';
         case 'Teoria e Storia della Traduzione 1': return 'TeoStoTr1';
+        case 'Automi e Linguaggi Formali': return 'ALF';
+        case 'Dati e Modelli': return 'DeM';
+        case 'Diritto': return 'EDI';
+        case 'Economia': return 'EDI';
     }
     let regexRules = [
+        ["Sistemi Operativi", "SO"],
         ["Programmazione 1", "PR1"],
         ["Programmazione 2", "PR2"],
         ["Reti di Calcolatori", "Reti"],

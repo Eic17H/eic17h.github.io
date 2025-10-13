@@ -1,4 +1,5 @@
 function init(){
+    hiddenByDefault()
     let orar = document.getElementById("col-Orario")
     for(let i = 8; i <= 19; i++){
         orar.innerHTML += "<div class=\"lezione noshadow aula\" style=\"height:"+cinqueMinuti*12+"%; max-height:"+cinqueMinuti*12+"%; background-color: #00000000;\">"+"<div class=\"orasingola\">"+String(i).padStart(2, '0')+"</div>"+"</div>"
@@ -47,6 +48,7 @@ function faiColonne(){
     faiColonna("Giacomo")
     faiColonna("Zanzu")
     faiColonna("Vargiu")
+    faiColonna("Davide")
     //faiColonna("Sara")
     //faiColonna("Tommaso")
     //faiColonna("Andry")
