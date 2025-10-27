@@ -11,6 +11,7 @@
 #pulsanti-giorni{
     width:100%;
     height: fit-content;
+    font-size: calc(min(7cqh,5cqw)/3);
 }
 #pulsanti-giorni>button{
     width: 20%;
