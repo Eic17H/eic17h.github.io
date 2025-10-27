@@ -14,20 +14,20 @@
     align-items: center;
     display: flex;
     text-align: center;
-    background: linear-gradient(to bottom, var(--dark-gray) 40%, var(--light-gray));
+    background: linear-gradient(to bottom, var(--background-special) 40%, var(--background-normal));
     font-size: calc(min(7cqh,5cqw));
     font-weight: bold;
 }
 
 .Orario > .testa-colonna{
-    background: var(--dark-gray);
+    background: var(--background-special);
 }
 
 .corpo-colonna{
     width: auto;
     height: var(--h-col);
     margin: auto;
-    background-color: var(--light-gray);
+    background-color: var(--background-normal);
 }
 
 .nome-col{

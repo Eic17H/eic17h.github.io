@@ -10,17 +10,17 @@ html{
 body{
     align-items: center;
     margin: 0;
-    background-color: var(--dark-gray);
-    color: var(--light-white);
+    background-color: var(--background-special);
+    color: var(--text-special);
 }
 
 .divisore-vert{
     width: 2vw;
-    background-color: black;
+    background-color: var(--border);
 }
 .divisore-hori{
     height: 0.5vw;
-    background-color: black;
+    background-color: var(--border);
 }
 body{
     background-color: white;

@@ -6,10 +6,27 @@
     --gray: #2E2E34;
     --dark-gray: #28282D;
     --black: #000000;
-    --red: #D6363F;
-    --yellow: #CA9654;
+
     --greenish: #8DB85E;
+    --red: #D6363F;
+    --orange: #CA7B54;
+    --yellow: #CA9654;
     --green: #43A25A;
     --blue: #5865F2;
-    --orange: #CA7B54;
+
+    --background-normal: var(--light-gray);
+    --text-normal: var(--black);
+    --background-special: var(--dark-gray);
+    --text-special: var(--light-white);
+    --border: var(--black);
+}
+
+.theme-default {
+}
+
+.theme-swami {
+    --background-normal: #08070D;
+    --background-special: #0A090F;
+    --border: #434345;
+    --blue: #909FFC;
 }

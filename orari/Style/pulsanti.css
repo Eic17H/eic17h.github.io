@@ -20,18 +20,18 @@
 }
 
 button{
-    background-color: var(--dark-gray);
-    color: var(--light-white);
+    background-color: var(--background-special);
+    color: var(--text-special);
     border: 0px;
 }
 
 button:hover{
-    background-color: var(--light-gray);
+    background-color: var(--background-normal);
     font-weight: bold;
 }
 
 .selezionato{
-    background-color: var(--light-gray);
+    background-color: var(--background-normal);
     color: var(--blue);
     font-weight: bold;
 }
@@ -44,7 +44,7 @@ button:hover{
 .selettore{
     height: fit-content;
     max-height: var(--h-sel);
-    background-color: var(--dark-gray);
+    background-color: var(--background-special);
     display: flex;
 }
 

@@ -4,7 +4,7 @@
 }
 
 #col-Orario > .lezione{
-    color: var(--light-white)
+    color: var(--text-special)
 }
 
 .orasingola{
@@ -16,7 +16,7 @@
 }
 
 .corpo-colonna.orario{
-    background-color: var(--dark-gray);
+    background-color: var(--background-special);
 }
 
 .orario.lezione{
