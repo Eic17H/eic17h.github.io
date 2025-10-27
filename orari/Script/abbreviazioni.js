@@ -26,6 +26,8 @@ function abbreviaMaterie(nome){
         case 'Dati e Modelli': return 'DeM';
         case 'Diritto': return 'EDI';
         case 'Economia': return 'EDI';
+        case 'Storia e Critica del Cinema': return 'Cinema';
+        case 'Linguaggi della Televisione e dei Nuovi Media': return 'LingMedia';
     }
     let regexRules = [
         ["Sistemi Operativi", "SO"],
@@ -64,7 +66,7 @@ function abbreviaAule(nome){
         ["Laboratorio", "Lab"],
         ["Laboratorio Lingue", "Lab"],
         [/ ex .*$/, ""],
-        ["Aula Magna di", "A.Mag."],
+        ["Aula Magna di", "A.M."],
         ["Aula Magna", "A.Mag."],
         ["Aula Confucio", "Confucio"],
         [/.*\/.*/, "..."],
