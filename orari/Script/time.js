@@ -19,3 +19,4 @@ function oraNumero(input){
 function orariox(input){
     if(input.materia!="") return oraNumero(input.inizio) + "-​" + oraNumero(input.fine)
     else return ""
+}
