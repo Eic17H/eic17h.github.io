@@ -1,4 +1,4 @@
-function oraNumero(input){
+export function oraNumero(input){
   	let minuto, ora
     // Formato hh:mm
     if(String(input).match(/^[0-2][0-9]?:[0-5][0-9]$/)) {
@@ -15,14 +15,14 @@ function oraNumero(input){
 		return "" + String(ora).padStart(2,'0') + ":" + String(minuto).padStart(2,'0') + ""
 }
 
-function oraInt(input) {
+export function oraInt(input) {
 		let input = oraNumero(input)
     if(input == null) return null
     return input.replace(/.+:/, "")/5 + input.replace(/:.+/,"")*12
 }
 
 // inizio ZWSP - ZWSP fine
-function orariox(input){
+export function orariox(input){
     if(input.materia!="") return oraNumero(input.inizio) + "-​" + oraNumero(input.fine)
     else return ""
 }
