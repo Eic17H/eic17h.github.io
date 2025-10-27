@@ -38,6 +38,7 @@ function loadData(oggi){
             persona: datiRaw[i].persona,
             materia: datiRaw[i].materia,
             aula: datiRaw[i].aula,
+            edificio: datiRaw[i].edificio,
             inizio: oraInt(datiRaw[i].inizio),
             fine: oraInt(datiRaw[i].fine),
             giorno: datiRaw[i].giorno

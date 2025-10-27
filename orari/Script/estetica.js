@@ -1,4 +1,5 @@
-function colore(aula){
+// Esiste solo per retrocompatibilità, da rimuovere
+function coloreAula(aula){
     let aulaCosta = [
         "Aula Costa"
     ]
@@ -51,13 +52,30 @@ function colore(aula){
         "Aula 1 Olbia"
     ]
     if(aula.match(/.*\/.*/)) return "var(--dark-white)"
-    if(aulaCosta.includes(aula)) return "var(--orange)"
-    if(olbia.includes(aula)) return "var(--blue)"
-    if(palazzoDelleScienze.includes(aula)) return "var(--red)"
-    if(campusAresu.includes(aula)) return "var(--yellow)"
-    if(orario.includes(aula)) return "#00000000"
+    if(aulaCosta.includes(aula)) return coloreEdificio("Aula Costa")
+    if(olbia.includes(aula)) return coloreEdificio("Olbia")
+    if(palazzoDelleScienze.includes(aula)) return coloreEdificio("Palazzo delle Scienze")
+    if(campusAresu.includes(aula)) return coloreEdificio("Campus Aresu")
+    if(orario.includes(aula)) return null
     if(altro.includes(aula)) return "var(--dark-white)"
-    if(aula.match(/.(.?)_.(.?).*/)) return "var(--green)"
-    if(ingegneria.includes(aula)) return "var(--green)"
-    return "var(--darkgrey)"
+    if(aula.match(/.(.?)_.(.?).*/)) return coloreEdificio("Ingegneria")
+    if(ingegneria.includes(aula)) return coloreEdificio("Ingegneria")
+    return null
+}
+
+function coloreEdificio(edificio) {
+    switch(edificio) {
+        case "Aula Costa": return "var(--orange)";
+        case "Olbia": return "var(--blue)";
+        case "Campus Aresu": return "var(--yellow)";
+        case "Palazzo delle Scienze": return "var(--red)";
+        case "Ingegneria": return "var(--green)";
+        case "Sa Duchessa": return "var(--blue)";
+    }
+    return null
+}
+
+function colore(edificio, aula) {
+    console.log(edificio + " " + aula)
+    return coloreEdificio(edificio) ?? coloreAula(aula) ?? "#00000000"
 }

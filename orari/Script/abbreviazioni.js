@@ -76,7 +76,7 @@ function abbreviaAule(nome){
     let i
     for(i in regexRules) nome = nome.replace(regexRules[i][0], regexRules[i][1])
     loggers += " !!!!! " + nome
-    console.log(loggers)
+    //console.log(loggers)
     return nome;
 }
 

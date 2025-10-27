@@ -51,7 +51,7 @@ function aggiungiLezione(lezione){
         str += "max-height: "
             str += (lezione.fine - lezione.inizio)*cinqueMinuti + "%; "
         str += "background-color: "
-            str += colore(lezione.aula)
+            str += colore(lezione.edificio, lezione.aula)
         str += "\""
     str += ">"
 
