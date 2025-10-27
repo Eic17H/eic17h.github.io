@@ -16,7 +16,7 @@ function oraNumero(input){
 }
 
 function oraInt(input) {
-		let input = oraNumero(input)
+		input = oraNumero(input)
     if(input == null) return null
     return parseInt(input.replace(/.+:/, ""))/5 + parseInt(input.replace(/:.+/,""))*12
 }
