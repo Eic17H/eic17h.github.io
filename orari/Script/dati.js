@@ -1,4 +1,4 @@
-(// TODO: aggiungere campo "edificio" e rimuovere l'inferenza dal nome dell'aula
+// TODO: aggiungere campo "edificio" e rimuovere l'inferenza dal nome dell'aula
 // TODO: aggiornare i dati di Swami
 // TODO: aggiungere supporto per le lezioni opzionali
 
