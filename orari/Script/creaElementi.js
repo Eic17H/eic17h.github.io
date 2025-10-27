@@ -55,8 +55,6 @@ function aggiungiLezione(lezione){
         str += "\""
     str += "title=\""
         if(lezione.edificio) str += lezione.edificio
-        if(lezione.edificio && lezione.aula) str += " - "
-        if(lezione.aula) str += lezione.aula
         str += "\""
     str += ">"
 
