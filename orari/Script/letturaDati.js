@@ -1,3 +1,5 @@
+import { oraInt, oraNumero, orariox } from './time.js';
+
 function loadData(oggi){
     // Ok questa cosa funziona per leggere il nome dei campi dalla stringa
 
