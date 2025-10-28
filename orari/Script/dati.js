@@ -1,6 +1,4 @@
-// TODO: aggiungere supporto per le lezioni opzionali
-
-function getDati() {
+ìfunction getDati() {
     let out = [
         {persona: "Lorenzo", materia: "Interazione Uomo-Macchina", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: 132, fine: 153}, 
         {persona: "Lorenzo", materia: "Interazione Uomo-Macchina Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: 174, fine: 204}, 

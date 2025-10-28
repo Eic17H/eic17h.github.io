@@ -68,7 +68,7 @@ function aggiungiLezione(lezione){
         if(lezione.opzionale){
             str += "<span class=\"schermogrande\">"
                 str += "<span class =\"messaggioLezioneOpzionale\">"+"(Occasionale)"+"</span>"
-                str += "<br>"
+                str += "<br style=\"line-height: 200%;\">"
             str += "</span>"
         }
 
