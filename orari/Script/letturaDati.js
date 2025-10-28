@@ -41,7 +41,8 @@ function loadData(oggi){
             edificio: datiRaw[i].edificio,
             inizio: oraInt(datiRaw[i].inizio),
             fine: oraInt(datiRaw[i].fine),
-            giorno: datiRaw[i].giorno
+            giorno: datiRaw[i].giorno,
+            opzionale: datiRaw[i].opzionale
         }
         // Aggiungiamo obj all'array
         dati[datiRaw[i].giorno][datiRaw[i].persona].push(obj)

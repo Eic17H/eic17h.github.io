@@ -44,19 +44,33 @@ function aggiungiLezione(lezione){
         if(lezione.fine - lezione.inizio <= 15) str += " lezioneCorta"
         if(lezione.materia == "") str += " noshadow"
         if(lezione.inizio<=adesso && lezione.fine>=adesso && oggi==lezione.giorno) str += " corrente"
+        if(lezione.opzionale == true) str += " lezioneOpzionale"
         str += "\" "
     str += "style=\""
         str += "height: "
             str += (lezione.fine - lezione.inizio)*cinqueMinuti + "%; "
         str += "max-height: "
             str += (lezione.fine - lezione.inizio)*cinqueMinuti + "%; "
-        str += "background-color: "
-            str += colore(lezione.edificio, lezione.aula)
+        if(!lezione.opzionale) {
+            str += "background-color: "
+                str += colore(lezione.edificio, lezione.aula)
+        } else {
+            str += "border-color: "
+                str += colore(lezione.edificio, lezione.aula)
+        }
         str += "\""
     str += "title=\""
         if(lezione.edificio) str += lezione.edificio
         str += "\""
     str += ">"
+
+        // <span>
+        if(lezione.opzionale){
+            str += "<span class=\"schermogrande\">"
+                str += "<span class =\"messaggioLezioneOpzionale\">"+"(Occasionale)"+"</span>"
+                str += "<br>"
+            str += "</span>"
+        }
 
         // <span>
         str += "<span class=\"aula\">"

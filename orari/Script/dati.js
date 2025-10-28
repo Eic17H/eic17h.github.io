@@ -8,7 +8,7 @@ function getDati() {
         {persona: "Lorenzo", materia: "Basi di Dati Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: 132, fine: 162}, 
         {persona: "Lorenzo", materia: "Basi di Dati", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: 108, fine: 129}, 
         {persona: "Lorenzo", materia: "Linguaggi di Programmazione", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: 132, fine: 153}, 
-        //{persona: "Lorenzo", materia: "Linguaggi di Programmazione Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: 174, fine: 204, opzionale: true}, 
+        {persona: "Lorenzo", materia: "Linguaggi di Programmazione Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: 174, fine: 204, opzionale: true}, 
         {persona: "Lorenzo", materia: "Linguaggi di Programmazione", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: 108, fine: 129}, 
         {persona: "Lorenzo", materia: "Linguaggi di Programmazione Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: 132, fine: 162}, 
         {persona: "Swami", materia: "Storia e Critica del Cinema", aula: "Aula 5", edificio: "Sa Duchessa", giorno: "Lunedì", inizio: "15:45", fine: "17:15"}, 
