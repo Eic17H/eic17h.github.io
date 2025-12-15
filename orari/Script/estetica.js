@@ -71,6 +71,7 @@ function coloreEdificio(edificio) {
         case "Palazzo delle Scienze": return "var(--red)";
         case "Ingegneria": return "var(--green)";
         case "Sa Duchessa": return "var(--blue)";
+        case "CREA": return "var(--orange)";
     }
     return null
 }
