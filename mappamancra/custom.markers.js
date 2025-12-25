@@ -127,7 +127,7 @@ UnminedCustomMarkers = {
         {
             x: 1660,
             z: 0,
-            text: "Oceano dell'Ovest", 
+            text: "Oceano Centrale", 
             textColor: "white", 
             offsetX: 0,
             offsetY: 0,
