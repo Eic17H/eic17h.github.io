@@ -1,13 +1,13 @@
 function getDati() {
     let out = [
-        {persona: "Lorenzo", materia: "Interazione Uomo-Macchina", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: 132, fine: 153}, 
+        {persona: "Lorenzo", materia: "Interazione Uomo-Macchina", aula: "Aula F", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: 132, fine: 153}, 
         {persona: "Lorenzo", materia: "Interazione Uomo-Macchina Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: 174, fine: 204}, 
-        {persona: "Lorenzo", materia: "Basi di Dati", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: 108, fine: 129}, 
+        {persona: "Lorenzo", materia: "Basi di Dati", aula: "Teatro Anatomico CREA", edificio: "CREA", giorno: "Martedì", inizio: 108, fine: 129}, 
         {persona: "Lorenzo", materia: "Basi di Dati Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: 132, fine: 162}, 
-        {persona: "Lorenzo", materia: "Basi di Dati", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: 108, fine: 129}, 
-        {persona: "Lorenzo", materia: "Linguaggi di Programmazione", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: 132, fine: 153}, 
+        {persona: "Lorenzo", materia: "Basi di Dati", aula: "Aula Costa", edificio: "Aula Costa", giorno: "Mercoledì", inizio: 108, fine: 129}, 
+        {persona: "Lorenzo", materia: "Linguaggi di Programmazione", aula: "Aula F", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: 132, fine: 153}, 
         {persona: "Lorenzo", materia: "Linguaggi di Programmazione Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: 174, fine: 204, opzionale: true}, 
-        {persona: "Lorenzo", materia: "Linguaggi di Programmazione", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: 108, fine: 129}, 
+        {persona: "Lorenzo", materia: "Linguaggi di Programmazione", aula: "Aula F", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: 108, fine: 129}, 
         {persona: "Lorenzo", materia: "Linguaggi di Programmazione Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: 132, fine: 162}, 
         {persona: "Swami", materia: "Storia e Critica del Cinema", aula: "Aula 5", edificio: "Sa Duchessa", giorno: "Lunedì", inizio: "15:45", fine: "17:15"}, 
         {persona: "Swami", materia: "Laboratorio Cinese Ex", aula: "Laboratorio 1", edificio: "Campus Aresu", giorno: "Martedì", inizio: 121, fine: 139}, 

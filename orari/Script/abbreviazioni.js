@@ -60,6 +60,7 @@ function abbreviaAule(nome){
     let regexRules = [
         ["Aula Costa", "Costa"],
         [/.*Olbia/, "Olbia"],
+        [/.*CREA.*/, "CREA"],
         ["A.M. di ", ""],
         ["Matematica", "Mat."],
         ["Laboratorio Lingue", "Lab"],
