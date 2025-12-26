@@ -98,6 +98,15 @@ UnminedCustomMarkers = {
             font: "bold 15px Gabriola,serif",
         },
         {
+            x: 4149,
+            z: -442,
+            text: "Isola Demoniaca", 
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 0,
+            font: "bold 15px Gabriola,serif",
+        },
+        {
             x: 2240,
             z: -670,
             text: "Trionfo Nord", 
