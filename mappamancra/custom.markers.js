@@ -134,6 +134,15 @@ UnminedCustomMarkers = {
             font: "bold small-caps 10px Gabriola,serif",
         },
         {
+            x: 172,
+            z: 246,
+            text: "Golfo delle Corna", 
+            textColor: "white", 
+            offsetX: 0,
+            offsetY: 0,
+            font: "bold small-caps 10px Gabriola,serif",
+        },
+        {
             x: -1550,
             z: -1000,
             text: "Oceano dell'Ovest", 
