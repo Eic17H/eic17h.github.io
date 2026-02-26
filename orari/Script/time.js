@@ -1,7 +1,7 @@
 function oraNumero(input){
   	let minuto, ora
     // Formato hh:mm
-    if(String(input).match(/^[0-2][0-9]?:[0-5][0-9]$/)) {
+    if(String(input).match(/^[0-2]?[0-9]:[0-5][0-9]$/)) {
         minuto = input.replace(/.+:/, "")
         ora = input.replace(/:.+/,"")
     }

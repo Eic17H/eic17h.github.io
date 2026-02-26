@@ -39,6 +39,8 @@ function abbreviaMaterie(nome){
         ["Interazione Uomo-Macchina", "IUM"],
         ["Basi di Dati", "BD"],
         ["Linguaggi di Programmazione", "LiP"],
+        ["Ingegneria del Software", "ISW"],
+        ["Istituzioni di Logica", "Logica"],
         [/.*\/.*/, "..."],
         [/Tedesc.(( )([0-9]))?/, "Deu$3"],
         [/Cines.(( )([0-9]))?/, "Cmn$3"],
