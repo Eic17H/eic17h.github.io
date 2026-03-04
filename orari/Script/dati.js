@@ -1,4 +1,4 @@
-#function getDati() {
+function getDati() {
     let out = [
         {persona: "Lorenzo", materia: "Istituzioni di Logica", aula: "Aula 3A", edificio: "Sa Duchessa", giorno: "Lunedì", inizio: "11:40", fine: "13:05"},
         {persona: "Lorenzo", materia: "Ingegneria del Software", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "9:00", fine: "10:45"},
