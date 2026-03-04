@@ -1,4 +1,4 @@
-function getDati() {
+#function getDati() {
     let out = [
         {persona: "Lorenzo", materia: "Istituzioni di Logica", aula: "Aula 3A", edificio: "Sa Duchessa", giorno: "Lunedì", inizio: "11:40", fine: "13:05"},
         {persona: "Lorenzo", materia: "Ingegneria del Software", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "9:00", fine: "10:45"},
@@ -21,7 +21,7 @@ function getDati() {
         {persona: "Alessio", materia: "Tedesco 3 Ex", aula: "Aula 3", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "16:25", fine: "17:55"},
         {persona: "Alessio", materia: "Inglese 3 Ex", aula: "Aula Magna", edificio: "Campus Aresu", giorno: "Lunedì", inizio: "16:25", fine: "17:55"},
         {persona: "Alessio", materia: "Inglese 3 Ex", aula: "Aula 2", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "14:50", fine: "16:20"},
-        {persona: "Alessio", materia: "Inglese 3 Ex", aula: "Laboratorio Lingue A1", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "16:25", fine: "17:55"},
+        {persona: "Alessio", materia: "Inglese 3 Ex", aula: "Laboratorio Lingue A1", edificio: "Campus Aresu", giorno: "Giovedì", inizio: "16:25", fine: "17:55"},
         {persona: "Alessio", materia: "Mediazione Orale Tedesca", aula: "Aula 11", edificio: "Campus Aresu", giorno: "Martedì", inizio: "16:25", fine: "17:55"},
         {persona: "Alessio", materia: "Mediazione Orale Tedesca", aula: "Aula 11", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "13:10", fine: "14:45"},
         {persona: "Alessio", materia: "Mediazione Orale Tedesca", aula: "Aula 6", edificio: "Campus Aresu", giorno: "Giovedì", inizio: "11:40", fine: "13:10"},
