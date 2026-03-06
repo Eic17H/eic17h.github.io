@@ -25,6 +25,18 @@ function getDati() {
         {persona: "Alessio", materia: "Mediazione Orale Tedesca", aula: "Aula 11", edificio: "Campus Aresu", giorno: "Martedì", inizio: "16:25", fine: "17:55"},
         {persona: "Alessio", materia: "Mediazione Orale Tedesca", aula: "Aula 11", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "13:10", fine: "14:45"},
         {persona: "Alessio", materia: "Mediazione Orale Tedesca", aula: "Aula 6", edificio: "Campus Aresu", giorno: "Giovedì", inizio: "11:40", fine: "13:10"},
+        {persona: "Swami", materia: "Cinema e Storia", aula: "Aula 4", edificio: "Campus Aresu", giorno: "Lunedì", inizio: "8:30", fine: "10:00"},
+        {persona: "Swami", materia: "Communication and Social Media", aula: "Aula 7", edificio: "Campus Aresu", giorno: "Lunedì", inizio: "18:00", fine: "19:30"},
+        {persona: "Swami", materia: "Cinema e Storia", aula: "Aula 6", edificio: "Campus Aresu", giorno: "Martedì", inizio: "8:30", fine: "10:00"},
+        {persona: "Swami", materia: "Laboratorio Cinese Ex", aula: "Laboratorio 1", edificio: "Campus Aresu", giorno: "Martedì", inizio: "10:05", fine: "11:35"},
+        {persona: "Swami", materia: "Sociologia dei Processi Comunicativi", aula: "Aula 4", edificio: "Campus Aresu", giorno: "Martedì", inizio: "11:40", fine: "13:10"},
+        {persona: "Swami", materia: "Sociologia dei Processi Comunicativi", aula: "Aula 4", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "8:30", fine: "10:00"},
+        {persona: "Swami", materia: "Laboratorio Cinese Ex", aula: "Aula 2", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "10:05", fine: "11:35"},
+        {persona: "Swami", materia: "Inglese Ex", aula: "Laboratorio C", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "11:40", fine: "13:10"},
+        {persona: "Swami", materia: "Communication and Social Media", aula: "Aula 7", edificio: "Campus Aresu", giorno: "Mercoledì", inizio: "14:50", fine: "16:20"},
+        {persona: "Swami", materia: "Inglese Ex", aula: "Aula 11", edificio: "Campus Aresu", giorno: "Giovedì", inizio: "8:30", fine: "10:00"},
+        {persona: "Swami", materia: "Laboratorio Cinese", aula: "Aula 4", edificio: "Campus Aresu", giorno: "Giovedì", inizio: "10:05", fine: "11:35"},
+        {persona: "Swami", materia: "Cinema e Storia", aula: "Aula 4", edificio: "Campus Aresu", giorno: "Venerdì", inizio: "8:30", fine: "10:00"},
     ];
     return out;
 }
