@@ -45,7 +45,7 @@ function loadData(oggi){
             opzionale: datiRaw[i].opzionale
         }
         // Sezione dei cambiamenti momentanei
-        if (obj.aula == "Aula Magna di Matematica" && obj.edificio == "Palazzo delle Scienze") obj.aula = obj.edificio = "Aula Costa"
+        // if (obj.aula == "Aula Magna di Matematica" && obj.edificio == "Palazzo delle Scienze") obj.aula = obj.edificio = "Aula Costa"
         // Aggiungiamo obj all'array
         dati[datiRaw[i].giorno][datiRaw[i].persona].push(obj)
     }
