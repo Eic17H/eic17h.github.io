@@ -3,7 +3,7 @@ function getDati() {
         {persona: "Lorenzo", materia: "Ingegneria del Software", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "9:00", fine: "10:45"},
         {persona: "Lorenzo", materia: "Ingegneria del Software Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "11:00", fine: "13:00"},
         {persona: "Lorenzo", materia: "Ingegneria del Software", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "9:00", fine: "10:45"},
-        {persona: "Lorenzo", materia: "Calcolo Scientifico e Metodi Numerici Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "11:30", fine: "13:15"},
+        //{persona: "Lorenzo", materia: "Calcolo Scientifico e Metodi Numerici Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "11:30", fine: "13:15"},
         {persona: "Vargiu", materia: "Matematica Discreta", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "9:00", fine: "10:45"},
         {persona: "Vargiu", materia: "Fisica e Metodo Scientifico", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "11:00", fine: "12:45"},
         {persona: "Vargiu", materia: "Matematica Discreta", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "11:00", fine: "12:45"},
