@@ -1,0 +1,938 @@
+<!DOCTYPE html> <html lang="en-gb"><head>
+<title>Programmazione 1 - Modulo I</title>
+<base href="../..">
+<meta name="pathname" content="pr1/modulo-i/programmazione-1-modulo-i.html">
+<meta name="description" content="Obsidian-Universita - Programmazione 1 - Modulo I">
+<meta property="og:title" content="Programmazione 1 - Modulo I">
+<meta property="og:description" content="Obsidian-Universita - Programmazione 1 - Modulo I">
+<meta property="og:type" content="website">
+<meta property="og:url" content="pr1/modulo-i/programmazione-1-modulo-i.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="Obsidian-Universita"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="site-lib/rss.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="preload" href="site-lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/snippets.css"></noscript><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="preload" href="site-lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/other-plugins.css"></noscript><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager styled-scrollbars show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"><link itemprop="include" href="site-lib/html/custom-head-content-content.html"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="site-lib/html/file-tree-content.html"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties pr1" data-type="markdown"><style id="MJX-CHTML-styles">mjx-c.mjx-c1D44D.TEX-I::before{padding:.683em .723em 0 0;content:"Z"}mjx-c.mjx-c1D6FA.TEX-I::before{padding:.704em .786em 0 0;content:"Ω"}mjx-c.mjx-c1D6E9.TEX-I::before{padding:.704em .763em .022em 0;content:"Θ"}mjx-c.mjx-c220B::before{padding:.54em .667em .04em 0;content:"∋"}mjx-c.mjx-c2234.TEX-A::before{padding:.471em .667em .082em 0;content:"∴"}mjx-c.mjx-c25::before{padding:.75em .833em .056em 0;content:"%"}mjx-c.mjx-cB1::before{padding:.666em .778em 0 0;content:"±"}mjx-c.mjx-c2202::before{padding:.715em .566em .022em 0;content:"∂"}mjx-c.mjx-c27FA::before{padding:.525em 1.858em .024em 0;content:"⟺"}mjx-c.mjx-c2022::before{padding:.444em .5em 0 0;content:"∙"}mjx-c.mjx-cF7::before{padding:.537em .778em .036em 0;content:"÷"}mjx-c.mjx-c23::before{padding:.694em .833em .194em 0;content:"#"}mjx-c.mjx-c221A.TEX-S1::before{padding:.85em 1.02em .35em 0;content:"√"}mjx-c.mjx-cAF::before{padding:.59em .5em 0 0;content:"¯"}mjx-c.mjx-c1D53D.TEX-A::before{padding:.683em .611em 0 0;content:"F"}mjx-c.mjx-c2209::before{padding:.716em .667em .215em 0;content:"∉"}mjx-c.mjx-c2F::before{padding:.75em .5em .25em 0;content:"/"}mjx-c.mjx-cD7::before{padding:.491em .778em 0 0;content:"×"}mjx-c.mjx-c50.TEX-C::before{padding:.683em .733em .057em 0;content:"P"}mjx-c.mjx-c53.TEX-C::before{padding:.705em .642em .022em 0;content:"S"}mjx-c.mjx-c45.TEX-C::before{padding:.705em .564em .022em 0;content:"E"}mjx-stretchy-v.mjx-c221A mjx-beg mjx-c::before{content:"";padding:.605em 1.056em .014em 0}mjx-stretchy-v.mjx-c221A mjx-ext mjx-c::before{content:"";width:1.056em}mjx-stretchy-v.mjx-c221A mjx-end mjx-c::before{content:"⎷";padding:.935em 1.056em .885em 0}mjx-stretchy-v.mjx-c221A>mjx-end{margin-top:-1.82em}mjx-stretchy-v.mjx-c221A>mjx-ext{border-top-width:.589em;border-bottom-width:1.79em}mjx-c.mjx-c78::before{padding:.431em .528em 0 0;content:"x"}mjx-c.mjx-c221A.TEX-S2::before{padding:1.15em 1.02em .65em 0;content:"√"}mjx-c.mjx-c22::before{padding:.694em .5em 0 0;content:"\""}mjx-c.mjx-c50::before{padding:.683em .681em 0 0;content:"P"}mjx-c.mjx-c393::before{padding:.68em .625em 0 0;content:"Γ"}mjx-c.mjx-c1D492.TEX-BI::before{padding:.452em .542em .194em 0;content:"q"}mjx-c.mjx-cAC::before{padding:.356em .667em 0 0;content:"¬"}mjx-c.mjx-c71.TEX-MI::before{padding:.442em .46em .194em 0;content:"q"}mjx-c.mjx-c1D493.TEX-BI::before{padding:.452em .529em .008em 0;content:"r"}mjx-c.mjx-c2228.TEX-B::before{padding:.604em .767em .016em 0;content:"∨"}mjx-c.mjx-c2192.TEX-B::before{padding:.518em 1.15em .017em 0;content:"→"}mjx-c.mjx-c1D491.TEX-BI::before{padding:.452em .601em .194em 0;content:"p"}mjx-c.mjx-c28.TEX-MI::before{padding:.75em .517em .25em 0;content:"("}mjx-c.mjx-c72.TEX-MI::before{padding:.442em .422em .011em 0;content:"r"}mjx-c.mjx-c29.TEX-MI::before{padding:.75em .409em .25em 0;content:")"}mjx-c.mjx-c28.TEX-B::before{padding:.75em .447em .249em 0;content:"("}mjx-c.mjx-c29.TEX-B::before{padding:.75em .447em .249em 0;content:")"}mjx-c.mjx-c22C6::before{padding:.486em .5em 0 0;content:"⋆"}mjx-c.mjx-c41.TEX-C::before{padding:.728em .819em .05em 0;content:"A"}mjx-c.mjx-c1D464.TEX-I::before{padding:.443em .716em .011em 0;content:"w"}mjx-c.mjx-c22C3.TEX-S1::before{padding:.75em .833em .249em 0;content:"⋃"}mjx-c.mjx-c2229::before{padding:.598em .667em .022em 0;content:"∩"}mjx-c.mjx-c5E::before{padding:.694em .5em 0 0;content:"^"}mjx-c.mjx-c2034::before{padding:.56em .825em 0 0;content:"′′′"}mjx-stretchy-v.mjx-c7D mjx-beg mjx-c::before{content:"⎫";padding:.899em .889em .01em 0}mjx-stretchy-v.mjx-c7D mjx-ext mjx-c::before{content:"⎪";width:.889em}mjx-stretchy-v.mjx-c7D mjx-end mjx-c::before{content:"⎭";padding:.01em .889em .899em 0}mjx-stretchy-v.mjx-c7D mjx-mid mjx-c::before{content:"⎬";padding:1.16em .889em .66em 0}mjx-stretchy-v.mjx-c7D>mjx-mid{margin-top:-.91em;margin-bottom:-.91em}mjx-stretchy-v.mjx-c7D>mjx-end{margin-top:-.909em}mjx-stretchy-v.mjx-c7D>mjx-ext{height:50%;border-top-width:.879em;border-bottom-width:.879em}mjx-c.mjx-c22A8::before{padding:.75em .867em .249em 0;content:"⊨"}mjx-c.mjx-c1D6FF.TEX-I::before{padding:.717em .444em .01em 0;content:"δ"}mjx-c.mjx-c56.TEX-C::before{padding:.683em .658em .052em 0;content:"V"}mjx-c.mjx-c76::before{padding:.431em .528em .011em 0;content:"v"}mjx-c.mjx-c2205::before{padding:.772em .5em .078em 0;content:"∅"}mjx-c.mjx-c1D6E5.TEX-I::before{padding:.716em .833em 0 0;content:"Δ"}mjx-c.mjx-cAC::before{padding:.356em .667em 0 0;content:"¬"}mjx-c.mjx-c1D436.TEX-I::before{padding:.705em .76em .022em 0;content:"C"}mjx-c.mjx-c1D442.TEX-I::before{padding:.704em .763em .022em 0;content:"O"}mjx-c.mjx-c54.TEX-C::before{padding:.717em .833em .068em 0;content:"T"}mjx-c.mjx-c2286::before{padding:.636em .778em .138em 0;content:"⊆"}mjx-c.mjx-c1D467.TEX-I::before{padding:.442em .465em .011em 0;content:"z"}mjx-c.mjx-c1D463.TEX-I::before{padding:.443em .485em .011em 0;content:"v"}mjx-c.mjx-c66::before{padding:.705em .372em 0 0;content:"f"}mjx-c.mjx-c68::before{padding:.694em .556em 0 0;content:"h"}mjx-c.mjx-c45::before{padding:.68em .681em 0 0;content:"E"}mjx-c.mjx-c49::before{padding:.683em .361em 0 0;content:"I"}mjx-c.mjx-c54::before{padding:.677em .722em 0 0;content:"T"}mjx-c.mjx-c46::before{padding:.68em .653em 0 0;content:"F"}mjx-c.mjx-c1D422.TEX-B::before{padding:.695em .319em 0 0;content:"i"}mjx-c.mjx-c1D41F.TEX-B::before{padding:.7em .452em 0 0;content:"f"}mjx-c.mjx-c20::before{padding:0 .25em 0 0;content:" "}mjx-c.mjx-c1D42D.TEX-B::before{padding:.635em .447em .005em 0;content:"t"}mjx-c.mjx-c1D42B.TEX-B::before{padding:.45em .474em 0 0;content:"r"}mjx-c.mjx-c1D421.TEX-B::before{padding:.694em .639em 0 0;content:"h"}mjx-c.mjx-c1D427.TEX-B::before{padding:.45em .639em 0 0;content:"n"}mjx-c.mjx-c1D42C.TEX-B::before{padding:.453em .454em .006em 0;content:"s"}mjx-c.mjx-c1D40D.TEX-B::before{padding:.686em .9em 0 0;content:"N"}mjx-c.mjx-c1D41A.TEX-B::before{padding:.453em .559em .006em 0;content:"a"}mjx-c.mjx-c1D426.TEX-B::before{padding:.45em .958em 0 0;content:"m"}mjx-c.mjx-c1D41E.TEX-B::before{padding:.452em .527em .006em 0;content:"e"}mjx-c.mjx-c1D415.TEX-B::before{padding:.686em .869em .007em 0;content:"V"}mjx-c.mjx-c1D425.TEX-B::before{padding:.694em .319em 0 0;content:"l"}mjx-c.mjx-c1D42E.TEX-B::before{padding:.45em .639em .006em 0;content:"u"}mjx-c.mjx-c70::before{padding:.442em .556em .194em 0;content:"p"}mjx-c.mjx-c75::before{padding:.442em .556em .011em 0;content:"u"}mjx-c.mjx-c7A::before{padding:.431em .444em 0 0;content:"z"}mjx-c.mjx-cB7::before{padding:.31em .278em 0 0;content:"⋅"}mjx-c.mjx-c2248::before{padding:.483em .778em 0 0;content:"≈"}mjx-c.mjx-c1D6E2.TEX-I::before{padding:.716em .75em 0 0;content:"A"}mjx-c.mjx-c1D713.TEX-I::before{padding:.694em .651em .205em 0;content:"ψ"}mjx-c.mjx-c1D45E.TEX-I::before{padding:.442em .46em .194em 0;content:"q"}mjx-c.mjx-c39::before{padding:.666em .5em .022em 0;content:"9"}mjx-c.mjx-c28.TEX-S3::before{padding:1.45em .736em .949em 0;content:"("}mjx-c.mjx-c29.TEX-S3::before{padding:1.45em .736em .949em 0;content:")"}mjx-c.mjx-c2228::before{padding:.598em .667em .022em 0;content:"∨"}mjx-c.mjx-c1D70C.TEX-I::before{padding:.442em .517em .216em 0;content:"ρ"}mjx-c.mjx-c1D446.TEX-I::before{padding:.705em .645em .022em 0;content:"S"}mjx-c.mjx-c1D447.TEX-I::before{padding:.677em .704em 0 0;content:"T"}mjx-c.mjx-c1D706.TEX-I::before{padding:.694em .583em .012em 0;content:"λ"}mjx-c.mjx-c38::before{padding:.666em .5em .022em 0;content:"8"}mjx-msqrt{display:inline-block;text-align:left}mjx-root{display:inline-block;white-space:nowrap}mjx-surd{display:inline-block;vertical-align:top}mjx-sqrt{display:inline-block;padding-top:.07em}mjx-sqrt>mjx-box{border-top:.07em solid}mjx-sqrt.mjx-tall>mjx-box{padding-left:.3em;margin-left:-.3em}mjx-c.mjx-c21A3.TEX-A::before{padding:.417em 1.111em 0 0;content:"↣"}mjx-c.mjx-c37::before{padding:.676em .5em .022em 0;content:"7"}mjx-c.mjx-c221A::before{padding:.8em .853em .2em 0;content:"√"}mjx-c.mjx-c210E.TEX-I::before{padding:.694em .576em .011em 0;content:"h"}mjx-c.mjx-c36::before{padding:.666em .5em .022em 0;content:"6"}mjx-c.mjx-c221A.TEX-S4::before{padding:1.75em 1.02em 1.25em 0;content:"√"}mjx-c.mjx-c2225::before{padding:.75em .5em .25em 0;content:"∥"}mjx-c.mjx-c3C::before{padding:.54em .778em .04em 0;content:"<"}mjx-c.mjx-c1D719.TEX-I::before{padding:.694em .596em .205em 0;content:"ϕ"}mjx-c.mjx-c1D711.TEX-I::before{padding:.442em .654em .218em 0;content:"φ"}mjx-c.mjx-c1D6F7.TEX-I::before{padding:.683em .667em 0 0;content:"Φ"}mjx-c.mjx-c5B.TEX-S4::before{padding:1.75em .583em 1.249em 0;content:"["}mjx-c.mjx-c5D.TEX-S4::before{padding:1.75em .583em 1.249em 0;content:"]"}mjx-c.mjx-c22F1::before{padding:1.52em 1.282em 0 0;content:"⋱"}mjx-c.mjx-c1D43D.TEX-I::before{padding:.683em .633em .022em 0;content:"J"}mjx-c.mjx-c220F.TEX-S2::before{padding:.95em 1.278em .45em 0;content:"∏"}mjx-c.mjx-c2102.TEX-A::before{padding:.702em .722em .019em 0;content:"C"}mjx-c.mjx-cA0::before{padding:0 .25em 0 0;content:" "}mjx-c.mjx-c1D445.TEX-I::before{padding:.683em .759em .021em 0;content:"R"}mjx-c.mjx-c2211.TEX-S2::before{padding:.95em 1.444em .45em 0;content:"∑"}mjx-c.mjx-c21::before{padding:.716em .278em 0 0;content:"!"}mjx-c.mjx-c1D709.TEX-I::before{padding:.704em .438em .205em 0;content:"ξ"}mjx-munderover{display:inline-block;text-align:left}mjx-munderover:not([limits=false]){padding-top:.1em}mjx-munderover:not([limits=false])>*{display:block}mjx-msubsup{display:inline-block;text-align:left}mjx-script{display:inline-block;padding-right:.05em;padding-left:.033em}mjx-script>mjx-spacer{display:block}mjx-c.mjx-c3B::before{padding:.43em .278em .194em 0;content:";"}mjx-c.mjx-c5B.TEX-S3::before{padding:1.45em .528em .949em 0;content:"["}mjx-c.mjx-c5D.TEX-S3::before{padding:1.45em .528em .949em 0;content:"]"}mjx-c.mjx-c1D444.TEX-I::before{padding:.704em .791em .194em 0;content:"Q"}mjx-c.mjx-c2190::before{padding:.511em 1em .011em 0;content:"←"}mjx-c.mjx-c1D45F.TEX-I::before{padding:.442em .451em .011em 0;content:"r"}mjx-c.mjx-c1D454.TEX-I::before{padding:.442em .477em .205em 0;content:"g"}mjx-c.mjx-c34::before{padding:.677em .5em 0 0;content:"4"}mjx-c.mjx-c1D440.TEX-I::before{padding:.683em 1.051em 0 0;content:"M"}mjx-c.mjx-c1D43A.TEX-I::before{padding:.705em .786em .022em 0;content:"G"}mjx-c.mjx-c2265::before{padding:.636em .778em .138em 0;content:"≥"}mjx-c.mjx-c2211.TEX-S1::before{padding:.75em 1.056em .25em 0;content:"∑"}mjx-c.mjx-c2260::before{padding:.716em .778em .215em 0;content:"≠"}mjx-c.mjx-c5B.TEX-S1::before{padding:.85em .417em .349em 0;content:"["}mjx-c.mjx-c5D.TEX-S1::before{padding:.85em .417em .349em 0;content:"]"}.mjx-stretched mjx-c.mjx-c2013::before{content:"–"}mjx-stretchy-h.mjx-c2013 mjx-ext mjx-c::before{content:"–";padding:.285em 0 0}mjx-stretchy-v.mjx-c5B mjx-beg mjx-c::before{content:"⎡";padding:1.154em .667em .645em 0}mjx-stretchy-v.mjx-c5B mjx-ext mjx-c::before{content:"⎢";width:.667em}mjx-stretchy-v.mjx-c5B mjx-end mjx-c::before{content:"⎣";padding:1.155em .667em .644em 0}mjx-stretchy-v.mjx-c5B>mjx-end{margin-top:-1.799em}mjx-stretchy-v.mjx-c5B>mjx-ext{border-top-width:1.769em;border-bottom-width:1.769em}mjx-stretchy-v.mjx-c5D mjx-beg mjx-c::before{content:"⎤";padding:1.154em .667em .645em 0}mjx-stretchy-v.mjx-c5D mjx-ext mjx-c::before{content:"⎥";width:.667em}mjx-stretchy-v.mjx-c5D mjx-end mjx-c::before{content:"⎦";padding:1.155em .667em .644em 0}mjx-stretchy-v.mjx-c5D>mjx-end{margin-top:-1.799em}mjx-stretchy-v.mjx-c5D>mjx-ext{border-top-width:1.769em;border-bottom-width:1.769em}mjx-stretchy-h.mjx-c2192 mjx-ext mjx-c::before{content:"−";padding:.583em 0 .082em}mjx-stretchy-h.mjx-c2192 mjx-end mjx-c::before{content:"→";padding:.583em 0 .082em}mjx-c.mjx-c35::before{padding:.666em .5em .022em 0;content:"5"}mjx-c.mjx-c33::before{padding:.665em .5em .022em 0;content:"3"}mjx-c.mjx-c22C5::before{padding:.31em .278em 0 0;content:"⋅"}mjx-c.mjx-c65::before{padding:.448em .444em .011em 0;content:"e"}mjx-c.mjx-c64::before{padding:.694em .556em .011em 0;content:"d"}mjx-c.mjx-c20::before{padding:0 .25em 0 0;content:" "}mjx-c.mjx-c74::before{padding:.615em .389em .01em 0;content:"t"}mjx-c.mjx-c72::before{padding:.442em .392em 0 0;content:"r"}mjx-c.mjx-c61::before{padding:.448em .5em .011em 0;content:"a"}mjx-c.mjx-c67::before{padding:.453em .5em .206em 0;content:"g"}mjx-c.mjx-c2013::before{padding:.285em .5em 0 0;content:"–"}mjx-c.mjx-c7B.TEX-S4::before{padding:1.75em .806em 1.249em 0;content:"{"}mjx-c.mjx-c1D452.TEX-I::before{padding:.442em .466em .011em 0;content:"e"}mjx-c.mjx-c2E::before{padding:.12em .278em 0 0;content:"."}mjx-munder{display:inline-block;text-align:left}mjx-over{text-align:left}mjx-munder:not([limits=false]){display:inline-table}mjx-munder>mjx-row{text-align:left}mjx-under{padding-bottom:.1em}mjx-stretchy-v.mjx-c28 mjx-beg mjx-c::before{content:"⎛";padding:1.154em .875em .655em 0}mjx-stretchy-v.mjx-c28 mjx-ext mjx-c::before{content:"⎜";width:.875em}mjx-stretchy-v.mjx-c28 mjx-end mjx-c::before{content:"⎝";padding:1.165em .875em .644em 0}mjx-stretchy-v.mjx-c28>mjx-end{margin-top:-1.809em}mjx-stretchy-v.mjx-c28>mjx-ext{border-top-width:1.779em;border-bottom-width:1.779em}mjx-stretchy-v.mjx-c29 mjx-beg mjx-c::before{content:"⎞";padding:1.154em .875em .655em 0}mjx-stretchy-v.mjx-c29 mjx-ext mjx-c::before{content:"⎟";width:.875em}mjx-stretchy-v.mjx-c29 mjx-end mjx-c::before{content:"⎠";padding:1.165em .875em .644em 0}mjx-stretchy-v.mjx-c29>mjx-end{margin-top:-1.809em}mjx-stretchy-v.mjx-c29>mjx-ext{border-top-width:1.779em;border-bottom-width:1.779em}mjx-stretchy-v.mjx-c7B mjx-beg mjx-c::before{content:"⎧";padding:.899em .889em .01em 0}mjx-stretchy-v.mjx-c7B mjx-ext mjx-c::before{content:"⎪";width:.889em}mjx-stretchy-v.mjx-c7B mjx-end mjx-c::before{content:"⎩";padding:.01em .889em .899em 0}mjx-stretchy-v.mjx-c7B mjx-mid mjx-c::before{content:"⎨";padding:1.16em .889em .66em 0}mjx-stretchy-v.mjx-c7B>mjx-mid{margin-top:-.91em;margin-bottom:-.91em}mjx-stretchy-v.mjx-c7B>mjx-end{margin-top:-.909em}mjx-stretchy-v.mjx-c7B>mjx-ext{height:50%;border-top-width:.879em;border-bottom-width:.879em}mjx-c.mjx-c1D700.TEX-I::before{padding:.452em .466em .022em 0;content:"ε"}mjx-c.mjx-c6C::before{padding:.694em .278em 0 0;content:"l"}mjx-c.mjx-c69::before{padding:.669em .278em 0 0;content:"i"}mjx-c.mjx-c6D::before{padding:.442em .833em 0 0;content:"m"}mjx-c.mjx-c63::before{padding:.448em .444em .011em 0;content:"c"}mjx-c.mjx-c6F::before{padding:.448em .5em .01em 0;content:"o"}mjx-c.mjx-c73::before{padding:.448em .394em .011em 0;content:"s"}mjx-c.mjx-c2061::before{padding:0;content:""}mjx-c.mjx-c1D45C.TEX-I::before{padding:.441em .485em .011em 0;content:"o"}mjx-c.mjx-c6E::before{padding:.442em .556em 0 0;content:"n"}mjx-c.mjx-c28.TEX-S2::before{padding:1.15em .597em .649em 0;content:"("}mjx-c.mjx-c29.TEX-S2::before{padding:1.15em .597em .649em 0;content:")"}mjx-c.mjx-c1D43F.TEX-I::before{padding:.683em .681em 0 0;content:"L"}mjx-c.mjx-c1D448.TEX-I::before{padding:.683em .767em .022em 0;content:"U"}mjx-c.mjx-c1D459.TEX-I::before{padding:.694em .298em .011em 0;content:"l"}mjx-c.mjx-c1D457.TEX-I::before{padding:.661em .412em .204em 0;content:"j"}mjx-c.mjx-c1D458.TEX-I::before{padding:.694em .521em .011em 0;content:"k"}mjx-c.mjx-c1D44F.TEX-I::before{padding:.694em .429em .011em 0;content:"b"}mjx-c.mjx-c1D466.TEX-I::before{padding:.442em .49em .205em 0;content:"y"}mjx-c.mjx-c7B.TEX-S3::before{padding:1.45em .75em .949em 0;content:"{"}mjx-c.mjx-c1D70F.TEX-I::before{padding:.431em .517em .013em 0;content:"τ"}mjx-c.mjx-c1D435.TEX-I::before{padding:.683em .759em 0 0;content:"B"}mjx-c.mjx-c1D439.TEX-I::before{padding:.68em .749em 0 0;content:"F"}mjx-c.mjx-c1D453.TEX-I::before{padding:.705em .55em .205em 0;content:"f"}mjx-c.mjx-c1D434.TEX-I::before{padding:.716em .75em 0 0;content:"A"}mjx-c.mjx-c2212::before{padding:.583em .778em .082em 0;content:"−"}mjx-c.mjx-c221E::before{padding:.442em 1em .011em 0;content:"∞"}mjx-c.mjx-c3E::before{padding:.54em .778em .04em 0;content:">"}mjx-c.mjx-c1D707.TEX-I::before{padding:.442em .603em .216em 0;content:"μ"}mjx-c.mjx-c1D70E.TEX-I::before{padding:.431em .571em .011em 0;content:"σ"}mjx-mi{display:inline-block;text-align:left}mjx-msub{display:inline-block;text-align:left}mjx-texatom{display:inline-block;text-align:left}mjx-mspace{display:inline-block;text-align:left}mjx-mfrac{display:inline-block;text-align:left}mjx-frac{display:inline-block;vertical-align:.17em;padding:0 .22em}mjx-frac[type="d"]{vertical-align:.04em}mjx-frac[delims]{padding:0 .1em}mjx-frac[atop]{padding:0 .12em}mjx-frac[atop][delims]{padding:0}mjx-dtable{display:inline-table;width:100%}mjx-dtable>*{font-size:2000%}mjx-dbox{display:block;font-size:5%}mjx-num{display:block;text-align:center}mjx-den{display:block;text-align:center}mjx-mfrac[bevelled]>mjx-num{display:inline-block}mjx-mfrac[bevelled]>mjx-den{display:inline-block}mjx-den[align=right],mjx-num[align=right]{text-align:right}mjx-den[align=left],mjx-num[align=left]{text-align:left}mjx-nstrut{display:inline-block;height:.054em;width:0;vertical-align:-.054em}mjx-nstrut[type="d"]{height:.217em;vertical-align:-.217em}mjx-dstrut{display:inline-block;height:.505em;width:0}mjx-dstrut[type="d"]{height:.726em}mjx-line{display:block;box-sizing:border-box;min-height:1px;height:.06em;border-top:.06em solid;margin:.06em -.1em;overflow:hidden}mjx-line[type="d"]{margin:.18em -.1em}mjx-mrow{display:inline-block;text-align:left}mjx-mover{display:inline-block;text-align:left}mjx-mover:not([limits=false]){padding-top:.1em}mjx-mover:not([limits=false])>*{display:block;text-align:left}mjx-mpadded{display:inline-block;text-align:left}mjx-rbox{display:inline-block;position:relative}mjx-mtext{display:inline-block;text-align:left}mjx-mtable{display:inline-block;text-align:center;vertical-align:.25em;position:relative;box-sizing:border-box;border-spacing:0px;border-collapse:collapse}mjx-mstyle[size="s"] mjx-mtable{vertical-align:.354em}mjx-labels{position:absolute;left:0;top:0}mjx-table{display:inline-block;vertical-align:-.5ex;box-sizing:border-box}mjx-table>mjx-itable{vertical-align:middle;text-align:left;box-sizing:border-box}mjx-labels>mjx-itable{position:absolute;top:0}mjx-mtable[justify=left]{text-align:left}mjx-mtable[justify=right]{text-align:right}mjx-mtable[justify=left][side=left]{padding-right:0!important}mjx-mtable[justify=left][side=right]{padding-left:0!important}mjx-mtable[justify=right][side=left]{padding-right:0!important}mjx-mtable[justify=right][side=right]{padding-left:0!important}mjx-mtable[align]{vertical-align:baseline}mjx-mtable[align=top]>mjx-table{vertical-align:top}mjx-mtable[align=bottom]>mjx-table{vertical-align:bottom}mjx-mtable[side=right] mjx-labels{min-width:100%}mjx-mtr{display:table-row;text-align:left}mjx-mtr[rowalign=top]>mjx-mtd{vertical-align:top}mjx-mtr[rowalign=center]>mjx-mtd{vertical-align:middle}mjx-mtr[rowalign=bottom]>mjx-mtd{vertical-align:bottom}mjx-mtr[rowalign=baseline]>mjx-mtd{vertical-align:baseline}mjx-mtr[rowalign=axis]>mjx-mtd{vertical-align:.25em}mjx-mtd{display:table-cell;text-align:center;padding:.215em .4em}mjx-mtd:first-child{padding-left:0}mjx-mtd:last-child{padding-right:0}mjx-mtable>*>mjx-itable>:first-child>mjx-mtd{padding-top:0}mjx-mtable>*>mjx-itable>:last-child>mjx-mtd{padding-bottom:0}mjx-tstrut{display:inline-block;height:1em;vertical-align:-.25em}mjx-labels[align=left]>mjx-mtr>mjx-mtd{text-align:left}mjx-labels[align=right]>mjx-mtr>mjx-mtd{text-align:right}mjx-mtd[extra]{padding:0}mjx-mtd[rowalign=top]{vertical-align:top}mjx-mtd[rowalign=center]{vertical-align:middle}mjx-mtd[rowalign=bottom]{vertical-align:bottom}mjx-mtd[rowalign=baseline]{vertical-align:baseline}mjx-mtd[rowalign=axis]{vertical-align:.25em}mjx-msup{display:inline-block;text-align:left}mjx-stretchy-h.mjx-c21D2 mjx-ext mjx-c::before{content:"=";padding:.583em 0 .082em}mjx-stretchy-h.mjx-c21D2 mjx-end mjx-c::before{content:"⇒";padding:.583em 0 .082em}mjx-c.mjx-c1D6E4.TEX-I::before{padding:.68em .721em 0 0;content:"Γ"}mjx-c.mjx-c22A2::before{padding:.694em .611em 0 0;content:"⊢"}mjx-c.mjx-c1D43B.TEX-I::before{padding:.683em .888em 0 0;content:"H"}mjx-c.mjx-c1D43E.TEX-I::before{padding:.683em .889em 0 0;content:"K"}mjx-c.mjx-c1D6FC.TEX-I::before{padding:.442em .64em .011em 0;content:"α"}mjx-c.mjx-c2194::before{padding:.511em 1em .011em 0;content:"↔"}mjx-c.mjx-c1D441.TEX-I::before{padding:.683em .888em 0 0;content:"N"}mjx-c.mjx-c1D437.TEX-I::before{padding:.683em .828em 0 0;content:"D"}mjx-c.mjx-c1D443.TEX-I::before{padding:.683em .751em 0 0;content:"P"}mjx-c.mjx-c21D2::before{padding:.525em 1em .024em 0;content:"⇒"}mjx-c.mjx-c1D44B.TEX-I::before{padding:.683em .852em 0 0;content:"X"}mjx-c.mjx-c1D45B.TEX-I::before{padding:.442em .6em .011em 0;content:"n"}mjx-c.mjx-c28::before{padding:.75em .389em .25em 0;content:"("}mjx-c.mjx-c29::before{padding:.75em .389em .25em 0;content:")"}mjx-c.mjx-c211D.TEX-A::before{padding:.683em .722em 0 0;content:"R"}mjx-c.mjx-c7C::before{padding:.75em .278em .249em 0;content:"|"}mjx-c.mjx-c3D::before{padding:.583em .778em .082em 0;content:"="}mjx-c.mjx-c7B::before{padding:.75em .5em .25em 0;content:"{"}mjx-c.mjx-c1D465.TEX-I::before{padding:.442em .572em .011em 0;content:"x"}mjx-c.mjx-c2208::before{padding:.54em .667em .04em 0;content:"∈"}mjx-c.mjx-c3A::before{padding:.43em .278em 0 0;content:":"}mjx-c.mjx-c2203::before{padding:.694em .556em 0 0;content:"∃"}mjx-c.mjx-c1D45A.TEX-I::before{padding:.442em .878em .011em 0;content:"m"}mjx-c.mjx-c2264::before{padding:.636em .778em .138em 0;content:"≤"}mjx-c.mjx-c2115.TEX-A::before{padding:.683em .722em .02em 0;content:"N"}mjx-c.mjx-c2C::before{padding:.121em .278em .194em 0;content:","}mjx-c.mjx-c7D::before{padding:.75em .5em .25em 0;content:"}"}mjx-c.mjx-c1D44C.TEX-I::before{padding:.683em .763em 0 0;content:"Y"}mjx-c.mjx-c1D44E.TEX-I::before{padding:.441em .529em .01em 0;content:"a"}mjx-c.mjx-c2026::before{padding:.12em 1.172em 0 0;content:"…"}mjx-c.mjx-c1D70B.TEX-I::before{padding:.431em .57em .011em 0;content:"π"}mjx-c.mjx-c27E8::before{padding:.75em .389em .25em 0;content:"⟨"}mjx-c.mjx-c27E9::before{padding:.75em .389em .25em 0;content:"⟩"}mjx-c.mjx-c4C.TEX-C::before{padding:.705em .69em .022em 0;content:"L"}mjx-c.mjx-c30::before{padding:.666em .5em .022em 0;content:"0"}mjx-c.mjx-c2200::before{padding:.694em .556em .022em 0;content:"∀"}mjx-c.mjx-c1D6F1.TEX-I::before{padding:.68em .887em 0 0;content:"Π"}mjx-c.mjx-c1D456.TEX-I::before{padding:.661em .345em .011em 0;content:"i"}mjx-c.mjx-c1D460.TEX-I::before{padding:.442em .469em .01em 0;content:"s"}mjx-c.mjx-c2B::before{padding:.583em .778em .082em 0;content:"+"}mjx-c.mjx-c1D6EC.TEX-I::before{padding:.716em .694em 0 0;content:"Λ"}mjx-c.mjx-c2D::before{padding:.252em .333em 0 0;content:"-"}mjx-c.mjx-c1D43C.TEX-I::before{padding:.683em .504em 0 0;content:"I"}mjx-c.mjx-c1D438.TEX-I::before{padding:.68em .764em 0 0;content:"E"}mjx-c.mjx-c1D449.TEX-I::before{padding:.683em .769em .022em 0;content:"V"}mjx-c.mjx-c2227::before{padding:.598em .667em .022em 0;content:"∧"}mjx-c.mjx-c2261::before{padding:.464em .778em 0 0;content:"≡"}mjx-c.mjx-c1D6FD.TEX-I::before{padding:.705em .566em .194em 0;content:"β"}mjx-c.mjx-c1D6FE.TEX-I::before{padding:.441em .543em .216em 0;content:"γ"}mjx-c.mjx-c22EE::before{padding:1.3em .278em .03em 0;content:"⋮"}mjx-c.mjx-c22EF::before{padding:.31em 1.172em 0 0;content:"⋯"}mjx-c.mjx-c2032::before{padding:.56em .275em 0 0;content:"′"}mjx-c.mjx-c2033::before{padding:.56em .55em 0 0;content:"′′"}mjx-c.mjx-c1D451.TEX-I::before{padding:.694em .52em .01em 0;content:"d"}mjx-c.mjx-c32::before{padding:.666em .5em 0 0;content:"2"}mjx-c.mjx-c1D450.TEX-I::before{padding:.442em .433em .011em 0;content:"c"}mjx-c.mjx-c1D462.TEX-I::before{padding:.442em .572em .011em 0;content:"u"}mjx-c.mjx-c1D461.TEX-I::before{padding:.626em .361em .011em 0;content:"t"}mjx-c.mjx-c2217::before{padding:.465em .5em 0 0;content:"∗"}mjx-c.mjx-c5B::before{padding:.75em .278em .25em 0;content:"["}mjx-c.mjx-c5D::before{padding:.75em .278em .25em 0;content:"]"}mjx-c.mjx-c2192::before{padding:.511em 1em .011em 0;content:"→"}mjx-c.mjx-c222A::before{padding:.598em .667em .022em 0;content:"∪"}mjx-c.mjx-c1D45D.TEX-I::before{padding:.442em .503em .194em 0;content:"p"}mjx-c.mjx-c1D6F4.TEX-I::before{padding:.683em .806em 0 0;content:"Σ"}mjx-c.mjx-c2216::before{padding:.75em .5em .25em 0;content:"∖"}mjx-container[jax=CHTML]{line-height:0}mjx-container [space="1"]{margin-left:.111em}mjx-container [space="2"]{margin-left:.167em}mjx-container [space="3"]{margin-left:.222em}mjx-container [space="4"]{margin-left:.278em}mjx-container [space="5"]{margin-left:.333em}mjx-container [rspace="1"]{margin-right:.111em}mjx-container [rspace="2"]{margin-right:.167em}mjx-container [rspace="3"]{margin-right:.222em}mjx-container [rspace="4"]{margin-right:.278em}mjx-container [rspace="5"]{margin-right:.333em}mjx-container [size="s"]{font-size:70.7%}mjx-container [size=ss]{font-size:50%}mjx-container [size=Tn]{font-size:60%}mjx-container [size=sm]{font-size:85%}mjx-container [size=lg]{font-size:120%}mjx-container [size=Lg]{font-size:144%}mjx-container [size=LG]{font-size:173%}mjx-container [size=hg]{font-size:207%}mjx-container [size=HG]{font-size:249%}mjx-container [width=full]{width:100%}mjx-box{display:inline-block}mjx-block{display:block}mjx-itable{display:inline-table}mjx-row{display:table-row}mjx-row>*{display:table-cell}mjx-mtext{display:inline-block}mjx-mstyle{display:inline-block}mjx-merror{display:inline-block;color:red;background-color:#ff0}mjx-mphantom{visibility:hidden}mjx-assistive-mml{top:0;left:0;clip:rect(1px,1px,1px,1px);user-select:none;position:absolute!important;padding:1px 0 0!important;border:0!important;display:block!important;width:auto!important;overflow:hidden!important}mjx-assistive-mml[display=block]{width:100%!important}mjx-math{display:inline-block;text-align:left;line-height:0;text-indent:0;font-style:normal;font-weight:400;font-size:100%;font-size-adjust:none;letter-spacing:normal;border-collapse:collapse;overflow-wrap:normal;word-spacing:normal;white-space:nowrap;direction:ltr;padding:1px 0}mjx-container[jax=CHTML][display=true]{display:block;text-align:center;margin:1em 0}mjx-container[jax=CHTML][display=true][width=full]{display:flex}mjx-container[jax=CHTML][display=true] mjx-math{padding:0}mjx-container[jax=CHTML][justify=left]{text-align:left}mjx-container[jax=CHTML][justify=right]{text-align:right}mjx-mn{display:inline-block;text-align:left}mjx-c{display:inline-block}mjx-utext{display:inline-block;padding:.75em 0 .2em}mjx-mo{display:inline-block;text-align:left}mjx-stretchy-h{display:inline-table;width:100%}mjx-stretchy-h>*{display:table-cell;width:0}mjx-stretchy-h>*>mjx-c{display:inline-block;transform:scaleX(1)}mjx-stretchy-h>*>mjx-c::before{display:inline-block;width:initial}mjx-stretchy-h>mjx-ext{overflow:clip visible;width:100%}mjx-stretchy-h>mjx-ext>mjx-c::before{transform:scaleX(500)}mjx-stretchy-h>mjx-ext>mjx-c{width:0}mjx-stretchy-h>mjx-beg>mjx-c{margin-right:-.1em}mjx-stretchy-h>mjx-end>mjx-c{margin-left:-.1em}mjx-stretchy-v{display:inline-block}mjx-stretchy-v>*{display:block}mjx-stretchy-v>mjx-beg{height:0}mjx-stretchy-v>mjx-end>mjx-c{display:block}mjx-stretchy-v>*>mjx-c{transform:scaleY(1);transform-origin:left center;overflow:hidden}mjx-stretchy-v>mjx-ext{display:block;height:100%;box-sizing:border-box;border:0 solid transparent;overflow:visible clip}mjx-stretchy-v>mjx-ext>mjx-c::before{width:initial;box-sizing:border-box}mjx-stretchy-v>mjx-ext>mjx-c{transform:scaleY(500) translateY(.075em);overflow:visible}mjx-mark{display:inline-block;height:0}mjx-c::before{display:block;width:0}.MJX-TEX{font-family:MJXZERO,MJXTEX}.TEX-B{font-family:MJXZERO,MJXTEX-B}.TEX-I{font-family:MJXZERO,MJXTEX-I}.TEX-MI{font-family:MJXZERO,MJXTEX-MI}.TEX-BI{font-family:MJXZERO,MJXTEX-BI}.TEX-S1{font-family:MJXZERO,MJXTEX-S1}.TEX-S2{font-family:MJXZERO,MJXTEX-S2}.TEX-S3{font-family:MJXZERO,MJXTEX-S3}.TEX-S4{font-family:MJXZERO,MJXTEX-S4}.TEX-A{font-family:MJXZERO,MJXTEX-A}.TEX-C{font-family:MJXZERO,MJXTEX-C}.TEX-CB{font-family:MJXZERO,MJXTEX-CB}.TEX-FR{font-family:MJXZERO,MJXTEX-FR}.TEX-FRB{font-family:MJXZERO,MJXTEX-FRB}.TEX-SS{font-family:MJXZERO,MJXTEX-SS}.TEX-SSB{font-family:MJXZERO,MJXTEX-SSB}.TEX-SSI{font-family:MJXZERO,MJXTEX-SSI}.TEX-SC{font-family:MJXZERO,MJXTEX-SC}.TEX-T{font-family:MJXZERO,MJXTEX-T}.TEX-V{font-family:MJXZERO,MJXTEX-V}.TEX-VB{font-family:MJXZERO,MJXTEX-VB}mjx-stretchy-h mjx-c,mjx-stretchy-v mjx-c{font-family:MJXZERO,MJXTEX-S1,MJXTEX-S4,MJXTEX,MJXTEX-A!important}@font-face{font-family:MJXZERO;src:url("site-lib/fonts/mathjax_zero.woff") format("woff")}@font-face{font-family:MJXTEX;src:url("site-lib/fonts/mathjax_main-regular.woff") format("woff")}@font-face{font-family:MJXTEX-B;src:url("site-lib/fonts/mathjax_main-bold.woff") format("woff")}@font-face{font-family:MJXTEX-I;src:url("site-lib/fonts/mathjax_math-italic.woff") format("woff")}@font-face{font-family:MJXTEX-MI;src:url("site-lib/fonts/mathjax_main-italic.woff") format("woff")}@font-face{font-family:MJXTEX-BI;src:url("site-lib/fonts/mathjax_math-bolditalic.woff") format("woff")}@font-face{font-family:MJXTEX-S1;src:url("site-lib/fonts/mathjax_size1-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S2;src:url("site-lib/fonts/mathjax_size2-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S3;src:url("site-lib/fonts/mathjax_size3-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S4;src:url("site-lib/fonts/mathjax_size4-regular.woff") format("woff")}@font-face{font-family:MJXTEX-A;src:url("site-lib/fonts/mathjax_ams-regular.woff") format("woff")}@font-face{font-family:MJXTEX-C;src:url("site-lib/fonts/mathjax_calligraphic-regular.woff") format("woff")}@font-face{font-family:MJXTEX-CB;src:url("site-lib/fonts/mathjax_calligraphic-bold.woff") format("woff")}@font-face{font-family:MJXTEX-FR;src:url("site-lib/fonts/mathjax_fraktur-regular.woff") format("woff")}@font-face{font-family:MJXTEX-FRB;src:url("site-lib/fonts/mathjax_fraktur-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SS;src:url("site-lib/fonts/mathjax_sansserif-regular.woff") format("woff")}@font-face{font-family:MJXTEX-SSB;src:url("site-lib/fonts/mathjax_sansserif-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SSI;src:url("site-lib/fonts/mathjax_sansserif-italic.woff") format("woff")}@font-face{font-family:MJXTEX-SC;src:url("site-lib/fonts/mathjax_script-regular.woff") format("woff")}@font-face{font-family:MJXTEX-T;src:url("site-lib/fonts/mathjax_typewriter-regular.woff") format("woff")}@font-face{font-family:MJXTEX-V;src:url("site-lib/fonts/mathjax_vector-regular.woff") format("woff")}@font-face{font-family:MJXTEX-VB;src:url("site-lib/fonts/mathjax_vector-bold.woff") format("woff")}mjx-c.mjx-c31::before{padding:.666em .5em 0 0;content:"1"}mjx-c.mjx-cD7::before{padding:.491em .778em 0 0;content:"×"}</style><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="Programmazione_1_-_Modulo_I_0">Programmazione 1 - Modulo I</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-pre mod-frontmatter mod-ui"><div class="block-language-yaml"></div></div><div class="el-p"><p dir="auto">(nel processo di aggiungere tag e poi separare non cronologicamente ma per argomento)<br>
+Ci sarà bisogno di dividere Linguaggio in tipo "Linguaggio generale", "Linguaggio matematico"...<br>
+In realtà forse viene troppo male dividere in argomenti<br>
+Forse viene meglio dividere in capitoli<br>
+Ma è troppo stream of consciousness</p></div><div class="el-h2"><h2 data-heading="Settimana 1" dir="auto" class="heading" id="Settimana_1_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 1</h2></div><div class="el-p"><p dir="auto"><a href="?query=tag:generale" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#generale">#generale</a><br>
+Minimo 60% presenze.<br>
+Tre prove a un terzo, due terzi e alla fine del corso.<br>
+Voto massimo: 33/30.<br>
+Il primo parziale sarà nella prima metà di Novembre.<br>
+Tipi di domande:<br>
+Risposta multipla, con una o più risposte corrette;<br>
+Vero/Falso;<br>
+Aperta.<br>
+Il valore di ciascuna domanda è predefinito, e il voto è la somma dei valori.<br>
+Saranno test open book.<br>
+I test saranno dello stesso tipo di quelli degli anni precedenti.<br>
+Prima di ciascun test, ci sarà un’esercitazione: ci darà i test vecchi, alla lezione dopo li correggeremo, e quella successiva sarà il test.</p></div><div class="el-p"><p dir="auto">Per contattare il professore:<br>
+E-mail: <a data-tooltip-position="top" aria-label="mailto:riccardo@unica.it" rel="noopener nofollow" class="external-link is-unresolved" href="mailto:riccardo@unica.it" target="_self">riccardo@unica.it</a>, oggetto: “[PR1]”<br>
+Orari di ricevimento: dalle 15 alle 17<br>
+Telefono: 0706758540, per le emergenze<br>
+WhatsApp/Telegram: 3280090937, solo per comunicazioni immediate importanti</p></div><div class="el-p"><p dir="auto">Libri consigliati:<br>
+Deitel - Il Linguaggio C, Fondamenti e Tecniche di Programmazione - Pearson</p></div><div class="el-p"><p dir="auto">Teams: 319p0vs</p></div><div class="el-p"><p dir="auto">I voti dei parziali saranno visibili da Teams, quello dell’esame finale solo da Esse3.<br>
+In un algoritmo bisogna tenere conto dello stato corrente del sistema. Di solito, lo stato del sistema è la combinazione dei valori delle sue variabili.<br>
+Un algoritmo deve avere un numero finito di stati e un numero finito di operazioni possibili per ogni stato.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:algoritmi" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#algoritmi">#algoritmi</a><br>
+Il quesito dell’uovo tartufato può essere automatizzato tramite un algoritmo, che avrà come operazioni lo spostamento da un contenitore a un altro.<br>
+Una possibile soluzione sarebbe fare ogni operazione possibile (ne hai 6) per ogni stato, e tornare indietro quando si è bloccati. Bisognerebbe tenere una cronologia per sapere per quali stati si è già passati, e prima o poi si arriva alla soluzione.<br>
+Non tutti gli stati sono validi, nel nostro caso la somma deve essere sempre 80.<br>
+L’obiettivo del nostro corso è imparare a risolvere problemi e acquisire un metodo.<br>
+Parliamo di termini, definizioni, etimologie e storia.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Alla fine del ‘600 fu inventata la Pascalina, precursore dei computer.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Computer: Dall’inglese, in origine la professione di fare calcoli per i censi. I macchinari hanno preso questo nome dopo un po’ di tempo dalla loro invenzione.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+La macchina analitica di Babbage, l’analytical engine, fu inventata intorno al 1840 per risolvere problemi analitici, cioè matematici. Babbage ci spese l’equivalente di oltre 10 milioni di euro.<br>
+Babbage si rese conto che questo nuovo tipo di macchina si poteva programmare, a differenza delle macchine precedenti, che potevano compiere un solo lavoro.<br>
+La parola computer fu introdotta per questi macchinari negli anni ‘90.</p></div><div class="el-p"><p dir="auto">Un altro precursore dei computer era il telaio a schede perforate, che funzionava con lo stesso principio: diamo istruzioni alla macchina perché risolvano problemi per conto nostro.<br>
+Inizialmente, questa era una professione stereotipicamente femminile.<br>
+La prima programmatrice fu Ada Lovelace.</p></div><div class="el-p"><p dir="auto">Altre figure molto importanti furono Alonzo Church e Alan Turing.<br>
+Church inventò il λ-calcolo.<br>
+Turing ideò la macchina di Turing, che vedremo l’anno prossimo.<br>
+Insieme, pubblicarono la tesi di Church-Turing.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Definizione di computer: Macchina elettronica che può svolgere diversi compiti a seconda delle istruzioni impartitele.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+I Paesi principali della WWII furono il UK, gli US e la Germania, e furono proprio questi i Paesi dove furono inventati i primi computer.<br>
+Due altre invenzioni aiutarono molto: la valvola termoionica e il transistor, invenzione degli anni ‘50-‘60 che rimpiazzò le valvole termoioniche.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a><br>
+L’esistenza dell’informatica non dipende dai computer. Senza computer, l’informatica sarebbe rimasta una disciplina sconosciuta, esoterica e presa in giro.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Istruzione: Comando impartito a un computer che determina una variazione di stato.<br>
+Bisogna sempre sapere qual è lo stato del sistema.</p></div><div class="el-p"><p dir="auto">Obiettivo della programmazione: Trovare una serie finita di istruzioni che ci fanno passare da uno stato iniziale a uno stato finale.</p></div><div class="el-p"><p dir="auto">Programma: Sequenza di istruzioni elementari che un computer è in grado di comprendere ed eseguire.<br>
+I concetti di sequenza e di istruzione elementare sono parimente importanti.</p></div><div class="el-p"><p dir="auto">Programmare: Realizzare un programma per svolgere determinati compiti.<br>
+Per imparare la programmazione bisogna conoscere un linguaggio.<br>
+Differenza tra comunicazione verbale e scritta: prossemica.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:generale" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#generale">#generale</a><br>
+Programmare un computer è come parlare a un bambino:<br>
+Prende tutto alla lettera;<br>
+Devi spiegare esattamente tutti i dettagli, non sa inferire dal contesto;<br>
+Non puoi dare niente per scontato.<br>
+Le macchine si devono adeguare.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Informatica: Disciplina/scienza dell’informazione e della sua automazione.<br>
+L’informatica, derivando dalla matematica, ha tutto il diritto di essere chiamata hard science.<br>
+<a href="?query=tag:algoritmi" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#algoritmi">#algoritmi</a><br>
+Serve un processo risolutivo, è fondamentale.<br>
+La caratteristica fondamentale del processo risolutivo è la presenza di un algoritmo.<br>
+Un po’ di <a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a>:<br>
+900 d.C. (X secolo), impero Persiano, Al-Khwarizmi inventa Al-Jabr, l’algebra.<br>
+Dal nome Al-Khwarizmi (e da arithmos, numero) deriva “algoritmo”.<br>
+Un algoritmo è un insieme finito e ordinato di passi univoci eseguibili che definiscono un processo che termina.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:algoritmi" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#algoritmi">#algoritmi</a><br>
+Avere un numero di passi finito è facile.<br>
+Far sì che ogni passo sia completabile in un tempo finito è facile.<br>
+Assicurarsi che la sequenza di passi e stati sia finita, questa è la parte difficile.<br>
+Questo è il celebre halting problem, problema della terminazione.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:algoritmi" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#algoritmi">#algoritmi</a><br>
+Un esempio di algoritmo che termina è l’algoritmo di Euclide.</p></div><div class="el-h2"><h2 data-heading="Settimana 2" dir="auto" class="heading" id="Settimana_2_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 2</h2></div><div class="el-p"><p dir="auto"><a href="?query=tag:algoritmi" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#algoritmi">#algoritmi</a><br>
+Massimo Comun Divisore: il metodo più semplice consiste nell’enumerare tutti i divisori del primo numero, tutti quelli del secondo, trovarne l’intersezione, e poi cercare lì il maggiore.<br>
+Questo è un metodo di tipo bruteforce, a forza bruta.<br>
+Funziona perché l’intersezione non è mai un insieme vuoto, contiene sempre 1.<br>
+I metodi bruteforce sono spesso molto lenti e inefficienti, e sono la soluzione in casi disperati, o in certi casi specifici.</p></div><div class="el-p"><p dir="auto">Un metodo più efficiente è l’algoritmo di Euclide. È un algoritmo in quanto:<br>
+Ha un numero finito di passi;<br>
+È scritto in un linguaggio univoco, quello della matematica;<br>
+Ogni passo si svolge in un tempo finito.<br>
+Termina perché dopo ogni passo, si ottiene un valore strettamente minore del precedente, e lavoriamo con i numeri naturali. Tutte le serie discendenti di numeri naturali prima o poi terminano: non puoi scendere per sempre nei numeri interi senza andare sotto 0.<br>
+Otteniamo la risposta giusta? Non lo sappiamo, ma almeno sappiamo che termina sempre.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+Tra l’altro, i simboli matematici sono un linguaggio formalizzato solo dal ‘600, e ancora oggi non sono 100% univoci: la moltiplicazione ha *, •, ×, e il nulla, la divisione ha :, ÷, /, –.<br>
+Prima si scriveva tutto a parole! Confrontiamo la lunghezza:<br>
+∀i∈Dx, …<br>
+Per ogni i divisore di x, …<br>
+Quando si parla di un linguaggio formale, “univocamente interpretabile” è sottinteso.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termini" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termini">#termini</a><br>
+Efficacia: Capacità dell’algoritmo di risolvere il problema.<br>
+Efficienza: Quanto cresce il tempo di esecuzione al crescere dell’input.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Von Neumann apparteneva al gruppo dei marziani, un piccolo gruppo di persone che hanno rivoluzionato la scienza, nella zona di Budapest intorno al 1900. Tra questi, anche alcuni che hanno lavorato alla bomba atomica di Oppenheimer.</p></div><div class="el-p"><p dir="auto">Dovevano fare tanti calcoli, serviva un calcolatore programmabile per farli in poco tempo.</p></div><div class="el-p"><p dir="auto">Macchina di Von Neumann del ‘46:<br>
+Nuovo concetto di calcolatore con memoria (per dati e programma), (pensavano in termini di funzioni matematiche)<br>
+Esecutore programmabile di istruzioni = processore<br>
+Oggi caratteristiche tutte banali.</p></div><div class="el-p"><p dir="auto">La prima memoria di massa mai inventata: tre fili ortogonali, intrecciati in un anello di ferrite magnetizzata: a seconda di come passa la corrente per i tre fili, l’anello è magnetizzato in senso orario o antiorario, bit 1 o 0. L’anello può cambiare dinamicamente, ma una volta cambiato senso, il nuovo senso rimane (immagazzinato).</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a> <a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a><br>
+Era già stato introdotto un modello fondamentale: fetch, decode, execute, ripeti. Prende un po’ di dati codificati, li decodifica, esegue le istruzioni che contengono, e ricomincia. È talmente fondamentale che si usa ancora oggi.<br>
+Un algoritmo può essere scritto in pseudo-codice, cioè comprensibile da un essere umano.<br>
+Molto diverso è il codice per i computer:<br>
+Tempo fa l’unico modo era il codice assembly, che doveva essere cambiato ogni volta che un programma doveva essere usato su una macchina diversa. Questo rendeva impossibile il porting, cioè l’atto di rendere disponibile un programma su più macchine.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a> <a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Obiettivo: rendere la programmazione alla portata di molti.<br>
+Questo è legato al concetto moderno di natural interaction: per esempio, imparare a usare uno smartphone è intuitivo, perché c’è un lavoro dietro.<br>
+La soluzione fu l’invenzione dei linguaggi ad alto livello.<br>
+Chomsky, importante linguista, divise le lingue in 4 gruppi, tra cui i linguaggi formali.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Automa: macchina che esegue istruzioni.<br>
+A seconda del linguaggio ci sono automi diversi che comprendono linguaggi diversi.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a> <a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Quindi, i linguaggi di programmazione, essendo veri linguaggi, possono essere tradotti.<br>
+Traduzione: Prendere il contenuto semantico di una frase ed esprimerlo in un’altra lingua.<br>
+Si tiene lo stesso contenuto semantico, ma si cambiano la costruzione della frase, l’ortografia, e le altre cose che caratterizzano un linguaggio.<br>
+Traduttore (di lingue naturali): I.A. addestrata sulla traduzione.<br>
+I traduttori di linguaggi di programmazione sono molto più semplici, in quanto non hanno bisogno di tenere conto di ambiguità (contrario di univocità).</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+Molti termini dei linguaggi di programmazione sono presi da lingue naturali, perlopiù dall’inglese. È per questo che in C troviamo “if() else” e non “profl()”, semplicemente fa comodo a noi perché è una parola familiare.</p></div><div class="el-p"><p dir="auto">Ci sono linguaggi compilati e linguaggi interpretati.<br>
+Nei linguaggi compilati, come il C, viene prima controllato il codice per vedere se ha un significato logico, poi viene tutto tradotto in linguaggio macchina, e poi viene eseguito.<br>
+Nei linguaggi interpretati, si traduce, si esegue, traduci, esegui, sul momento.<br>
+I linguaggi interpretati erano passati di moda, ma poi python li ha salvati.</p></div><div class="el-h2"><h2 data-heading="Settimana 3" dir="auto" class="heading" id="Settimana_3_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 3</h2></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+L’architettura dei computer di oggi non è quella di 70 anni fa.<br>
+Abbiamo preferito adattare la programmazione ai nostri cervelli piuttosto che il contrario.</p></div><div class="el-p"><p dir="auto">Ci sono tre tipi di linguaggi:<br>
+Linguaggi naturali: hanno circa 40mila parole, spesso di significato ambiguo, che è la parte difficile, ma la punteggiatura si può usare “a orecchio”;<br>
+Linguaggi formali di alto livello: la parte difficile è che hanno regole strette, ma hanno circa 30 o 40 parole, e assecondano l’essere umano;<br>
+Linguaggi formali di basso livello: hanno regole strette e poche parole, ma non assecondano l’essere umano e sono più simili al linguaggio macchina.<br>
+Ci sono anche altri elementi, come l’ortografia, la sintassi e il lessico.</p></div><div class="el-p"><p dir="auto">In generale, i linguaggi umani hanno un lessico complesso ma sintassi semplice, mentre i linguaggi di programmazione hanno un lessico semplice, con pochissime parole chiave, e una sintassi complessa con regole strette.</p></div><div class="el-p"><p dir="auto">Un neonato conosce poche parole. Sa esprimere concetti, ma sono concetti semplici espressi in modo semplice.</p></div><div class="el-p"><p dir="auto">Si creano nuovi linguaggi di programmazione per adattarsi alle nuove caratteristiche delle macchine.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a> <a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a> <a href="?query=tag:generale" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#generale">#generale</a> <a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a><br>
+Turing: Può esserci una macchina ideale che può risolvere qualsiasi problema.<br>
+Macchina di Turing: Macchina con un foglio di carta infinitamente lungo.<br>
+Se un linguaggio di programmazione permette di risolvere qualsiasi problema è Turing-compatibile.<br>
+I primi programmi Turing-compatibili furono scritti in assembly.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+Quando programmiamo in un linguaggio di alto livello, creiamo un programma che da solo è inutilizzabile, in quanto non c’è una macchina che possa comprenderlo: non è il linguaggio macchina di nessuna macchina.<br>
+Serve dunque un processo di traduzione.</p></div><div class="el-p"><p dir="auto">“int main() …” è comprensibile per un essere umano.<br>
+“10110100101110100” è comprensibile per un computer.<br>
+Dobbiamo trovare un codice in linguaggio macchina che sia equivalente, cioè che abbia lo stesso contenuto semantico, del nostro codice in linguaggio di alto livello.<br>
+Se facciamo un programma in pascal, e facciamo un programma windows, un programma mac, e uno linux che siano equivalenti al nostro originale, e dunque, per proprietà transitiva, equivalenti tra di loro.</p></div><div class="el-p"><p dir="auto">Spesso bisogna aggiustare qualcosa nell’adattare un programma ad altri sistemi operativi, ma grazie ai linguaggi ad alto livello non bisogna cambiare molto.</p></div><div class="el-p"><p dir="auto">Ci sono due tipi di errore: un errore di compilazione è dovuto a un codice scritto male, un errore al runtime è dovuto a un ragionamento sbagliato.<br>
+C’è un tipo di file, un programma oggetto (file.o), scritto in linguaggio macchina, che però non è eseguibile.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Java: ‘80-‘90.<br>
+I processori stavano diventando sempre più piccoli, si cominciò a pensare di metterli negli elettrodomestici.<br>
+Il codice in Java viene prima compilato in bytecode, linguaggio universale, che poi viene interpretato sul momento in linguaggio macchina, quasi parola per parola.<br>
+Java si usa molto e funziona molto bene per cose programmabili che non sono esattamente computer, come le lavatrici e i navigatori.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+Grazie ai linguaggi di alto livello, non devo più sprecare tempo a capire il linguaggio macchina, basta risolvere il problema logico.<br>
+Nuovo problema: come ragiona l’essere umano?<br>
+Scomponiamo un problema in tanti problemi piccoli.<br>
+Lo facciamo sempre istintivamente, la nostra mente funziona così.<br>
+Scomponiamo un’azione in singoli passaggi, e i passaggi in piccoli movimenti.</p></div><div class="el-p"><p dir="auto">Per convenzione, qui si scrive da sinistra a destra.<br>
+Se la programmazione fosse nata 1000 anni fa, quando i più colti erano gli arabi, programmeremmo da destra a sinistra.<br>
+I programmatori arabi sanno adattarsi a scrivere sia un una direzione che nell’altra.</p></div><div class="el-p"><p dir="auto">Se ti dico “fai 12 passi”, non fai lo stesso passo 12 volte, ti “muovi”, perché cambi la condizione di partenza (lo stato del sistema).</p></div><div class="el-p"><p dir="auto">Un linguaggio di programmazione deve poter:<br>
+Descrivere le istruzioni in modo ordinato;<br>
+Selezionare tra due branche di codice secondo una condizione;<br>
+Iterare dei comandi cambiando lo stato iniziale;<br>
+Noi lo facciamo sempre, ma senza formalizzare questi passaggi.<br>
+Nei linguaggi di programmazione introduci costrutti che fanno queste tre cose.<br>
+I programmi hanno un punto di inizio e almeno uno di fine.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a> <a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Una domanda non aveva risposta fino al ‘66: I linguaggi di alto livello hanno la stessa capacità espressiva che ha l’assembly?<br>
+Corrado Böhm (uno dei fondatori dell’informatica in Italia) e il laureando Jacopini, nel ‘66, dimostrarono che l’insieme dei programmi che si possono scrivere in assembly, l’insieme di quelli che si possono scrivere in linguaggi di alto livello, e l’insieme di quelli risolvibili dalla macchina di turing sono in realtà tutti e tre lo stesso insieme.<br>
+Programmare sempre in assembly non è dunque obbligatorio.<br>
+Programmazione strutturata.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a></p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p>Metodologia:<br>
+Comprensione del problema<br>
+Modellazione del problema<br>
+??? del problema<br>
+??? del problema</p>
+</li>
+<li data-line="6" dir="auto">
+<p>In tutti i linguaggi di programmazione ci sono delle strutture di controllo:<br>
+Successione: Implicita, l’ordine in cui appaiono le istruzioni<br>
+Scelta: if() else<br>
+Iterazione: In C ha molte forme, ma in generale dopo ogni iterazione le condizioni di partenza cambiano, altrimenti sarebbe un loop infinito</p>
+</li>
+<li data-line="11" dir="auto">
+<p>Torniamo all’uovo tartufato…<br>
+Un contenitore ha:<br>
+Un nome (“80”);<br>
+Un tipo di cosa che può contenere (l’olio tartufato)<br>
+Un contenuto corrente (40 ml)</p>
+</li>
+</ol></div><div class="el-p"><p dir="auto">Una macchina automatica (gli dici cosa fare e lo fa) programmabile (sa fare più di una cosa)</p></div><div class="el-p"><p dir="auto">Dati in input -&gt; programma &lt;-&gt; dati di lavoro -&gt; programma -&gt; dati in output<br>
+Il programma è una funzione:<br>
+Prendiamo il programma<br>
+Descriviamolo come una funzione<br>
+Descriviamone la semantica funzionale</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Programma: una serie ordinata di cambiamenti di stato, che porta dallo stato iniziale, costituito solo dai dati di ingresso, a uno stato finale costituito dai dati di uscita.</p></div><div class="el-p"><p dir="auto">Prima dei linguaggi di programmazione, si conservavano valori direttamente in un indirizzo, ma quali dipendeva dall’architettura della macchina.<br>
+Ora invece astraiamo, usiamo nomi, e il singolo computer deciderà cosa farne.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Tavola dei simboli: Associa i nomi delle variabili (astratte) a degli indirizzi di memoria. Associa il modo in cui sono memorizzati i valori nel codice a come sono immagazzinati nella RAM, la memoria ad accesso casuale.<br>
+La tavola dei simboli è riempita dal compilatore, solo il compilatore sa com’è fatta.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Perché si chiama “ad accesso casuale”?<br>
+Le prime memorie di massa erano nastri: se ti serve l’indirizzo 50, devi scorrere dall’inizio fino al 50. È molto lento, ma va bene per immagazzinare dati.<br>
+Serve anche un modo per accedere ai dati velocemente, e la RAM può andare direttamente all’indirizzo 50 senza scorrere tutta la memoria, può leggere il valore appena mi serve.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a> <a href="?query=tag:algoritmi" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#algoritmi">#algoritmi</a><br>
+Le variabili sono dentro una macchina astratta e sono esse stesse astratte.<br>
+Lo stato del sistema è dato:<br>
+Dalla RAM (macchina fisica)<br>
+Dalle variabili (macchina astratta)</p></div><div class="el-p"><p dir="auto">Io, l’utente, conosco l’input, l’output, ma non conosco ciò che c’è in mezzo.</p></div><div class="el-p"><p dir="auto">Fisicamente, le variabili sono immagazzinate in ordine casuale.<br>
+Se dichiaro tre variabili x, y e z, può anche essere che si trovino agli indirizzi 679, 536 e 892.<br>
+Un po’ di storia.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+I primi linguaggi di programmazione furono:<br>
+Fortran (formula translation): primo linguaggio con un compilatore;<br>
+Lisp (list processor): primo linguaggio interpretato, circa ‘56. </p></div><div class="el-p"><p dir="auto"><a href="?query=tag:termine" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#termine">#termine</a><br>
+Sistema Operativo (OS): insieme di funzionalità di base per far funzionare un computer.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Il linguaggio C nasce alla fine degli anni ‘60, nel periodo dei primi tentativi di utilizzo di ARPAnet, alla Bell corporation: si sapeva già che le telecomunicazioni non erano destinate ad essere solo audio, ma anche altro.<br>
+Volevano fare un OS unificato per tutte le macchine nuove.<br>
+All’epoca sembrava impossibile programmare un OS con un linguaggio ad alto livello, venivano programmati sempre in assembly, ma fare un programma che si adatti a più macchine è esattamente lo scopo dei linguaggi ad alto livello.<br>
+Serviva dunque un linguaggio di programmazione ad alto livello.<br>
+Questo sembrava un progetto folle.<br>
+A un linguaggio di programmazione di alto livello serve un compilatore, un programma molto più semplice di un sistema operativo. Basta dunque fare i diversi compilatori in assembly.</p></div><div class="el-p"><p dir="auto">Il prossimo passo è fare il linguaggio.<br>
+C’era già chi stava lavorando a un linguaggio di programmazione alla Bell, si chiamava B.<br>
+Hanno deciso di adattare B al compilatore, quindi potevano adattare anche il compilatore.<br>
+Con grande fantasia, questa versione modificata di B venne chiamata C.</p></div><div class="el-p"><p dir="auto">I mainframe tennero i loro OS proprietari.</p></div><div class="el-p"><p dir="auto">Unix e C vennero sviluppati su PDP 11, un computer relativamente piccolo ed economico.<br>
+L’idea era di usare C per fare Unix, e poi abbandonarlo.<br>
+Però C piacque.<br>
+C’erano molti sviluppatori di linguaggi a basso livello che si rifiutavano di passare a linguaggi ad alto livello, ma C era un’ottima via di mezzo tra i due, che offriva la comodità dell’alto livello ma la totale libertà dell’assembly.<br>
+C, pur essendo ad alto livello, aveva bisogno della libertà dell’assembly perché, dovendo compilare un sistema operativo, doveva avere completo accesso alla macchina e a tutti gli elementi dell’OS.<br>
+Questo fece incuriosire gli sviluppatori di assembly, che passarono a C.</p></div><div class="el-p"><p dir="auto">Ancora oggi, 51 anni dopo, C è uno dei linguaggi più utilizzati e per questo, sebbene sia uno strumento troppo potente per dei principianti, è quello utilizzato nell’istruzione.</p></div><div class="el-p"><p dir="auto">A dire il vero, professor Scateni preferisce Pascal come linguaggio per insegnare, ma nessuno conosce Pascal, e ancora meno persone lo usano.</p></div><div class="el-h2"><h2 data-heading="Settimana 4" dir="auto" class="heading" id="Settimana_4_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 4</h2></div><div class="el-p"><p dir="auto"><a href="?query=tag:standard" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#standard">#standard</a> <a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a> <a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Un linguaggio di programmazione è qualcosa che dovrebbe essere standardizzato.<br>
+Molte cose sono standardizzate: i mattoni, l’USB…<br>
+Ci sono due organizzazioni per gli standard:<br>
+ISO, internazionale;<br>
+ANSI, americana.<br>
+E ci sono due tipi di standard:<br>
+De jure: ufficiali, come C89 e C90, rilasciati da un’organizzazione;<br>
+De facto: come il K&amp;R C, diventano standard solo perché li usano tutti.<br>
+Gli standard de facto sono come se, esempio assurdo, ci fossero tante marche di crema di nocciole e cioccolato, ma poi una diventa molto famosa, e tutte le altre cominciano a usare la stessa ricetta di quella famosa. È un esempio impossibile, certo, ma la logica è quella.<br>
+Gli standard del C sono sempre più simili al precedente, perché sarebbe un disastro se qualcosa che funziona in un vecchio codice improvvisamente smettesse di funzionare.<br>
+Un altro esempio di standard de facto è la posizione della leva della freccia a sinistra del volante: non c’è nessuna legge che lo impone, ma sarebbe orrendo se dovessi abituarti alla configurazione di ciascuna nuova macchina che guidi.<br>
+Perciò i linguaggi derivati dal C hanno tenuto molti elementi del C: Java, Per, C++, C#, quindi se sai il C, puoi imparare facilmente i suoi derivati.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+Non esiste il concetto di “questo si può programmare solo in C/C++/C#/JS/Java/…”.<br>
+Esiste “questo è più facile da programmare in C/…”. Al tuo datore di lavoro non importa.</p></div><div class="el-p"><p dir="auto">C ha caratteristiche dei linguaggi di basso livello che non ci aspettiamo da uno ad alto livello.<br>
+C può accedere a certe parti dell’architettura della macchina che non dovrebbero essere accessibili ai linguaggi ad alto livello.<br>
+Vi può accedere perché dovevano farci un sistema operativo.<br>
+Ma per questo motivo, C non è 100% portabile.<br>
+Il programmatore ha “troppo potere”, quindi C è più adatto agli esperti.<br>
+C di base non può neanche gestire input e output, usa delle librerie per farlo.<br>
+Eppure, è il primo linguaggio che si insegna, perché lo usano tutti.<br>
+(Questo ci porta alla differenza tra istruzioni del linguaggio e istruzioni delle librerie, più tardi)</p></div><div class="el-p"><p dir="auto">Secondo il professor Scateni, Pascal è un ottimo linguaggio per uso didattico.<br>
+C’è solo un problema con Pascal: è inutile.<br>
+Non lo usa nessuno.<br>
+C si usa perché è utile, è molto usato e lo sono anche i suoi derivati, è pieno di ottimi compilatori di C, quindi c’è poco da cambiare per il porting.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:storia" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#storia">#storia</a><br>
+Linux è stato fatto praticamente da una persona, Linus Pauling, sulla base di Unix.<br>
+L’idea: portare Unix ai personal computer (che ormai è una sottocategoria obsoleta)</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a> <a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a> <a href="?query=tag:goodpractice" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#goodpractice">#goodpractice</a><br>
+Donald Knuth ha fatto TeC, da cui deriva LaTeC.<br>
+TeC automatizza la qualità tipografica.<br>
+Knuth ha preso il manuale statunitense della buona scrittura e l’ha trasformato in codice.<br>
+È importante commentare il codice perché C può essere confuso e offuscato.<br>
+L’ideale è: 1 riga di codice, 1 riga di commento, circa.<br>
+È difficile modificare il codice di qualcun altro (o il proprio vecchio codice), soprattutto se non ci sono commenti.<br>
+Esistono addirittura gli Obfuscated C contests, dove meno si capisce, meglio è, e non c’è bisogno di aggiungere altro per far capire in che situazione è il C.</p></div><div class="el-p"><p dir="auto">Una regola molto importante per la progettazione di un programma è:<br>
+Prima scrivi i commenti, poi il codice.<br>
+I commenti sono il progetto originale, il codice è solo una traduzione!<br>
+E la traduzione deve essere 1:1, altrimenti:<br>
+O manca qualcosa nel commento, quindi è incompleto;<br>
+O il commento è innecessariamente lungo, quindi è ridondante.<br>
+Il commento è completamente ignorato dal compilatore.</p></div><div class="el-p"><p dir="auto">Il compilatore capisce se la sintassi è giusta. Solo la sintassi.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+Si può descrivere la sintassi di un linguaggio naturale (vedi anche slide).<br>
+Lo stesso si può fare per un linguaggio formale, e c’è una notazione specifica per farlo.<br>
+BNF: Backus e Naur si sono resi conto che serviva un sistema.<br>
+&lt;reale&gt; e &lt;cifra&gt; sono categorie sintattiche.<br>
+“blu”, “ligneo”, “3” eccetera sono simboli terminali.<br>
+Per esempio:<br>
+&lt;attribuzione&gt; ::= &lt;gruppo_nominale&gt; è &lt;aggettivo&gt;;<br>
+&lt;aggettivo&gt; ::= blu|rosso|basso|ligneo|…;<br>
+Dove “::=“ significa “può essere” e “|” significa “o”, la congiunzione.<br>
+L’insieme delle regole della sintassi di una lingua è detto grammatica.<br>
+[Regole dalle slide]<br>
+Per costruire una frase partiamo dal basso (voglio un reale) e andiamo in alto (32.21).</p></div><div class="el-table" dir="auto" style="overflow-x: auto;"><table id="obsidian-sheets-parsed"><thead><tr><th class="" row-index="0" col-index="0" style="text-align: center;">3</th><th class="" row-index="0" col-index="1" style="text-align: center;">2</th><th class="" row-index="0" col-index="2" style="text-align: center;">.</th><th class="" row-index="0" col-index="3" style="text-align: center;">2</th><th class="" row-index="0" col-index="4" style="text-align: center;">1</th></tr></thead><tbody><tr></tr><tr></tr><tr><td class="" row-index="2" col-index="0" style="text-align: center;">&lt;cifra&gt;</td><td class="" row-index="2" col-index="1" style="text-align: center;">&lt;cifra&gt;</td><td class="" row-index="2" col-index="2" style="text-align: center;">.</td><td class="" row-index="2" col-index="3" style="text-align: center;">&lt;cifra&gt;</td><td class="" row-index="2" col-index="4" style="text-align: center;">&lt;cifra&gt;</td></tr><tr><td class="" row-index="3" col-index="0" colspan="2" style="text-align: center;">&lt;sequenza_cifre&gt;</td><td class="" row-index="3" col-index="2" style="text-align: center;">.</td><td class="" row-index="3" col-index="3" style="text-align: center;">&lt;cifra&gt;</td><td class="" row-index="3" col-index="4" style="text-align: center;">&lt;cifra&gt;</td></tr><tr><td class="" row-index="4" col-index="0" colspan="2" style="text-align: center;">&lt;sequenza_cifre&gt;</td><td class="" row-index="4" col-index="2" style="text-align: center;">.</td><td class="" row-index="4" col-index="3" colspan="2" style="text-align: center;">&lt;sequenza_cifre&gt;</td></tr><tr><td class="" row-index="5" col-index="0" colspan="5" style="text-align: center;">&lt;reale&gt;</td></tr></tbody></table></div><div class="el-p"><p dir="auto">12 non è un reale.<br>
+È così che il compilatore decide come tradurre un numero da caratteri a linguaggio macchina (vedi FDI, rappresentazione dei numeri interi e razionali).<br>
+Lessico: insieme dei simboli e dei termini.</p></div><div class="el-p"><p dir="auto">I modelli linguistici generativi generano linguaggio da:<br>
+Sintassi;<br>
+Vocabolario;<br>
+Informazioni esterne.<br>
+[Vedi slide col diagramma ad albero etc]<br>
+G=(T, N, P, S)</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:vedioriginale" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#vedioriginale">#vedioriginale</a><br>
+Sintassi<br>
+Semantica<br>
+La tenda<br>
+V<br>
+V<br>
+Lo tenda<br>
+V<br>
+X</p></div><div class="el-p"><p dir="auto">”Lo tenda” al compilatore va bene, siamo noi che dobbiamo controllare la semantica.<br>
+Secondo la sintassi, “lo tenda” è giusto perché è “&lt;articolo&gt; &lt;nome&gt;”.</p></div><div class="el-h2"><h2 data-heading="Settimana 5" dir="auto" class="heading" id="Settimana_5_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 5</h2></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+Una frase di senso compiuto è una frase il cui significato è contenuti nella frase stessa.<br>
+Abbiamo imparato il nostro linguaggio naturale copiando gli altri e poi imparando le regole.<br>
+Per fortuna, per imparare i linguaggi di programmazione non si fa così, si studia prima tutta la parte formale, e poi si comincia a usarlo.<br>
+Costruiamo una frase, che nei linguaggi di programmazione è un programma.<br>
+Quando abbiamo solo simboli terminali abbiamo finito di costruire la frase.<br>
+“La tenda” e “lo tenda” sono entrambi sintatticamente corretti.<br>
+Ma, il secondo non ha senso semantico.</p></div><div class="el-p"><p dir="auto">Nella programmazione, la parte facile è correggere la sintassi, quella difficile è controllare che la semantica sia corretta, cioè ciò che voglio.<br>
+Non c’è semantica oggettivamente corretta, dipende da cosa voglio che faccia.<br>
+Alla sintassi ci pensa il compilatore.<br>
+Come si fa per la semantica?<br>
+Si controllano tutte le combinazioni input-output?<br>
+Certo, ma no, questo metodo è solitamente impossibile.<br>
+Inferno. Non c’è una risposta, mi dispiace.<br>
+Il compito di un bravo compilatore è fare un programma che sia facile da testare.<br>
+C’è tutto un ramo di studi per questa cosa.</p></div><div class="el-p"><p dir="auto">Per la sintassi, usiamo un grafo sintattico. [vedi slide]<br>
+È ancora più facile imparare il lessico.<br>
+È il contrario delle lingue naturali, dove la sintassi è semplice e il lessico è difficile.<br>
+Gli identificatori, essendo stati scelti dai progettatori dei del linguaggio di programmazione, non possono essere usati dal programma stesso.<br>
+Gli identificatori (o nomi) sono le parole del linguaggio. In C ce ne sono 33.<br>
+Tutti i linguaggi di programmazione sono così. Quello con più parole è Ada, sviluppato negli anni ‘70 dalla difesa statunitense per essere il miglior linguaggio per la sicurezza. Oggi lo usano solo loro. È il linguaggio con più parole riservate e ne ha 110.<br>
+Tra l’altro, in C ci sono più operatori che identificatori. Alcuni sono inutili per noi però.</p></div><div class="el-p"><p dir="auto">Quando il compilatore vede “/*”, ignora tutto e cerca un “*”. Se lo trova, se dopo c’è un “/“, riprende a compilare, altrimenti continua a ignorare.<br>
+Questo testo, ignorato dal compilatore, racchiuso tra “/*” e “*/“, si chiama commento.</p></div><div class="el-p"><p dir="auto">{<br>
+etc…<br>
+}</p></div><div class="el-p"><p dir="auto">Questo, racchiuso tra parentesi graffe, è un blocco di codice</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a> <a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+C è particolare, in quanto non ha istruzioni proprie per l’input e l’output, deve invece usare istruzioni di librerie esterne. Il primo programma che si fa vedere agli studenti (Hello World), non ha funzioni del linguaggio C. (Diciamo, ci sono nella definizione di printf()).<br>
+Perché 5+4=9?<br>
+L’addizione è una funzione a due variabili: (N, N)-&gt;N (da N cartesiano N ad N).<br>
++(5, 4) = 9.<br>
+L’addizione nei computer è un circuito stampato, interazioni tra impulsi elettrici.<br>
+Tra l’altro, in binario ti bastano 4 combinazioni di x ed y per fare x+y.<br>
+All’inizio si faceva con calcolatori meccanici. Con quelli elettronici è ancora più veloce.<br>
+Grazie ai linguaggi ad alto livello possiamo essere più sintetici e scrivere “5+4+5”.</p></div><div class="el-p"><p dir="auto">Noi scriviamo “4+5” e non “+ 4 5” perché ce l’hanno insegnato così.<br>
+Prendiamo “3+2*4”: un compilatore semplice direbbe che fa 20, andando in ordine.<br>
+Il compilatore deve trasformarlo in cose del tipo “ADD MUL R1” eccetera. Bel casino.<br>
+Deve leggere tutta l’espressione, riordinarla, e poi compilare.<br>
+(inserire grafo) Al compilatore piacerebbe farle in ordine.<br>
+Un’alternativa è cambiare le relazioni tra operatori e operandi.<br>
+“3+4” -&gt; “+ 3 4”, operatore-operando-operando.<br>
+“3+2*4” diventa + <em> 2 4 3, + </em> 2 4 3.<br>
+Questa si chiama tokenizzazione, e quelli sono 5 token.<br>
+Il ragionamento è questo:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Cosa c’è dopo?<br>
++ * 2<br>
+Non si può fare, riparto dal secondo token.<br>
+* 2 4<br>
+Ok, rimpiazzo questi tre token con uno solo, 8. Adesso ho 3 token in totale.<br>
++ 8 3<br>
+Ok, fa 11.</li>
+</ul></div><div class="el-p"><p dir="auto">Se non trova “&lt;operatore&gt; &lt;operando&gt; &lt;operando&gt;” non fa nulla.<br>
+(3+2)*4 è diverso: <em> + 2 3 4.<br>
+Questo metodo abolisce le parentesi grazie agli operatori prefissi.<br>
+Semplice, univoco, lo leggi e sai cosa devi fare.<br>
+Ma noi complichiamo la vita al compilatore per facilitarla a noi.<br>
+Il vantaggio degli operatori infissi è che sono anche separatori, è difficile scrivere bene gli spazi a mano per evitare che diventi “</em> +2 34”, il cui risultato è 68.</p></div><div class="el-p"><p dir="auto">Postscript è un linguaggio nato per descrivere pagine alle stampanti, sviluppato da Adobe, usato nella realizzazione del formato PDF. Quindi ha dominato il mondo. E appunto ha operatori postfissi.<br>
+Il linguaggio più diffuso che usa i prefissi è Lisp.<br>
+Si fece per adattare il linguaggio alla semplificazione del processo di traduzione.<br>
+Quando l’IA era ancora seria, senza media, senza Elon Musk, si usava Lisp.<br>
+Se rappresenti dati e programmi nello stesso modo, allora puoi outputtare programmi (programmi in Lisp) e questo fu chiamato machine learning: un programma che può modificare sé stesso.</p></div><div class="el-h2"><h2 data-heading="Settimana 6" dir="auto" class="heading" id="Settimana_6_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 6</h2></div><div class="el-p"><p dir="auto"><a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a><br>
+Calx (sasso) -&gt; calculus (sassolino) -&gt; calcolo renale, calcolo (sassolino dell’abaco).<br>
+Anche adesso, anche coi computer, calcolare è contare.<br>
+“Il computer sa fare…” = La macchina è progettata per fare…</p></div><div class="el-p"><p dir="auto">Mettere gli operatori infissi non è legge, è convenzione.<br>
+Se li mettessimo prefissi o postfissi, non servirebbero le parentesi, non servirebbe la precedenza degli operatori, si leggerebbe sempre da sinistra a destra.<br>
+La precedenza degli operatori è una proprietà implicita.<br>
+Se esiste, complichi la realizzazione del compilatore.</p></div><div class="el-p"><p dir="auto">Il C nasce per avere un compilatore semplice, eppure ha operatori infissi.<br>
+Più si va avanti, più i linguaggi di programmazione si fanno simili al linguaggio umano.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a><br>
+Ricorda che la divisione tra interi ha due risultati, anche se lo dimentichiamo.<br>
+Da dire che 7:5 = 1R2 passiamo a dire che 7:5=1,4.<br>
+Un’operazione però può avere un solo risultato, quindi separiamo la divisione intera in due: la divisione 7/5=1 e il modulo 7%5=2.<br>
+Un tempo sapevamo che un’operazione può avere due risultati, ma ce l’hanno fatto dimenticare dopo le elementari.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:boh" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#boh">#boh</a> <a href="?query=tag:linguaggiomatematico" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggiomatematico">#linguaggiomatematico</a> <a href="?query=tag:linguaggio" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggio">#linguaggio</a> <a href="?query=tag:linguaggiosimboli" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#linguaggiosimboli">#linguaggiosimboli</a><br>
+Che tipo di numero è 25? Domanda ridicola, è 25.<br>
+Comunque è un numero naturale.<br>
+Facendo parte di N, fa parte anche di Z, quindi di Q, quindi di R.<br>
+Nei computer, ci sono due tipi di numero: int e float, completamente separati.<br>
+Z fa parte di Q, ma int non fa parte di float.<br>
+Gli int e i float sono gestiti da parti diverse del processore.<br>
+L’operatore “+” è uno, ma è bino (tipo Dio che è trino), perché è un simbolo, ma ha due operazioni, molto diverse in linguaggio macchina.</p></div><div class="el-p"><p dir="auto">13+43, leggi gli operandi e capisci che “+” è l’operazione dell’addizione intera, lo capisci a partire dalle regole implicite del linguaggio.<br>
+2.5+3.2, stessa cosa, sai che è un’addizione reale.<br>
+3+1.3 e ora? NcZ, quindi è un’addizione reale.<br>
+E questa non è una particolarità del C.</p></div><div class="el-p"><p dir="auto">Ci sono 5 simboli per le operazione aritmetiche (+ - <em> / %), ma 9 operazioni.<br>
++ - </em> / sono operatori sovraccarichi, overloaded, hanno più di un’operazione ciascuno.<br>
+La soluzione è fare nuovi simboli: 13+43 e 2.5☺3.2, eccetera.<br>
+Potrei? Sì. Quanto mi conviene? Poco.<br>
+Converrebbe molto al compilatore, ma facciamo un compromesso.<br>
+OCaml li distingue.</p></div><div class="el-p"><p dir="auto">Per quanto riguarda la precedenza, la possiamo modificare co due separatori, ().<br>
+Sono strani però: 8-3*2 = 3-(3*2). Non cambia nulla ma è sintatticamente corretto.<br>
+8(-3<em>)2 invece no, perché -3</em> non è un’operazione.<br>
+Il C ha 35 operatori, con 15 livelli di precedenza.<br>
+Per l’associatività, vedi slide.<br>
+L’associatività è LTR per 5-4+3 e RTL per +-k.</p></div><div class="el-p"><p dir="auto"><a href="?query=tag:algoritmi" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#algoritmi">#algoritmi</a> <a href="?query=tag:bohguarda" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#bohguarda">#bohguarda</a> <a href="?query=tag:checasino" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#checasino">#checasino</a><br>
+È possibile che l’intero programma sia un’unica valutazione con tutti gli input e tutti gli output.<br>
+Non succede mai.<br>
+Abbiamo stabilito che un programma deve cambiare passo-passo lo stato del sistema, tramite delle assegnazioni.<br>
+Il succo dello scrivere il programma è capire quali assegnazioni fare.</p></div><div class="el-p"><p dir="auto">L’assegnazione ha tre ingredienti:<br>
+1 variabile;<br>
+1 espressione;<br>
+1 simbolo.<br>
+E che simbolo?<br>
+Una freccia?<br>
+var &lt;- expr<br>
+Bello. Intuitivo. Ma non c’è nella tastiera.<br>
+Una sorta di freccia?<br>
+var &lt;-- expr<br>
+Non lo usa nessun linguaggio. Peccato, è carino.<br>
+Una lettera?<br>
+var w expr<br>
+La w è inutile, no? Non serve a niente, usiamola qui. Però dai è una lettera, evitiamo lettere e cifre, usiamo la punteggiatura.<br>
+Quindi della punteggiatura.<br>
+var := expr<br>
+No, non è un metaforico simbolo fallico. Bellino, si usa in Pascal. Ma, c’è un problema. Sono due simboli. Si fanno tante assegnazioni, è scomodo.<br>
+Togliamone uno.<br>
+var = expr<br>
+Esattamente ciò che usa il C.</p></div><div class="el-p"><p dir="auto">Che scelta tragica. Sì ok dopo l’assegnazione sono effettivamente uguali, ma non è proprio la cosa più sensata. Sto prendendo il simbolo matematico che dice “sono uguali!” e lo sto usando per fare un’azione. Lo sto rendendo dinamico.<br>
+Forse non era la scelta più sensata. C fu il primo a fare così, seguito dai suoi derivati.<br>
+Dai, è solo una convenzione, potevo chiamarlo “pippo” e invece è “=“, non cambia niente.<br>
+Non è vero, vedremo più avanti i problemi che causa.</p></div><div class="el-p"><p dir="auto">Le operazioni sono calcoli, le istruzioni sono cambiamenti dello stato del sistema.<br>
+Quindi l’assegnamento è LA istruzione.<br>
+In tutti i linguaggi imperativi lo è.<br>
+In C è un operatore.<br>
+PERCHÉ? CHE SENSO HA?<br>
+Uno solo: puoi fare i=j=k=0 per rendere tutti 0.<br>
+L’operatore = cambia il valore di var in expr e restituisce expr.<br>
+È un’operazione, ha un risultato.<br>
+È diverso dagli altri operatori. “3+5” è 8 ma non fa nulla. “a=5” è 5 ma cambia a.<br>
+Questo cambiamento è un side effect.<br>
+Quella che negli altri linguaggi è la sua azione fondamentale diventa un effetto collaterale.<br>
+C è stato sviluppato con una macchina con 56 KiB di memoria! Serviva la compattezza di<br>
+i=j=k=0. Adesso che non abbiamo questi problemi possiamo anche dimenticarcene.<br>
+I linguaggi di alto livello non hanno una macchina che li possa capire.<br>
+Però, grazie alla traduzione, c’è una macchina astratta che lo capisce.<br>
+Il programma della macchina astratta è totalmente equivalente a quello reale.<br>
+Tutti gli stati e i cambiamenti di stato del programma astratto equivalgono a quelli reali.</p></div><div class="el-p"><p dir="auto">Assegnazione. È il concetto fondamentale.</p></div><div class="el-p"><p dir="auto">Operazioni: valutare espressioni.<br>
+Istruzioni: modificare lo stato del sistema.<br>
+Di queste due grandi famiglie di azioni, diremmo che l’assegnamento è un’istruzione.<br>
+Eppure in C è un’operazione.<br>
+Soluzione: facciamo finta di no, dimentichiamocene.<br>
+Ce ne dobbiamo ricordare nel caso in cui facciamo un errore.</p></div><div class="el-p"><p dir="auto">Nella buona progettazione di un linguaggio di programmazione, si evitano i side effect.<br>
+I side effect sono uno scopo accessorio spesso indesiderato, ma nell’assegnazione è l’effetto voluto e quello che ci si aspetta come primario.<br>
+Il linguaggio Haskell è 100% funzionale, può solo modificare lo stato e non ha side effect.<br>
+I linguaggio Scala ha una caratteristica nel mercato: i programmatori di Scala sono pagati di più. Questo è perché Scala è usato in ambienti finanziari, dove girano molti soldi.</p></div><div class="el-p"><p dir="auto">3=2 non si può fare.<br>
+L’L-value deve essere un contenitore: gli unici contenitori che abbiamo visto sono le variabili.<br>
+La semantica dell’assegnamento è:<br>
+Valuta l’R-value;<br>
+Restituisce il risultato;<br>
+Side effect: sostituisce il contenuto dell’L-value col risultato.</p></div><div class="el-p"><p dir="auto">Un linguaggio di programmazione senza variabili sembra un concetto strano.<br>
+È strano. Se ti interessa, guarda Haskell.</p></div><div class="el-p"><p dir="auto">Se il comportamento del programma si basa sullo stato 1, ma lo stato 1 è indeciso, c’è un problema di indecidibilità.<br>
+Quindi, il programma va inizializzato.<br>
+Esempio:<br>
+int i, j, k;<br>
+k = i + j;</p></div><div class="el-p"><p dir="auto">Quanto vale k? Boh.<br>
+Non è un errore sintattico, la sintassi non obbliga a inizializzare le variabili.<br>
+(Per esempio, inizializzare k è inutile).<br>
+Talvolta non è neanche un errore semantico.<br>
+Questo è un errore concettuale.<br>
+Per sicurezza, inizializziamo sempre tutto. Al massimo il compilatore semplifica.<br>
+int i = 3;</p></div><div class="el-p"><p dir="auto">Non è un’assegnazione, ma fa la stessa cosa.<br>
+Se non inizializzi, il compilatore ti dà un ignorabilissimo warning.<br>
+Li leggi gli warning? No, quando mai, non li legge nessuno.<br>
+Assegnamento composto</p></div><div class="el-p"><p dir="auto">Aggiornare il valore di una variabile: a=a+2.<br>
+Visto che è molto frequente, è stato introdotto a+=2.<br>
++= e non =+: per ricordartelo, tieni a mente che prima fai il + (a+2) e poi l’= (l’assegnazione).<br>
+Cursed. Ora è proprio un’operazione pur essendo un’assegnazione, anche concettualmente.</p></div><div class="el-p"><p dir="auto">Problema:<br>
+a<em>=3+2 si può interpretare in due modi:<br>
+(a = a </em> 3) + 2;<br>
+a = a <em> (3 + 2): corretta.<br>
+La semantica è questa:<br>
+Valuta l’R-value: 3+2=5;<br>
+Valuta L-value</em>R-value: a*5 = 5a;<br>
+Assegnazione: a = 5a;<br>
+Esiste per l’efficienza, per quei 58 KiB di memoria.<br>
+È ridondante ma è efficiente per il compilatore: si traduce direttamente come ADD R1 R2.<br>
+Ecco perché ci sono così tanti operatori.</p></div><div class="el-p"><p dir="auto">Parliamo di qualcosa di ancora più efficiente.<br>
+Anziché i=i+1, anziché i+=1, scriviamo i++.<br>
+Essendo un operatore di assegnamento, l’L-value deve essere un contenitore.<br>
+Ci sono quelli prefissi e quelli postfissi: ++i e i++.<br>
+Fanno la stessa assegnazione, ma cambia il risultato.<br>
+Se i=1, i++ viene valutato 1, mentre ++i viene valutato 2.<br>
+Quindi posso fare j = i++ + ++i.<br>
+ECCO. Ci siamo arrivati. Ecco la maledizione.<br>
+Questi sono operatori di assegnazione e sono dentro un’espressione.<br>
+E SI USANO, CAZZO! È PRASSI COMUNE!<br>
+Quando si usano questi operatori, si valuta e si ha un side effect.<br>
+In un’espressione di solito non ci sono side effect, si valuta e basta.<br>
+In un’assegnazione di solito si ignora la valutazione, si usa il side effect.<br>
+Questo ha entrambi. Cursed.</p></div><div class="el-p"><p dir="auto">Questi operatori hanno la più alta priorità, gli altri operatori di assegnamento ce l’hanno bassissima. ++i ha più priorità di i++.<br>
+Di forma, gli operatori del C fanno schifo, ma sono efficientissimi.</p></div><div class="el-p"><p dir="auto">Vediamo un programma con due righe, e i valori dopo ciascuna riga.<br>
+i<br>
+j<br>
+k<br>
+int i=3, j=2, k;<br>
+1<br>
+2<br>
+?<br>
+k = ++i + j++;<br>
+2<br>
+3<br>
+4</p></div><div class="el-p"><p dir="auto">Questo equivale a:</p></div><div class="el-p"><p dir="auto">int i=3, j=2, k;<br>
+i = i + 1;<br>
+k = i + j;<br>
+k = j + 1;</p></div><div class="el-h2"><h2 data-heading="Settimana 7 (prima del parziale)" dir="auto" class="heading" id="Settimana_7_(prima_del_parziale)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 7 (prima del parziale)</h2></div><div class="el-p"><p dir="auto">TUTTE le risposte a TUTTE le domande del mondo.</p></div><div class="el-p"><p dir="auto">Per le domande del tipo “Quali di queste?”, o è sì o è no, nient’altro.<br>
+“Non è del ‘78 perché la primissima edizione è del 31 dicembre 1977 STA CERCANDO DI FREGARMI” no. Non ci sono domande a trabocchetto.</p></div><div class="el-p"><p dir="auto">Per le domande a risposta multipla, vediamo quattro tipi di studente:<br>
+“Questa è vera di sicuro, metto vera solo questa”: 1/2 risposte giuste, 0,5pt;<br>
+“Queste due sono vere di sicuro”: 2/2 risposte giuste, 1pt;<br>
+“Queste due sono vere di sicuro”: 1 giusta e 1 sbagliata, -0,5pt;<br>
+“Queste tre sono vere di sicuro”: 2/2 giuste ma 1 sbagliata, -0,5pt;<br>
+Ne basta una sbagliata per annullare quelle giuste.</p></div><div class="el-p"><p dir="auto">Didattica: Scienza dell’insegnamento.<br>
+Docimologia: Scienza della valutazione.</p></div><div class="el-p"><p dir="auto">Vediamo le domande del parziale dell’anno scorso.</p></div><div class="el-p"><p dir="auto">Ho “- / 80 2 4”.</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>/ 80 non esiste;<br>
+/ 80 2 è 40;</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>40 4 è 36.</li>
+</ul></div><div class="el-p"><p dir="auto">Bello sarebbe l’operatore +/-. 3 +/- 2, bello. Quanto fa? Boh, più o meno all’incirca siamo lì.</p></div><div class="el-p"><p dir="auto">Se chiamo la variabile “precipitevolissimevolmente” ma mi accorgo che usa tropppa memoria, quindi la abbrevio a “precipitevolissime” con l’istruzione di accorciamento della variabile, che usa la parola chiave stocazzo.</p></div><div class="el-p"><p dir="auto">L’anno scorso c’erano circa 2,3 risposte esatte per domanda. È quest’anno? Heh.</p></div><div class="el-p"><p dir="auto">Se sbagli, puoi mettere un “NO” vicino alla casella sbagliata.</p></div><div class="el-p"><p dir="auto">Per la domanda su i, j, k.<br>
+Se dai solo i valori e il resto lo lasci in bianco, 1,5pt.<br>
+Con uno o più valori errati, 0pt.<br>
+Puoi scrivere così:</p></div><div class="el-p"><p dir="auto">T1<br>
+T2<br>
+T3<br>
+Linea<br>
+Read<br>
+Write<br>
+i<br>
+4<br>
+4<br>
+4<br>
+1<br>
+0<br>
+0 (3 con int i=4)<br>
+j<br>
+3<br>
+3<br>
+4<br>
+2<br>
+2<br>
+1<br>
+k<br>
+2<br>
+2<br>
+2<br>
+3<br>
+3<br>
+2<br>
+perché</p></div><div class="el-p"><p dir="auto">6-2=4<br>
+k = k<em>(i/++j) = 2</em>(4/4))<br>
+Totale<br>
+5<br>
+3 (o 6)</p></div><div class="el-p"><p dir="auto">La risposta alla domanda dopo è i: 3, 4; j: 3, 2.</p></div><div class="el-p"><p dir="auto">Per i += --i * j++, quale side effect accade prima? += o --?<br>
+Boh, dipende. Dato il risultato, dimmi la logica imprevedibile che ha portato a quel calcolo.</p></div><div class="el-h2"><h2 data-heading="Settimana 9" dir="auto" class="heading" id="Settimana_9_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 9</h2></div><div class="el-p"><p dir="auto">(ho saltato 3 lezioni)<br>
+Tipi equivalenti, tipi compatibili, operandi.</p></div><div class="el-p"><p dir="auto">Il nome del tipo può cambiare da un linguaggio a un altro.<br>
+Quasi sempre, ci sono almeno quattro tipi di tipi differenti tipi:<br>
+Booleani;<br>
+Interi;<br>
+Reali;<br>
+Caratteri.</p></div><div class="el-p"><p dir="auto">Booleani:<br>
+Il tipo booleano è un tipo discreto (enumerabile), con solo due valori possibili, vero e falso.<br>
+Per rappresentare un booleano basterebbe un solo bit, ma per come sono fatti i computer è difficile usare un solo bit in un byte, quindi si usa comunque un byte intero.<br>
+Il C è strano, di base non ha un tipo booleano (c’è dal C99, ma molti non lo usano).<br>
+Tra l’altro, avete notato che il tipo booleano in C è diverso dagli altri? È _Bool.<br>
+Non c’è nessun altro tipo in C che comincia con un underscore e una maiuscola.<br>
+Avete visto _Int o _Float? No!<br>
+Il motivo è che prima dell’introduzione del tipo booleano nativo, molti avevano definito il proprio tipo booleano, usando typedef… Però non abbiamo ancora fatto typedef, quindi facciamo finta che si usi define.<br>
+Molti avevano nel loro codice qualcosa di simile a <a href="?query=tag:define" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#define">#define</a> boolean int, per fare cose come boolean flag; e fingere di avere un tipo booleano.<br>
+Per evitare conflitti, per mantenere l’importantissima backwards compatibility, lo standard C non poteva usare boolean o bool, quindi è stato scelto qualcosa che sicuramente non ha mai usato nessuno.</p></div><div class="el-p"><p dir="auto">Caratteri:<br>
+I computer sono number-cruncher, non hanno lettere.<br>
+Noi mappiamo le lettere sui numeri, secondo una codifica.<br>
+La codifica più diffusa è ASCII, di ANSI, poi adottata da ISO.<br>
+ASCII aveva rimpiazzato la codifica EDCDC di IBM.<br>
+ASCII nasce sostanzialmente con UNIX (che nasce da MULTICS, con CS finale tra l’altro).<br>
+ASCII lavora su 7 bit, perché bastavano 128 caratteri.<br>
+Non ci sono lettere accentate, ma agli americani non servono, a loro bastano 128 caratteri.<br>
+I computer lavorano comunque su byte interi, quindi mappando caratteri ASCII su byte, un bit di ogni byte era sprecato.<br>
+La soluzione fu di usare quell’ottavo byte nella codifica ASCII estesa, che raddoppiava il numero di caratteri disponibili.<br>
+Questi 128 caratteri aggiuntivi non erano determinati da un’unica codifica, ma ogni paese assegnava 128 caratteri di cui aveva bisogno. L’estensione, la seconda pagina usata nella maggior parte dell’Europa si chiama Latin-1.<br>
+C usa l’ASCII esteso, solitamente con Latin-1.<br>
+In N, ogni numero ha un precedente e un successivo.<br>
+R è infinitamente denso, quindi questi concetti non esistono.</p></div><div class="el-p"><p dir="auto">C ti permette di usare numeri senza segno, che hanno un valore massimo doppio rispetto al valore massimo dei numeri normali.<br>
+Un altro insieme numerico che può servire è quello dei numeri complessi; l’unico linguaggio mainstream che li supporta nativamente è Fortran, che si usa molto in ambiti scientifici.<br>
+Ci sono anche linguaggi che aumentano la precisione quando serve (precisione arbitraria).</p></div><div class="el-p"><p dir="auto">Una volta che hai deciso quanti bit usare per una variabile, c’è un numero finito di possibili valori rappresentabili.</p></div><div class="el-p"><p dir="auto">Ci sono 8 tipi per i valori interi in C. [vedi slide]<br>
+unsigned e unsigned int sono lo stesso tipo.<br>
+Questi tipi sono fossili di un’epoca in cui bisognava ottimizzare l’utilizzo della memoria.<br>
+Adesso abbiamo a disposizione memoria per memorizzare miliardi di numeri.<br>
+Ai tempi, appena qualche centinaio.</p></div><div class="el-p"><p dir="auto">[metti disegno]</p></div><div class="el-p"><p dir="auto">Il compilatore può decidere quanti bit allocare a una variabile. È un problema?<br>
+Sì, in realtà.<br>
+C’è prassi, ma non c’è obbligo. [vedi slide]</p></div><div class="el-p"><p dir="auto">“A noi del sistema di tipi non ce ne frega niente” (o qualcosa del genere)<br>
+-Ritchie</p></div><div class="el-p"><p dir="auto">In C, i caratteri sono ancora una volta degli interi.<br>
+Quindi si possono mescolare con gli interi. Terrificante.<br>
+‘a’ ha valore 97, quindi è il 98esimo carattere [ignora slide]</p></div><div class="el-p"><p dir="auto">Per i reali all’inizio si è cominciato dalla fixed point, che ha fatto schifo.<br>
+Come visto in FDI, si è presto passati alla floating point.<br>
+I reali in C sono float e double.</p></div><div class="el-p"><p dir="auto">123 è decimale, 0123 è ottale, 0x123 è esadecimale.<br>
+Perché proprio ottale ed esadecimale?<br>
+Quante cifre binarie è una cifra decimale? Boh, 4 o 5 fai.<br>
+Quante cifre esadecimale o ottali? Precisamente 4 e 3. Utile.</p></div><div class="el-p"><p dir="auto">Quando a=expr, ci sono dei controlli.<br>
+Nei linguaggi tipati staticamente, a ed expr devono essere dello stesso tipo.<br>
+Se non lo sono, si casta, già visto.<br>
+10+4.5 non va bene, devo fare (float) 10+4.5.<br>
+Ma. Se. Se. Se. Se. Se. Se.<br>
+Se. Il sistema dei tipi del mio linguaggio mi dice che sono tipi compatibili, posso farlo senza cast espliciti.<br>
+Regola di compatibilità del sistema dei tipi del C:<br>
+Posso sommare una quantità intera e una reale.<br>
+Prima devo convertire l’intero in reale.<br>
+Regola di inferenza del sistema dei tipi del C:<br>
+Se sommo un intero e un reale, devo usare l’addizione reale.<br>
+Int, char e bool sono compatibili perché sono lo stesso tipo.<br>
+Non c’è da fare nessuna cazzo di conversione, e sostanzialmente non c’è da fare nessuna inferenza.<br>
+[vedi slide su sh=lo]<br>
+Il problema è che tutto questo è legale nel sistema dei tipi.<br>
+La soluzione sarebbe evitare che si possa compilare, ma perderesti libertà.<br>
+Le regole di compilazione aiutano, ma hanno un costo, e possono generare errori che talvolta sono difficili da notare.</p></div><div class="el-p"><p dir="auto">Equivalenza, compatibilità e inferenza sono regole che completano la grammatica: la grammatica, purtroppo, da sola non basta.</p></div><div class="el-p"><p dir="auto">Più un sistema di tipi è debolmente tirato, più c’è compatibilità tra tipi.<br>
+Ciò nasce da Caml, che non è tipata, cioè usa solo i tipi dell’hardware.<br>
+Quando si introduce un sistema di tipi in C, ci si rifà al non-sistema di tipi di Caml.<br>
+In OOP, i tipi sono eliminati e rimpiazzati dalle classi.<br>
+Quando si crea un sistema di tipi, si hanno due opzioni:<br>
+Non estensibile: usi solo i tipi predefiniti;<br>
+Estensibile: puoi creare nuovi tipi.<br>
+In C, typedef permette di creare nuovi tipi equivalenti ai vecchi tipi.<br>
+A che serve? A livelli semplici, per puri motivi linguistici.<br>
+typedef char Char e voi mi direte: “Cosa me ne faccio di tutto questo?”<br>
+Per convenzione, per prassi, i nuovi tipi si definiscono con la maiuscola.<br>
+Cosa succede? All’interno della mia tavola dei simboli, viene inserito Char con valore char.<br>
+Tavola dei simboli: simboli non definiti dal linguaggio.<br>
+Da questo momento in poi, Char è utilizzabile come tipo predefinito del linguaggio.<br>
+NON C’È DISTINZIONE TRA NUOVI TIPI E TIPI PREDEFINITI DEL LINGUAGGIO.</p></div><div class="el-p"><p dir="auto">La differenza tra <a href="?query=tag:define" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#define">#define</a> e typedef è sottile ma sostanziale.<br>
+<a href="?query=tag:define" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#define">#define</a> avviene un passo prima della compilazione.<br>
+C’è un modo per far eseguire solo il preprocessing sul tuo codice. Le macro vengono sostituite, gli “#include” vengono sostituiti dal codice di ciò che viene incluso, e viene visualizzato il codice così come sarà ricevuto dal compilatore.<br>
+Euro bill=20Euro e float bill=20.0 hanno lo stesso identico contenuto semantico.<br>
+La differenza è prettamente linguistica, perché i tipi Euro e float sono equivalenti.<br>
+I tipi equivalenti sono anche meglio dei tipi compatibili: non devi neanche fare conversioni.<br>
+Quando due tipi sono compatibili, ci sono due tipi di conversioni possibili:<br>
+Implicite: type coercion;<br>
+Esplicite: casting.</p></div><div class="el-p"><p dir="auto">Definire tipi è utile quando definisci qualcosa che non esiste.</p></div><div class="el-p"><p dir="auto">Comunque un’enum in C è essenzialmente una macro di interi.<br>
+Questo approccio lazy del C ha fatto risparmiare nello scrivere il compilatore.</p></div><div class="el-p"><p dir="auto">Il C originale era molto weakly typed. Con le revisioni, con gli standard, come C89, si è rafforzato, ma è ancora molto weak.</p></div><div class="el-p"><p dir="auto">All’interno del file, la posizione migliore per un typedef è prima del main().<br>
+L’ultimo argomento dei tipi è molto interessante, anche se non sembra molto collegato: array e matrici.<br>
+Fa comodo avere coerenza strutturale.<br>
+Se la locazione in memoria x è Gennaio, ha senso dare x+1 a Febbraio e così via.<br>
+E quindi ci sarà da qualche parte Dicembre a x+11. Che bello.<br>
+Passiamo dalle locazioni di memoria (realtà) alle variabili (astrazione).<br>
+Se voglio astrarre questo modello, posso avere int janincome, febincome,…<br>
+Ma così avrò qualcosa del genere:<br>
+locazione di memoria<br>
+546<br>
+227<br>
+938<br>
+389<br>
+mese<br>
+gennaio<br>
+febbraio<br>
+aprile<br>
+marzo</p></div><div class="el-p"><p dir="auto">12 diversi indirizzi da memorizzare. Preferisco memorizzare solo 546, e poi ricavare gli altri.<br>
+Dichiaro invece int income[12].<br>
+Le la variabile di Dicembre sarà a income[11], cioè all’indirizzo 546+11.<br>
+Le parentesi quadre sono uno strano operatore circonfisso, l’operatore di indicizzazione, che permette di specificare l’offset da aggiungere all’indirizzo della prima variabile.<br>
+Si tratta di offset, non di posizione, quindi la prima variabile ha offset/indirizzo 0, non 1.<br>
+Questo ha senso per il compilatore, ma è pessimo per il programmatore.<br>
+A sproposito, Scateni consiglia vivamente di lasciare da parte l’under_score.<br>
+a[1] === a[1.5], l’indice viene arrotondato per difetto.<br>
+int a[100] = {0} inizializza tutto a 0, e l’array si prende 100 locazioni di memoria, che senza l’inizializzazione sarebbero piene di datori casuali.</p></div><div class="el-p"><p dir="auto">Quando scrivo a[100], dove viene memorizzato quel “100”? Nella tavola dei simboli!<br>
+Ma in effetti forse no sai? Ho sempre dato per scontato che lo fosse ma in effetti non serve a niente.<br>
+Ci informeremo.<br>
+[non ci siamo informati]</p></div><div class="el-p"><p dir="auto">Quando dichiari a[3][4], 4 è l’indice interno e 3 è l’indice esterno:<br>
+{</p></div><div class="el-p"><p dir="auto">{▭, ▭, ▭, ▭},<br>
+{▭, ▭, ▭, ▭},<br>
+{▭, ▭, ▭, ▭}<br>
+}</p></div><div class="el-h2"><h2 data-heading="Settimana 10" dir="auto" class="heading" id="Settimana_10_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 10</h2></div><div class="el-p"><p dir="auto">SUB-ROUTINE<br>
+Com- nellalalah… Beh, forse nella vita di tutti i giorni non si usa… Avere una routine significa fare la stessa cosa nello stresso ordine nello stesso modo ogni volta. È la definizione di programma.<br>
+In Golf, dove Scateni ha tanta determinazione ma scarsi risultati, si parla di routine. I linguaggi di programmazione, rispetto ai linguaggi naturali, sono formali,<br>
+Sotto-, come interpretiamo ‘sto sotto? Sottoparte del problema complessivo. Scomposizione del problema.</p></div><div class="el-p"><p dir="auto">Un grande classico quando si parla di programmazione è fare confronti con la cucina.<br>
+Esempio: olio tartufato lasagne al forno.<br>
+Serve il ragù, la besciamella, e la pasta.<br>
+Ma il ragù della pasta al forno è quello dei tortellini sono lo stesso ragù. E magari compri il ragù già fatto e non sai neanche come si fa.<br>
+La successione di un programma è una successione di cambiamenti di stato controllati da iterazioni che lavorano tramite formule matematiche.<br>
+Astraiamo. Non abbiamo il controllo su ogni singola istruzione, abbiamo il controllo su un’unica istruzione gigante: non sappiamo come fa qualcosa, ma sappiamo che lo fa.<br>
+Dal più concreto al più astratto, ci sono il linguaggio macchina, gli HLL, e l’istruzione gigante.<br>
+Le azioni giganti non sono definite dal linguaggio, ma dalle subroutine.</p></div><div class="el-p"><p dir="auto">NON COME, MA COSA<br>
+DAL 20 AL 26 NOVEMBRE<br>
+UNICASTORES<br>
+SCONTI DEL BLACK BOX</p></div><div class="el-p"><p dir="auto">Per un neofita (bella parola, neofita), non c’è distinzione tra istruzioni del linguaggio e subroutine, ma in realtà la differenza è enorme.</p></div><div class="el-p"><p dir="auto">Le variabili sono astrazione delle posizioni di memoria, e la forma più basica di astrazione dei dati. In OOP, il principale modello di astrazione dei dati sono le classi.</p></div><div class="el-p"><p dir="auto">Quando si usa una subroutine, in inglese si dice che si effettua una subroutine call, ma in italiano diciamo invocazione di una subroutine. Tipico pathos italiano, non la chiamiamo, la invochiamo.<br>
+Subroutine: senza che noi sappiamo come, fa qualcosa che sappiamo.<br>
+“Black box”, scatola nera. Dati in, processo ininfluente, dati out.<br>
+Chi ha fatto le funzioni di std? Boh. Saranno passati 40 anni. Non ci interessa.<br>
+Ci basta la lista di parametri. Il numero va da 0 a molti, valore che dipende dal compilatore.<br>
+Una subroutine che restituisce un valore è una funzione, come in matematica, mentre una che compie azioni senza restituire niente è una procedura.<br>
+Per dichiarare una subroutine servono queste cose:<br>
+Un nome (un identificatore);<br>
+Se ha un risultato o no, e se sì di che tipo;<br>
+Quanti parametri ha, e se ne ha di che tipo sono.<br>
+Per esempio, double sqrt(double) restituisce un valore double e prende un parametro double.<br>
+Nei nostri programmi, anche se non compare nel nostro codice, questa funzione è dichiarata perché includiamo math.h, che contiene questa dichiarazione.</p></div><div class="el-p"><p dir="auto">I file .h che includiamo sono dei file header, che contengono le dichiarazioni in C, mentre il vero codice è in assembly ed è contenuto nell’associato file .o.<br>
+“math.h è una libreria” è una stronzata colossale, math.h è solo l’intestazione (header).<br>
+I file header sono a corredo della libreria.</p></div><div class="el-p"><p dir="auto">double sqrt(double) è una signature. Non ci possono essere due subroutine con la stessa signature, ma possono essercene con lo stesso nome e signature diverse.</p></div><div class="el-p"><p dir="auto">Le funzioni sono praticamente operatori prefissi.<br>
+3+4 è come add(3,4).</p></div><div class="el-p"><p dir="auto">Le procedure si dichiarano come void foo(int, int).<br>
+Si introduce questo tipo fasullo void. Cos’è?<br>
+Nelle header c’è typedef void int. È l’ennesimo tipo intero!<br>
+Però il compilatore ti impedirà comunque di returnare se una subroutine è void.</p></div><div class="el-p"><p dir="auto">Tra l’altro le subroutine sono belle perché posso scrivere il programma invocando quante volte voglio la subroutine funzioneFondamentalissima() senza aver ancora progettato la subroutine stessa, magari mentre aspetto che lo faccia qualcun altro.</p></div><div class="el-p"><p dir="auto">Per prassi, quando si fa una libreria, il file .c e il file .h hanno lo stesso nome.</p></div><div class="el-p"><p dir="auto">I nomi dei parametri all’interno della subroutine sono da essere utilizzati come variabili.<br>
+Vedi le slide, comunque i parametri sono equivalenti a delle variabili.</p></div><div class="el-p"><p dir="auto">return restituisce il valore al programma chiamante.</p></div><div class="el-h2"><h2 data-heading="Settimana 11" dir="auto" class="heading" id="Settimana_11_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 11</h2></div><div class="el-p"><p dir="auto">Scope: strumenti per la pulizia di pavimenti…?<br>
+No. In inglese significa ambito di influenza.</p></div><div class="el-p"><p dir="auto">Partiamo da una domanda filosofica: cos’è un nome? Quando si sono cominciati a utilizzare i nomi? Quando si è cominciato ad assegnare qualche tipo di proprietà alle persone.<br>
+Avete letto Le Vie dei Canti di Bruce Chatwin? Chatwin ha fatto un viaggio in Australia. Prima del nostro arrivo, era un bellissimo posto. Gli aborigeni avevano un’idea sull’origine del mondo: camminando per le vie dei canti, le persone vedevano cose e le chiamavano, e così cominciavano ad esistere.<br>
+Confronta la Bibbia: Dio è il verbo e il verbo è Dio. Verbo, logos, parola razionale.</p></div><div class="el-p"><p dir="auto">Un nome è un’entità astratta che fa riferimento a qualcosa di concreto per poter conversare.<br>
+I nomi hanno anche un problema: possono essere ambigui.<br>
+In quest’aula ci sono tre Niccolò, ma sono distinti dai loro cognomi.<br>
+Ci sono tanti Niccolò ma nella famiglia Viale ce n’è uno.<br>
+Un cognome è uno scope.<br>
+Questo è un concetto proprio dei linguaggi ad alto livello. In quelli a basso livello, si usa la posizione fisica in memoria.</p></div><div class="el-p"><p dir="auto">Nei tempi antichi, per identificare una persona si diceva “il secondo figlio di quello che sta nella quarta capanna nel terzo villaggio”.<br>
+Poi si trasferisce e succede un casino. Sistema migliore: gli do un nome proprio.<br>
+Come evitiamo che ci siano troppi Niccolò nel nostro programma?<br>
+[boh non ho capito]</p></div><div class="el-p"><p dir="auto">I nomi sono il più potente strumento di astrazione.<br>
+Quando creo una persona, il processo di dare un nome legale è molto formale.<br>
+In programmazione ancora di più. Nome e oggetto sono binded finché questo oggetto è utilizzabile. Il primo momento di binding è alla progettazione del linguaggio. Tipi, costrutti.<br>
+Un binding statico collega un nome a una locazione di memoria.</p></div><div class="el-p"><p dir="auto">L’altro meccanismo è il binding basato su stack: nomi visibili solo per una parte della durata del programma. Sembra strano, ma sono le subroutine.<br>
+In C e nella maggior parte dei linguaggi di programmazione (in Basic no), gli scope delle subroutine sono separati.</p></div><div class="el-p"><p dir="auto">Perché è fondamentale? Se ci fosse conflitto, sarebbe difficile dividere il lavoro. “Io inizio i nomi con la A, tu con la B e lui con la C”. Immagina dover usare un nome diverso da quelli mai usati in tutti i programmi mai fatti prima.<br>
+Per fortuna non funziona così.</p></div><div class="el-p"><p dir="auto">Dovrebbe ora essere chiaro che main() è una subroutine, con la particolarità che il sistema operativo lo esegue. La sua prima istruzione, per convenzione, è la prima istruzione del programma, il suo punto di ingresso.<br>
+È per questo che si chiama main, ed è per questo che deve esserci.<br>
+Può esistere un programma che non ha il main(), ma non farebbe nulla.<br>
+Ambito testuale (file).<br>
+Il C (alcuni altri no) fa definire più subroutine nello stesso file.<br>
+I corpi delle subroutine sono sottoambiti testuali.<br>
+main() e foo() non possono essere in esecuzione contemporaneamente (per quanto ci riguarda in questo corso).</p></div><div class="el-p"><p dir="auto">Fare un programma del tipo:<br>
+int main(){<br>
+…<br>
+codice<br>
+…<br>
+int b;<br>
+…<br>
+{<br>
+int b;<br>
+}<br>
+…<br>
+}<br>
+Non è un errore sintattico, ma non farlo.</p></div><div class="el-p"><p dir="auto">In questo caso, lo scope del primo b è solo una parte di main(), e questo rende il codice più difficile da mantenere. In particolare, va da int b a { e da } alla fine di main().</p></div><div class="el-p"><p dir="auto">Lo scope del secondo b invece è solo la parte racchiusa tra le graffe.<br>
+Questo si chiama mascheramento ed è ancora più perverso dell’altro b.<br>
+È ancora più perverso di for(int i=0;...;...), dove lo scope di i è solo il blocco for.</p></div><div class="el-p"><p dir="auto">Variabili globali, file scope, definizione di simboli fuori da una subroutine.<br>
+Queste cose non sono mai necessarie. In C non sono errori sintattici, ma sono comunque delle porcherie. Sono il risultato della pigrizia, del non avere voglia di capire come fare bene i parametri delle subroutine per passare i valori o i puntatori giusti.<br>
+Sono anche un limite enorme: se una volta che il tuo file raggiunge le 1000 righe decidi di  separare il progetto in più file, non stai più passando i parametri e quindi lo scope delle tue variabili locali non include più le subroutine, e devi cambiare tutto ciò che hai già fatto perché adesso vengano passati i riferimenti, esattamente ciò che non hai voluto fare per pigrizia dichiarando variabili globali.<br>
+Quindi tanto vale non farlo dall’inizio.<br>
+Ricorsione.<br>
+Una classe di studenti è una classe di studenti + uno studente, o uno studente da solo.<br>
+classe = classe + studente | studente<br>
+Se da una classe togli uno studente, o ne aggiungi uno, è ancora una classe.<br>
+Il concetto di ricorsione è legato al concetto di oggetto autosimile.<br>
+Pensa alla scatola del Droste, la cui illustrazione contiene una scatola del Droste.<br>
+Guardi nella foto e dentro c’è la stessa foto, in cui c’è la stessa foto, in cui c’è la stessa foto, ma non puoi zoommare all’infinito, a un certo punto devi trovare la tipa che ti fa 🖕.<br>
+Vedi anche i frattali, e il triangolo di Sierpiński, che è formato da tre triangoli di Sierpiński.<br>
+Se cerchi “recursion” su Google, ti chiede se intendevi scrivere “recursion”.<br>
+A noi programmatori fa ridere, a qualcun altro sembriamo imbecilli, e forse hanno ragione.</p></div><div class="el-p"><p dir="auto">ℕ, successore e precedente, utile. Fattoriale.<br>
+5! = 5×4×3×2×1<br>
+4! = 4×3×2×1<br>
+3! = 3×2×1<br>
+2! = 2×1<br>
+1! = 1<br>
+Questo è fattibile perché ℕ è ordinato.<br>
+Quindi ∀n∈ℕ∃!m | m=n-1<br>
+Puoi anche farlo in ordine inverso, che è utile se vuoi usare l’iterazione anziché la recursione.<br>
+Il metodo iterativo però è meno elegante.</p></div><div class="el-p"><p dir="auto">Fibonacci iterativo? Quel famoso pisano, che ci ha portato lo zero e le cifre indoarabe.<br>
+Era un mercante, matematico nel tempo libero.<br>
+Il padre trasportava spezie tra la Repubblica di Pisa e l’Algeria.<br>
+Questa formula nasce da una considerazione di Fibonacci.<br>
+Mai pensato di prendere due conigli? A un mese si riproducono. I conigli scopano molto, devono mantenere questa fama.<br>
+Una coppia, poi 1, 2, 3, 5, 8, già 13, 21, 34, 55.<br>
+Scopano come conigli.<br>
+Al mese i, hai mesei-1+mesei-2 coppie. 89. 144. 233.</p></div><div class="el-p"><p dir="auto">Con l’iterazione come fai? Non fai. Sì è fattibile ma difficile.<br>
+Ma la formula è già il suo algoritmo iterativo.<br>
+Sì è pesante ma è una semplice traduzione da matematica a linguaggio di programmazione.<br>
+Vedi le slide.</p></div><div class="el-h2"><h2 data-heading="Settimana 12" dir="auto" class="heading" id="Settimana_12_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 12</h2></div><div class="el-p"><p dir="auto">Bene. (benino)</p></div><div class="el-p"><p dir="auto">Ultima lezione del 2023. La prossima sarà l’8 Gennaio 2024, seguita da altre due.<br>
+Il 15 ci sarà un’esercitazione, e il 16 il terzo compito, alle 15:00 a Monserrato.</p></div><div class="el-p"><p dir="auto">Passiamo all’argomento di oggi.<br>
+Call stack.<br>
+Dentro la funzione iterativa ci sono invocazioni alla funzione stessa<br>
+Lo scope definisce qual è l’ambito di visibilità degli identificatori.<br>
+a=fib(3); Prima cosa da valutare: rvalue.<br>
+[orrendi grafici sul quaderno che non ricreerò]<br>
+L’insieme di funzioni invocate si può visualizzare come una pila di invocazioni, una call stack in cui una funzione che ne invoca un’altra la mette sopra sé stessa. L’unica funzione attiva è quella in cima, l’ultima chiamata, quelle sotto sono in pausa, congelate.<br>
+Si chiama freeze/thaw, congelare/scongelare.</p></div><div class="el-p"><p dir="auto">Quello che abbiamo visto sulla gestione dei simboli:<br>
+Statica: stanze<br>
+Stack: cassette della frutta</p></div><div class="el-p"><p dir="auto">Contesto: set di identificatori visibili adesso.<br>
+Si parla di context switch.<br>
+Il cambio di scope avviene creando un record di attivazione della subroutine per contenere tutte le variabili.<br>
+Vedi slide, indirizzo di ritorno.<br>
+Tutti questi cambiamenti di contesto non esistono nel linguaggio macchina.<br>
+Il debugger ci dice in quale punto della call stack siamo.<br>
+Non tutti i linguaggi hanno la call stack. Alcuni hanno solo binding statico e globale.</p></div><div class="el-p"><p dir="auto">Stack overflow: chiamo fib(2450), non c’è spazio per nuovi processi sullo stack.</p></div><div class="el-p"><p dir="auto">La memoria è divisa in 4: program (sezione speciale), static, heap e call stack. Static, heap e call stack sono collettivamente detti data. Non sono necessariamente tutte della stessa dimensione, ma hanno una dimensione.<br>
+Modelli di gestione.</p></div><div class="el-p"><p dir="auto">Non dovrebbe mai arrivare il momento di parlare di gestione di memoria quando si parla di linguaggi ad alto livello, quindi perché è arrivato?<br>
+Aveva senso quando si avevano kB di memoria, ma ora siamo 6 ordini di grandezza sopra.</p></div><div class="el-p"><p dir="auto">Finora abbiamo pensato a una macchina astratta con memoria infinita. La macchina di Turing ha una memoria infinita. Ma la macchina astratta poi va tradotta in una macchina reale limitata.<br>
+Vedi slide.<br>
+Abbiamo fatto finta che non ci sia spreco di memoria.<br>
+Il meccanismo, più che alternativo, aggiuntivo è un retaggio del passato.<br>
+Oggi non capita di usare lo stesso computer più persone allo stesso tempo.<br>
+Quando c’erano 4 computer al mondo, non era “mio”, “tuo”, “suo”.<br>
+Oggi invece, “computer” è sinonimo di “PC”.<br>
+“Mi serve memoria, la chiedo, poi la restituisco”, prima serviva perché era condivisa, oggi si fa per non finirla.</p></div><div class="el-p"><p dir="auto">Heap, mucchio, pagliaio. Ammasso disordinato, prendi quanto vuoi.<br>
+Memoria ammuntonata.</p></div><div class="el-p"><p dir="auto">Ci sono due modi per gestire l’heap.<br>
+Bello: come lo stack, implicitamente, automaticamente, al runtime.<br>
+Brutto: esplicitamente, a scelta del programmatore.<br>
+Si applica sia ad allocare memoria che a rilasciarla.<br>
+L’ambiente a runtime non commette errori. Neanche Michele commette errori, ma qualche altro programmatore di sicuro sì.<br>
+Programmatore, prendi, sono tutti @tuoi!<br>
+Se lo fai bene bene, se no male.<br>
+A carico del runtime: difficile, pesante, complesso.<br>
+A carico del programmatore: facile, ci vuole meno, più errori.</p></div><div class="el-p"><p dir="auto">Il rilascio automatico è detto garbage collection.<br>
+Un DeVizia passa per la memoria, trova memoria che non serve e la rende nuova.<br>
+La garbage collection è caratteristica dei linguaggi progettati bene: C#, Java, non C.<br>
+Costa.</p></div><div class="el-p"><p dir="auto">Puntatori: nuova tipologia di simboli che, sinceramente, non vorremmo che esistessero, per un motivo molto semplice:<br>
+Mondo<br>
+Macchina astratta<br>
+:)<br>
+Si vive bene, non c’è bisogno di conoscere tutto sul computer.</p></div><div class="el-p"><p dir="auto">⊡ Questo è Gianfranceso, la mia variabile con un nome e un valore.</p></div><div class="el-p"><p dir="auto">😈 E questo è un puntatore.<br>
+Inferi<br>
+Macchina reale<br>
+):<br>
+Registri, assembler, locazioni di memoria.</p></div><div class="el-p"><p dir="auto">&amp;231<br>
+1010000<br>
+Locazioni di memoria, ciascuna con un numero lunghissimo che mi devo ricordare.<br>
+&amp;232<br>
+1010010<br>
+&amp;233<br>
+0110001<br>
+&amp;234<br>
+1001001</p></div><div class="el-p"><p dir="auto">Torniamo a una cosmogonia classica. Grecia classica. C’erano il mondo e gli inferi, coi demoni. Dove avresti voluto vivere? Quanto ci ha messo Dante a raccontare cosa c’è all’inferno…<br>
+Ci siamo svincolati dagli inferi, e poi, improvvisamente, chi arriva nel nostro mondo? I puntatori, gli emissari degli inferi, agenti delle potenze infernali.<br>
+Questo valore non è più un int, un bool, ma una locazione di memoria.<br>
+Abbiamo aperto le porte degli inferi.<br>
+(Un tempo tutto questo era sensato).</p></div><div class="el-p"><p dir="auto">Se proprio devi fare queste cose, cambia linguaggio.<br>
+“Eh no ma io se lo faccio in C ci metto 3ms di meno e quindi con 7’000’000 di iterazioni risparmio 10 secondi”-<br>
+Benissimo! Bene!<br>
+A tuo rischio e pericolo.</p></div><div class="el-p"><p dir="auto">Quando allochi della memoria dall’heap, ‘sto gran pezzo di me…<br>
+moria è una cosa reale.</p></div><div class="el-p"><p dir="auto">Non esiste alternativa per allocare dinamicamente la memoria e utilizzarla.<br>
+Poi te la dimentichi e usi solo il nome.</p></div><div class="el-p"><p dir="auto">I puntatori non sono mai necessari (quasi).</p></div><div class="el-p"><p dir="auto">Quando fai int*p, int non serve a niente finché p non comincia a puntare.</p></div><div class="el-p"><p dir="auto">I progettisti del linguaggio, ‘ste merde, hanno reso possibili tutti questi modi (e altri) per dichiarare un puntatore: int<em> p, int </em>q, int<em>r, int </em> s…</p></div><div class="el-p"><p dir="auto">&amp; è un operatore unario prefisso che…<br>
+…pathos…<br>
+…<br>
+…<br>
+…<br>
+restituisce l’indirizzo di una variabile.<br>
+??? Ma?<br>
+La variabile vive nella macchina astratta.<br>
+Ma &amp;, Orfeo, che cercha Euridice all’inferno, ma è un fesso, ma il nostro &amp;orfeo, lo chiamiamo così per amicizia, va negli inferi e ripesca un indirizzo.</p></div><div class="el-p"><p dir="auto">Il corso comincia separando i due mondi con i linguaggi ad alto livello, e ora ciò che abbiamo cacciato dalla porta rientra dalla finestra.</p></div><div class="el-p"><p dir="auto">Non so nulla sul risultato e mi fido della macchina.<br>
+Non saprò mai il valore della mia espressione.</p></div><div class="el-h2"><h2 data-heading="Settimana 13" dir="auto" class="heading" id="Settimana_13_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 13</h2></div><div class="el-p"><p dir="auto">C: il linguaggio di programmazione ha solo cose semplici (kernel compatto), le cose complesse sono lasciate alle librerie.<br>
+Il C tratta il testo in modo molto semplice:<br>
+Non esistono stringhe, solo semplici array di char;<br>
+Non ci sono istruzioni del linguaggio che hanno a che vedere con le stringhe.<br>
+Molte librerie sono fatte dai progettatori del linguaggio.<br>
+Senza librerie non si fa nulla in C. Pensa a stdlib, praticamente un’appendice del linguaggio.</p></div><div class="el-p"><p dir="auto">strcpy() sostituisce l’assegnazione di stringhe.</p></div><div class="el-p"><p dir="auto">Ipotesi, C con supporto testo:</p></div><div class="el-p"><p dir="auto">string a = “Ciao”;<br>
+string b;<br>
+b = a; // overloading</p></div><div class="el-p"><p dir="auto">Realtà:</p></div><div class="el-p"><p dir="auto">char a[10], b[10];<br>
+// inizializzazione di a<br>
+for(...) b[i]=a[i];<br>
+// oppure:<br>
+strcpy(b, a);</p></div><div class="el-p"><p dir="auto">Il C non è progettato per lavorare con le stringhe.<br>
+Ci sono anche operazioni proprie delle stringhe, come la concatenazione e la ricerca.</p></div><div class="el-p"><p dir="auto">Gli array di stringhe sono matrici.<br>
+Quando dichiari una matrice, ci sono le parentesi graffe annidate, ma non quando dichiari un array di stringhe. Perché?<br>
+Zucchero sintattico. Per le stringhe, si usa “” anziché {,,,\0} .</p></div><div class="el-p"><p dir="auto">Quando dichiaro una matrice, posso omettere la prima dimensione, ma non la seconda.<br>
+Per forza days[][10]. Perché? ti chiederai. E la risposta è…<br>
+Non lo so.</p></div><div class="el-p"><p dir="auto">[strano disegno che ti toccherà vedere dalle slide]<br>
+Record.<br>
+Collegare un solo nome a un insieme di dati tutti dello stesso tipo: array.<br>
+Collegare un solo nome a un insieme di dati di tipi diversi: record.<br>
+In C i record si chiamano struct.</p></div><div class="el-p"><p dir="auto">Il nome legale di una persona, la sua data di nascita, il codice fiscale.<br>
+Tutti sotto un solo identificatore.<br>
+Questa necessità ha portato alla creazione dei database.<br>
+In OOP, le i record sono rimpiazzati dalle classi, ma in C++ ci sono entrambi, strano.</p></div><div class="el-p"><p dir="auto">Usiamo un esempio diverso dallo studente universitario, l’elemento chimico.<br>
+Un elemento chimico ha un nome, un numero atomico, un peso, e se è metallo o no.<br>
+Un elemento all’interno della struct si chiama campo.</p></div><div class="el-p"><p dir="auto">Nei linguaggi di programmazione normali, una struct è un nuovo tipo del linguaggio.<br>
+In C no, devi usare typedef.<br>
+Se dichiari una struct in un typedef, non dare serve un nome alla struct, solo al tipo.<br>
+Questo presenta tre stranezze in una:<br>
+Le struct non sono tipi, ma una variabile può essere di tipo struct Element;<br>
+Devi dare un nome al tipo e alla struct;<br>
+Se li metti insieme però no.<br>
+Puoi assegnare struct… una struct sì ma un array no.<br>
+In realtà è perché due array corrispondenti degli struct sono della stessa lunghezza.</p></div><div class="el-p"><p dir="auto">Element (nel nostro esempio) si dice tipo strutturato.</p></div><div class="el-p"><p dir="auto">Una funzione può restituire un tipo struct.<br>
+Quindi puoi restituire due valori insieme, tipo min e max.</p></div><div class="el-p"><p dir="auto">Array di tipo strutturato. Sottoliste di inizializzazione. Un valore dentro la lista di inizializzazione può essere esso stesso una lista.</p></div><div class="el-p"><p dir="auto">[] e . sono operatori. L’ordine delle operazioni è (((class[0]).name).first).</p></div><div class="el-p"><p dir="auto">E ci fai i puntatori. student * best = &amp;class[1]</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>ha priorità bassa, quindi servono le parentesi per (<em>best).name.first.<br>
+Altrimenti fa prima best.name. Ma best non è una struct, non ha campi.<br>
+Errore? No, fa l’operazione.<br>
+best.name: ???<br>
+???.first: ???<br>
+</em>???: ???<br>
+Non ha senso.<br>
+I progettatori se ne sono accorti subito che sarebbe stato un bagno di sangue, ecco quindi l’operatore freccia: best-&gt;name.first.<br>
+Aumentiamo ancora un po’ di più la complessità.</li>
+</ul></div><div class="el-p"><p dir="auto">Un puntatore è un contenitore che contiene un indirizzo. Ha senso? Sì, no, non ci importa.<br>
+Può puntare a un int, a un float… a un puntatore.<br>
+È come una caccia al tesoro. Quante volte? 1, 2, 3, quante vuole il compilatore.<br>
+Mettiamoci in mezzo le struct. Come può avere senso? Coordinates, vedi slide.</p></div><div class="el-p"><p dir="auto">In tutto questo, il C non fa controlli. Se poi fai *p=25; boh. Le regole di compatibilità sono le più slabbrate che ci possano essere.<br>
+Tipi ricorsivi.<br>
+Utilissimo argomento che tocchiamo di sfuggita così per gusto.<br>
+Gusto di Scateni, non degli studenti, si intende.</p></div><div class="el-p"><p dir="auto">Alberi binari.<br>
+Parent/child, neutrale in inglese, diventa padre/figlio in italiano, nonostante “variabile” sia femminile. Avrebbe più senso madre/figlia.</p></div><div class="el-p"><p dir="auto">Lasciamo perdere il codice in Pascal perché sarebbe troppo figo.</p></div><div class="el-p"><p dir="auto">A livello di codice, una variabile in un albero binario ha i dati, un campo lchild e un campo rchild: figlio sinistro e figlio destro.<br>
+Complessità.</p></div><div class="el-p"><p dir="auto">Un programma complesso può andare bene per un insieme di dati piccolo, ma per quelli grandi essere troppo lento.</p></div><div class="el-p"><p dir="auto">Il caso medio si denota con O(n), il caso ottimo con Ω(n) e il caso pessimo con Θ(n), dove n è la dimensione dei dati.<br>
+A noi interessa O(n).</p></div><div class="el-p"><p dir="auto">O(f(n)) è la classe di complessità.<br>
+Leggendo la definizione formale avete il diritto di non capirci niente.<br>
+Aiuto ci sono i logaritmi perché? Aaa.</p></div><div class="el-p"><p dir="auto">Esempio: n²+2n+4 ∋ O(n²) ∴ Ǝ n, c | boh vedi slide.<br>
+n² asintoticamente esprime n²+2n+4.<br>
+lim(n-&gt;∞) n²+2n+4 = lim(n-&gt;∞) n² = ∞².</p></div><div class="el-p"><p dir="auto">Le classi di complessità più comuni sono:</p></div><div class="el-p"><p dir="auto">😇<br>
+O(1)<br>
+Ci mette sempre la stessa quantità di tempo. Scordatelo.<br>
+O(log(n))<br>
+Tempo ∝ log(n). Tipicamente log₂.<br>
+log8=3, log1024=10.<br>
+La differenza tra 8 e 1024 è molta, quella tra 3 e 10 no.<br>
+Molto efficiente.<br>
+Caratteristico della ricerca in set ordinati. Pagine gialle dato il nome.<br>
+O(n)<br>
+Lineare. Caratteristico della ricerca in set disordinati. Pagine gialle dato il numero di telefono.<br>
+O(n log(n))<br>
+Linearitmico, poco più che lineare.<br>
+Ancora molto accettabile. Caratteristico dell’ordinamento.</p></div><div class="el-p"><p dir="auto">😈<br>
+O(n²)<br>
+O(n³)<br>
+O(2ⁿ)<br>
+Quadratica, cubica, esponenziale, fattoriale.<br>
+Questi sono pessimi.<br>
+O(n!)<br>
+Esplorazione combinatorica di uno spazio di soluzioni.<br>
+Hai n oggetti, di cui vuoi trovare la combinazione ideale guardandole una per volta. Processo estremamente lungo.</p></div><div class="el-p"><p dir="auto">Vedi la tabella nelle slide.<br>
+L’universo ha 10¹⁴ anni. Il “&gt;&gt;” nella significa “più di 10²⁵ anni”. Il punto separa le migliaia.<br>
+Google deve cercare tra milioni di risultati. La complessità dell’algoritmo di ricerca è molto importante.<br>
+La radice è poco più del logaritmo.<br>
+Nel grafico, n! è praticamente verticale.</p></div><div class="el-p"><p dir="auto">Ω(n): Meglio di così non si può fare, lower bound.<br>
+Se Ω(n)=nlogn e tu mi dici che il tuo O(n) è √n mi stai dicendo una bugia.<br>
+Θ(n): Peggio di così non si può fare, se ci riesci sei un caprone puzzolente.</p></div><div class="el-p"><p dir="auto">La O(n) andrebbe calcolata sull’algoritmo, noi lo facciamo sulla sua traduzione in linguaggio di programmazione, è equivalente.<br>
+Complessità di alcune operazioni.</p></div><div class="el-p"><p dir="auto">L’assegnazione è O(1). Che stia assegnando 5 o 1000000 ci vuole la stessa quantità di tempo. Anche le operazioni aritmetiche sono a tempo fisso: ci sono circuiti dedicati.<br>
+Lo stesso vale per i confronti: &lt; &gt; = &lt;= &gt;=.</p></div><div class="el-p"><p dir="auto">Quando nei rami di un blocco di scelta ci sono complessità diverse, considero la peggiore.<br>
+Mi prendo il sicuro.<br>
+Per il for, la condizione, l’incremento e le istruzioni si ripetono, quindi si moltiplicano (credo).<br>
+Insomma, vedi le slide, c’è tutto.</p></div><div class="el-p"><p dir="auto">Per combinare insieme le complessità dei singoli pezzi del programma, funziona un po’ come i limiti.<br>
+Nelle addizioni, rimuovi la componente più piccola. Nelle moltiplicazioni, si tengono entrambe, ma O(1) è l’elemento neutro.<br>
+Si scrive g(n)∈O(n), non g(n)=O(n).<br>
+Se non conosco una funzione la lascio esplicita, tipo O(n∙g(n)).</p></div><div class="el-p"><p dir="auto">CORSO FINITO.</p></div><div class="el-h2"><h2 data-heading="Settimana 14" dir="auto" class="heading" id="Settimana_14_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Settimana 14</h2></div><div class="el-p"><p dir="auto">Esercitazione</p></div><div class="el-p"><p dir="auto">L’esame ha 8 domande a risposta multipla, 7 vero/falso e 6 a risposta aperta.<br>
+Se ce ne fossero 5 di un’altra tipologia e 4 di un’altra ancora sarebbe molto bello.<br>
+La prima domanda riguarda l’argomento della scorsa lezione (venerdì, oggi è lunedì).<br>
+Sicuramente tutti hanno studiato di giorno e dormito di notte, nonostante gli Australian Open giochino di notte, per studiare l’ultimo argomento.</p></div><div class="el-p"><p dir="auto">O(n) è un valore teorico, non pratico, riguarda l’algoritmo, non la sua implementazione.</p></div><div class="el-p"><p dir="auto">Domande a risposta multipla:</p></div><div class="el-p"><p dir="auto">Domanda 1: “Quantità di dati nell’output” è una supercazzola, importano solo i dati in input.</p></div><div class="el-p"><p dir="auto">Domanda 2: *(s+2) è come s[2]. “Parco” è P a r c o \0, 6 elementi.<br>
+s è come &amp;s[0]. Quel +2 è un “+ 2 volte la dimensione di un char” in questo caso.<br>
+“La dimensione è 5” in docimologia si chiama “distrattore”.</p></div><div class="el-p"><p dir="auto">Domanda 3: La dimensione di un puntatore dipende dall’architettura della macchina.<br>
+Nell’architettura a 32 bit, puoi indicizzare 2³² locazioni di memoria, equivalenti a 4GB.<br>
+La prima macchina su cui fu usato il C aveva 11 bit. Che numero è 11 bit? Strano.<br>
+La dimensione di un puntatore non dipende dal tipo a cui si punta. E dal nome?<br>
+p occupa 1, pippo occupa 5, giovanniDallaBandaNera occupa… No, è fissa.</p></div><div class="el-p"><p dir="auto">Domanda 4: La dimensione delle celle di memoria è appunto costante.<br>
+I frame vanno tutti sullo stack.<br>
+Lo heap è per l’allocazione dinamica, lo stack è per i frame delle subroutine.</p></div><div class="el-p"><p dir="auto">Domanda 5: sizeof() determina la dimensione di un frame? No ma sarebbe bello.<br>
+Può invece calcolare la memoria occupata da un tipo, e la esprime in byte.</p></div><div class="el-p"><p dir="auto">Domanda 6: . e -&gt; sono appunto distinti, come abbiamo visto.</p></div><div class="el-p"><p dir="auto">Domanda 7: Se una struct è fatta di un int e un float, puoi inizializzarla come, per esempio, {3, 4.0} o {{3}, {4.0}}, ma non come {{3, 4.0}}. Nel terzo caso, la sottolista viene assegnata all’int, tenendo conto solo del suo primo elemento; il secondo viene scartato, perché a un int basta un valore.<br>
+In un mondo giusto, float f = ‘4’ darebbe errore. Ma il C è un mondo giusto? No.</p></div><div class="el-p"><p dir="auto">Domanda 8: È possibile non basti la memoria per allocare.<br>
+Non si può verificare che lo heap sia pieno. Mai sentito parlare di isHeapFull()?<br>
+Ma tanto verificare che sia pieno sarebbe inutile.<br>
+Si richiede memoria allo heap, ma non esiste isHeapEmpty().<br>
+Non viene sempre allocata memoria quando è richiesta.<br>
+Domande vero/falso:</p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">Vero, in C non si alloca al runtime, lo fa il programmatore.</li>
+<li data-line="1" dir="auto">Vero. Tail recursive: chiama sé stessa una sola volta, alla fine del codice.</li>
+<li data-line="2" dir="auto">Falso, puoi fare class.best[2].name.first.</li>
+<li data-line="3" dir="auto">Il Basic non consente la ricorsione e non ha lo stack.</li>
+</ol></div><div class="el-p"><p dir="auto">Domande a risposta aperta:</p></div><div class="el-p"><p dir="auto">Domanda 16: Con Rat si intende rational.<br>
+Se volessi fare metodi per normalizzare e semplificare in C non si può fare.</p></div><div class="el-p"><p dir="auto">Domanda 17: int<em>p; p=(int</em>)malloc(sizeof(int)); realloc...etc;</p></div><div class="el-p"><p dir="auto">Domanda 18: Si capisce.</p></div><div class="el-p"><p dir="auto">Domanda 19: “Possiamo effettuare” è un’affermazione.<br>
+Rat*s=(4,5,6); Un puntatore si inizializza con un solo valore, il resto viene scartato.<br>
+In C, int e indirizzi sono compatibili, avviene la type coercion.<br>
+L’assegnazione è possibile per due motivi:<br>
+Int e puntatori sono compatibili;<br>
+Una lista di inizializzazione viene usata finché è utile, il resto è scartato.</p></div><div class="el-p"><p dir="auto">Domanda 20: Non ci vuole nulla, la formula matematica è già codice.<br>
+Caso base (1, 2) e caso ricorsivo (&gt;2).</p></div><div class="el-p"><p dir="auto">Consiglio: fai prima le domande più difficili e che impiegano più tempo.</p></div><div class="el-p"><p dir="auto">Se hai del codice così:<br>
+for ...<br>
+for ...<br>
+for ...<br>
+sum = sum;</p></div><div class="el-p"><p dir="auto">Devi moltiplicare tutte le complessità. Se ciascun for è lineare e dentro c’è l’assegnamento, diventa N∙N∙N∙1 = N³.</p></div><div class="el-p"><p dir="auto">Adesso il corso è davvero finito.</p></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable mod-collapsible" href="pr1/modulo-i/programmazione-1-modulo-i.html#Programmazione_1_-_Modulo_I_0" data-path="#Programmazione_1_-_Modulo_I_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Programmazione 1 - Modulo I">Programmazione 1 - Modulo I</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_1_0" data-path="#Settimana_1_0"><div class="tree-item-inner heading-link" heading-name="Settimana 1">Settimana 1</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_2_0" data-path="#Settimana_2_0"><div class="tree-item-inner heading-link" heading-name="Settimana 2">Settimana 2</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_3_0" data-path="#Settimana_3_0"><div class="tree-item-inner heading-link" heading-name="Settimana 3">Settimana 3</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_4_0" data-path="#Settimana_4_0"><div class="tree-item-inner heading-link" heading-name="Settimana 4">Settimana 4</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_5_0" data-path="#Settimana_5_0"><div class="tree-item-inner heading-link" heading-name="Settimana 5">Settimana 5</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_6_0" data-path="#Settimana_6_0"><div class="tree-item-inner heading-link" heading-name="Settimana 6">Settimana 6</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_7_(prima_del_parziale)_0" data-path="#Settimana_7_(prima_del_parziale)_0"><div class="tree-item-inner heading-link" heading-name="Settimana 7 (prima del parziale)">Settimana 7 (prima del parziale)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_9_0" data-path="#Settimana_9_0"><div class="tree-item-inner heading-link" heading-name="Settimana 9">Settimana 9</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_10_0" data-path="#Settimana_10_0"><div class="tree-item-inner heading-link" heading-name="Settimana 10">Settimana 10</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_11_0" data-path="#Settimana_11_0"><div class="tree-item-inner heading-link" heading-name="Settimana 11">Settimana 11</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_12_0" data-path="#Settimana_12_0"><div class="tree-item-inner heading-link" heading-name="Settimana 12">Settimana 12</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_13_0" data-path="#Settimana_13_0"><div class="tree-item-inner heading-link" heading-name="Settimana 13">Settimana 13</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="pr1/modulo-i/programmazione-1-modulo-i.html#Settimana_14_0" data-path="#Settimana_14_0"><div class="tree-item-inner heading-link" heading-name="Settimana 14">Settimana 14</div></a><div class="tree-item-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></div></body></html>
