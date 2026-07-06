@@ -308,13 +308,18 @@
 }
 
 .markdown-rendered mark {
-    background-color: transparent;
-    color: var(--accent);
+    background-color: transparent !important;
+    color: var(--accent) !important;
 }
 
 .markdown-preview-view mark {
-    background-color: transparent;
-    color: var(--accent);
+    background-color: transparent !important;
+    color: var(--accent) !important;
+}
+
+mark {
+    background-color: transparent !important;
+    color: var(--accent) !important;
 }
 
 ul .list-bullet::after {
