@@ -309,12 +309,12 @@
 
 .markdown-rendered mark {
     background-color: transparent;
-    color: var(--accent)
+    color: var(--accent);
 }
 
 .markdown-preview-view mark {
     background-color: transparent;
-    color: var(--accent)
+    color: var(--accent);
 }
 
 ul .list-bullet::after {
