@@ -307,7 +307,7 @@
     color: var(--accent)
 }
 
-mark {
+.markdown-rendered mark {
     background-color: transparent;
     color: var(--accent)
 }
