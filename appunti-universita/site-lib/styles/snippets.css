@@ -345,8 +345,12 @@ body {
 }
 
 .theme-light * {
-    --font-text-theme: serif;
-    --font-interface-theme: serif;
+    --font-text-theme: serif !important;
+    --font-interface-theme: serif !important;
+    --font-text: serif !important;
+    --font-interface: serif !important;
+    --font-text-override: serif !important;
+    --font-interface-override: serif !important;
     --paper-white-0: #f3f0ee;
     --paper-white-1: #EAE7E5;
     --paper-white-2: #E0DDDB;
