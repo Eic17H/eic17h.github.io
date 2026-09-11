@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco</title>
+    <style>
+        .gamesquare {
+            border-top: solid black 0.1vw;
+            border-left: solid black 0.1vw;
+            border-bottom: none;
+            border-right: none;
+            display: inline;
+            width: calc(min(10vw,10vh));
+            height: calc(min(10vw,10vh));
+            font-size: calc(0.70*min(10vw,10vh));
+        }
+        .gamerow {
+            margin-left: auto;
+            margin-right: auto;
+            align-content: center;
+            width: fit-content;
+            height: fit-content;
+        }
+        .gamerow .gamesquare:last-child {
+            border-right: solid black 0.1vw;
+        }
+        #gamespace .gamerow:last-child .gamesquare {
+            border-bottom: solid black 0.1vw;
+        }
+        .center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: fit-content;
+            align-content: center;
+        }
+        div {
+            width: 100vw;
+            align-content: center;
+        }
+    </style>
+</head>
+<body onload="load()">
+    <div class="center">
+        <div id="timer"></div>
+        <div id="30sscore"></div>
+        <div id="36time"></div>
+        <div id="gamespace"></div>
+        <div><button>Start</button></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
