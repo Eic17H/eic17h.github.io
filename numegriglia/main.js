@@ -62,7 +62,7 @@ function lose() {
 function win() {
     window.alert("Win in "+time+"s")
     currentAttempt.winTime = time;
-    document.getElementById("30sscore").innerHTML = `tot: ${time}s`;
+    document.getElementById("36time").innerHTML = `tot: ${time}s`;
     load();
 }
 
@@ -74,8 +74,8 @@ async function timer() {
         time = Math.round(time*100)/100;
         box.innerHTML = time+"s"
         if(time == targetTime) {
-            currentAttempt.progressAtTargetTime[targetTime] = current;
-            document.getElementById("30sscore").innerHTML = `${targetTime}s: ${current} punti`;
+            currentAttempt.progressAtTargetTime[targetTime] = current-1;
+            document.getElementById("30sscore").innerHTML = `${targetTime}s: ${current-1} punti`;
         }
     }
 }
