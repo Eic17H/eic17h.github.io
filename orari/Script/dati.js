@@ -11,6 +11,17 @@ function getDati() {
         {persona: "Lorenzo", materia: "Big Data", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "17:00", fine: "18:45"},
         {persona: "Lorenzo", materia: "Image Processing", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "11:00", fine: "12:45"},
         {persona: "Lorenzo", materia: "Big Data", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "17:00", fine: "18:45"},
+        {persona: "Vargiu", materia: "Sistemi Operativi Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "17:00", fine: "19:30"},
+        {persona: "Vargiu", materia: "Automi e Linguaggi Formali", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "11:00", fine: "12:45"},
+        {persona: "Vargiu", materia: "Sistemi Operativi", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "14:30", fine: "16:15"},
+        {persona: "Vargiu", materia: "Sistemi Operativi Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "11:15", fine: "13:45"},
+        {persona: "Vargiu", materia: "Sistemi Operativi", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "14:30", fine: "16:15"},
+        {persona: "Vargiu", materia: "Automi e Linguaggi Formali", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "11:00", fine: "12:45"},
+        {persona: "Vargiu", materia: "Dati e Modelli", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "14:15", fine: "16:00"},
+        {persona: "Vargiu", materia: "Diritto", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "16:00", fine: "18:00"},
+        {persona: "Vargiu", materia: "Automi e Linguaggi Formali", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "11:00", fine: "12:45"},
+        {persona: "Vargiu", materia: "Dati e Modelli", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "14:15", fine: "16:00"},
+        {persona: "Vargiu", materia: "Diritto", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "16:15", fine: "18:15"},
     ];
     return out;
 }
