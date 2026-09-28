@@ -14,8 +14,8 @@ function faiColonna(nome){
     let x = document.getElementById("tutte-le-colonne")
     x.innerHTML += ""
         + "<div class=\"una-colonna "+nome+"\">"
-            + "<div class=\"testa-colonna schermogrande\"><p class=\"nome-col\">"+nome+"</p></div>"
-            + "<div class=\"testa-colonna schermopiccolo\"><p class=\"nome-col\">"+nomeNew+"</p></div>"
+        + `<div class=\"testa-colonna schermogrande\"><p class=\"nome-col\"><a href=".?persona=${nome}">${nome}</a></p></div>`
+        + `<div class=\"testa-colonna schermopiccolo\"><p class=\"nome-col\"><a href=".?persona=${nome}">${nomeNew}</a></p></div>`
             + "<div class=\"corpo-colonna\" id=\"col-"+nome+"\">"
             + "</div>"
         + "</div>"

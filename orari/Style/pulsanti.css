@@ -13,6 +13,11 @@
     height: fit-content;
     font-size: calc(min(7cqh,5cqw)/3);
 }
+#titolo-persona{
+    width:100%;
+    height: fit-content;
+    font-size: calc(min(7cqh/3,10cqw));
+}
 #pulsanti-giorni>button{
     width: 20%;
     font-size: 200%;
@@ -56,4 +61,12 @@ button:hover{
 #pulsante-opzioni>button>img {
     height: 80%;
     padding: 10% 0%;
+}
+
+.titolopersona {
+    width: 100%;
+    height: var(--h-sel);
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
 }

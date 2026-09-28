@@ -38,3 +38,8 @@
 .occupato > .testa-colonna > .nome-col{
     color: #ffffffaa;
 }
+
+.testa-colonna > p > a {
+    text-decoration: inherit;
+    color: inherit;
+}

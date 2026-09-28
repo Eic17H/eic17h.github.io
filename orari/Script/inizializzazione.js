@@ -1,15 +1,48 @@
+var modalita = 'normale';
+var monopersona;
+
+function getParams() {
+    let url = window.location.href
+    let params = url.match(/.*\?(.*)/)
+    if(params) params = params[1]
+    params = String(params).split("&")
+    let pars = {}
+    for (let i in params) {
+        let split = params[i].split("=")
+        if(split && split.length==2) pars[split[0]] = split[1]
+    }
+    return pars
+}
+
 function init(){
     hiddenByDefault()
     let orar = document.getElementById("col-Orario")
     for(let i = 8; i <= 19; i++){
         orar.innerHTML += "<div class=\"lezione noshadow aula\" style=\"height:"+cinqueMinuti*12+"%; max-height:"+cinqueMinuti*12+"%; background-color: #00000000;\">"+"<div class=\"orasingola\">"+String(i).padStart(2, '0')+"</div>"+"</div>"
     }
-    faiPulsantiGiorni()
-    loadDataOggi()
+
+    let pars = getParams()
+
+    if(pars.persona) {
+        monopersona = pars.persona
+        modalita = 'monopersona'
+        if(monopersona == null) modalita = 'normale';
+        // TODO: metti normale se la persona non esiste
+    }
+
+    getCookie()
+    if(modalita == 'normale'){
+        faiPulsantiGiorni()
+        loadDataOggi()
+    } else if(modalita == 'monopersona') {
+        faiPulsantiPersone();
+        loadPersona(monopersona);
+    }
 }
 
 function getCookie(){
-    faiColonne()
+    if(modalita == 'normale') faiColonne()
+    else if(modalita == 'monopersona') faiColonneMonopersona()
     let decodedCookie = decodeURIComponent(document.cookie);
     let cookieArrayString = decodedCookie.split("; ")
     // Ha un array del tipo "nome=bool"
@@ -23,7 +56,6 @@ function getCookie(){
 }
 
 function loadDataOggi(){
-    getCookie();
     let d = new Date();
     switch(d.getDay()){
         case 2: loadData("Martedì");
