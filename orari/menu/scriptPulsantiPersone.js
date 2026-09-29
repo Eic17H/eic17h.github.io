@@ -31,7 +31,7 @@ function initMenu() {
     let decodedCookie = decodeURIComponent(document.cookie);
     console.log(decodedCookie)
     let cookieArrayString = decodedCookie.split("; ")
-    let persone = ["Lorenzo", "Alessio", "Swami", "Giacomo", "Zanzu", "Vargiu", "Davide"]
+    let persone = ["Lorenzo", "Alessio", "Swami", "Giacomo", "Zanzu", "Vargiu", "Sechi"]
     let personeCookie = {}
     for(let i in cookieArrayString) {
         personeCookie[cookieArrayString[i].split("=")[0]] = cookieArrayString[i].split("=")[1]
