@@ -80,7 +80,7 @@ function faiColonne(){
     faiColonna("Giacomo")
     faiColonna("Zanzu")
     faiColonna("Vargiu")
-    faiColonna("Davide")
+    faiColonna("Sechi")
     //faiColonna("Sara")
     //faiColonna("Tommaso")
     //faiColonna("Andry")
