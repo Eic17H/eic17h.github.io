@@ -43,3 +43,20 @@
     text-decoration: inherit;
     color: inherit;
 }
+
+.colonna-giorno {
+    font-weight: normal !important;
+}
+
+.colonna-giorno > .corpo-colonna > .lezione > * {
+    font-weight: normal !important;
+}
+
+.colonna-giorno .selezionato {
+    font-weight: bold !important;
+}
+
+.selezionato > .corpo-colonna > .lezione > * {
+    font-weight: bold !important;
+}
+

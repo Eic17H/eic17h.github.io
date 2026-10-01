@@ -175,7 +175,7 @@ function faiColonnaMonopersona(nome){
     let nomeNew = nome.substring(0, 3) + "."
     let x = document.getElementById("tutte-le-colonne")
     x.innerHTML += ""
-        + "<div class=\"una-colonna "+nome+selezionato+"\">"
+        + "<div class=\"una-colonna colonna-giorno "+nome+selezionato+"\">"
             + "<div class=\"testa-colonna schermogrande\"><p class=\"nome-col\">"+nome+"</p></div>"
             + "<div class=\"testa-colonna schermopiccolo\"><p class=\"nome-col\">"+nomeNew+"</p></div>"
             + "<div class=\"corpo-colonna\" id=\"col-"+nome+"\">"
