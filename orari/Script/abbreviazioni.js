@@ -23,6 +23,7 @@ function abbreviaMaterie(nome){
         case 'Fisica Tecnica Ambientale': return 'FTA';
         case 'Teoria e Storia della Traduzione 1': return 'TeoStoTr1';
         case 'Automi e Linguaggi Formali': return 'ALF';
+        case 'AI Learning Foundation': return 'ALF';
         case 'Dati e Modelli': return 'DeM';
         case 'Diritto': return 'EDI';
         case 'Economia': return 'EDI';
