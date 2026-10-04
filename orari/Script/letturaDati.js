@@ -46,6 +46,7 @@ function loadData(oggi){
         }
         // Sezione dei cambiamenti momentanei
         // if (obj.aula == "Aula Magna di Matematica" && obj.edificio == "Palazzo delle Scienze") obj.aula = obj.edificio = "Aula Costa"
+        // todo: infer sottoedificio Magistero da nome aula
         // Aggiungiamo obj all'array
         dati[datiRaw[i].giorno][datiRaw[i].persona].push(obj)
     }

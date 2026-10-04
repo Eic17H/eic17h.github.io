@@ -64,7 +64,11 @@ function abbreviaMaterie(nome){
         ["Graphics Algorithms", "GA"],
         ["Decision Science", "DS"],
         ["Image Processing", "IP"],
-        ["Cloud Infrastructures & Security", "Cloud"]
+        ["Cloud Infrastructures & Security", "Cloud"],
+        ["Tecnica del Cinema e dell'Audiovisivo", "Cinema"],
+        ["Culture Musicali e Nuovi Media", "Culture"],
+        ["English for Special Purposes lab", "EngSpLab"],
+        ["Antropologia dei Nuovi Media", "Antro."],
     ]
     let i
     for(i in regexRules) nome = nome.replace(regexRules[i][0], regexRules[i][1])

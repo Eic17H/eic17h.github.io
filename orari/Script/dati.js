@@ -31,6 +31,18 @@ function getDati() {
         {persona: "Sechi", materia: "Cloud Infrastructures & Security", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "15:00", fine: "16:45"},
         {persona: "Sechi", materia: "Cloud Infrastructures & Security Ex", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "15:00", fine: "16:45"},
         
+        {persona: "Swami", materia: "Tecnica del Cinema e dell'Audiovisivo", aula: "Aula 5", edificio: "Magistero", giorno: "Lunedì", inizio: "10:05", fine: "11:35"},
+        {persona: "Swami", materia: "Tecnica del Cinema e dell'Audiovisivo", aula: "Aula 2B", edificio: "Magistero", giorno: "Martedì", inizio: "10:05", fine: "11:35"},
+        {persona: "Swami", materia: "Tecnica del Cinema e dell'Audiovisivo", aula: "Aula 5", edificio: "Magistero", giorno: "Giovedì", inizio: "10:05", fine: "11:35"},
+        {persona: "Swami", materia: "Culture Musicali e Nuovi Media", aula: "Aula 2B", edificio: "Magistero", giorno: "Lunedì", inizio: "11:40", fine: "13:10"},
+        {persona: "Swami", materia: "Culture Musicali e Nuovi Media", aula: "Aula 5", edificio: "Magistero", giorno: "Martedì", inizio: "11:40", fine: "13:10"},
+        {persona: "Swami", materia: "Culture Musicali e Nuovi Media", aula: "Aula 2B", edificio: "Magistero", giorno: "Mercoledì", inizio: "10:05", fine: "11:35"},
+        {persona: "Swami", materia: "English for Special Purposes lab", aula: "Aula 5", edificio: "Magistero", giorno: "Mercoledì", inizio: "08:30", fine: "10:00"},
+        {persona: "Swami", materia: "English for Special Purposes lab", aula: "Aula 8A", edificio: "Magistero", giorno: "Giovedì", inizio: "08:30", fine: "10:00"},
+        {persona: "Swami", materia: "English for Special Purposes lab", aula: "Aula 8A", edificio: "Magistero", giorno: "Venerdì", inizio: "08:30", fine: "10:00"},
+        {persona: "Swami", materia: "Antropologia dei Nuovi Media", aula: "Aula 2B", edificio: "Magistero", giorno: "Mercoledì", inizio: "11:40", fine: "13:10"},
+        {persona: "Swami", materia: "Antropologia dei Nuovi Media", aula: "Aula 3B", edificio: "Magistero", giorno: "Giovedì", inizio: "11:40", fine: "13:10"},
+        
     ];
     return out;
 }
