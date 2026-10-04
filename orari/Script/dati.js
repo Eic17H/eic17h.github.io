@@ -42,6 +42,8 @@ function getDati() {
         {persona: "Swami", materia: "English for Special Purposes lab", aula: "Aula 8A", edificio: "Magistero", giorno: "Venerdì", inizio: "08:30", fine: "10:00"},
         {persona: "Swami", materia: "Antropologia dei Nuovi Media", aula: "Aula 2B", edificio: "Magistero", giorno: "Mercoledì", inizio: "11:40", fine: "13:10"},
         {persona: "Swami", materia: "Antropologia dei Nuovi Media", aula: "Aula 3B", edificio: "Magistero", giorno: "Giovedì", inizio: "11:40", fine: "13:10"},
+        {persona: "Swami", materia: "English Lab B2", aula: "Aula 6", edificio: "Magistero", giorno: "Giovedì", inizio: "15:35", fine: "17:50"},
+        {persona: "Swami", materia: "English Lab B2", aula: "Aula 2A", edificio: "Magistero", giorno: "Venerdì", inizio: "14:00", fine: "16:20"},
         
     ];
     return out;
