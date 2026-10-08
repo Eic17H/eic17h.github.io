@@ -29,8 +29,12 @@ function abbreviaMaterie(nome){
         case 'Economia': return 'EDI';
         case 'Storia e Critica del Cinema': return 'Cinema';
         case 'Linguaggi della Televisione e dei Nuovi Media': return 'LingMedia';
+        case "Interpretazione Consecutiva dall'Inglese all'Italiano 1": return 'IngEngIta1';
+        case "Teorie e Tecniche della Comunicazione Orale": return 'ComOrale';
+        case "Linguistica Applicata": return 'LingApp';
     }
     let regexRules = [
+        [/([0-9])-([0-9])/, "$1$2"],
         ["Sistemi Operativi", "SO"],
         ["Programmazione 1", "PR1"],
         ["Programmazione 2", "PR2"],

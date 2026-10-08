@@ -31,6 +31,8 @@ function loadData(oggi){
         dati[datiRaw[i].giorno][datiRaw[i].persona] = []
     }
 
+
+
     // Adesso convertiamo i dati nel formato che ci serve
     for(i in datiRaw){
         // Copiamo i dati da datiRaw a obj
@@ -46,7 +48,17 @@ function loadData(oggi){
         }
         // Sezione dei cambiamenti momentanei
         // if (obj.aula == "Aula Magna di Matematica" && obj.edificio == "Palazzo delle Scienze") obj.aula = obj.edificio = "Aula Costa"
-        // todo: infer sottoedificio Magistero da nome aula
+        
+        
+        // Infer sottoedificio Magistero da nome aula
+
+        if(obj.edificio=="Magistero"){
+            if(obj.aula.match(/.*A$/))
+                obj.edificio = "Magistero Aggiunto"
+            else if(obj.aula.match(/.*B$/))
+                obj.edificio = "Magistero Psicologia"
+        }
+
         // Aggiungiamo obj all'array
         dati[datiRaw[i].giorno][datiRaw[i].persona].push(obj)
     }

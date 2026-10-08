@@ -15,6 +15,10 @@
     --green: #43A25A;
     --blue: #5865F2;
 
+    --blueAggiunto: #4e5ee9;
+    --bluePsicologia: #4456e0;
+    --blueTrentino: #1e78f6;
+
     --background-normal: var(--light-gray);
     --text-normal: var(--black);
     --background-special: var(--dark-gray);

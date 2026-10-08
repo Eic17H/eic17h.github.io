@@ -73,6 +73,9 @@ function coloreEdificio(edificio) {
         case "Ingegneria": return "var(--green)";
         case "Sa Duchessa": return "var(--blue)";
         case "Magistero": return "var(--blue)";
+        case "Magistero Aggiunto": return "var(--blueAggiunto)";
+        case "Magistero Psicologia": return "var(--bluePsicologia)";
+        case "Via Trentino": return "var(--blueTrentino)";
         case "CREA": return "var(--redrange)";
     }
     return null

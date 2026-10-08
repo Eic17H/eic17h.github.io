@@ -45,6 +45,18 @@ function getDati() {
         {persona: "Swami", materia: "English Lab B2", aula: "Aula 6", edificio: "Magistero", giorno: "Giovedì", inizio: "15:35", fine: "17:50"},
         {persona: "Swami", materia: "English Lab B2", aula: "Aula 2A", edificio: "Magistero", giorno: "Venerdì", inizio: "14:00", fine: "16:20"},
         
+        {persona: "Alessio", materia: "Inglese 4", aula: "Aula 2", edificio: "Via Trentino", giorno: "Lunedì", inizio: "08:30", fine: "10:00"},
+        {persona: "Alessio", materia: "Linguistica Applicata", aula: "Laboratorio 3", edificio: "Via Trentino", giorno: "Lunedì", inizio: "16:25", fine: "17:55"},
+        {persona: "Alessio", materia: "Tedesco 4-5 Ex", aula: "Laboratorio 3", edificio: "Via Trentino", giorno: "Lunedì", inizio: "18:00", fine: "19:30"},
+        {persona: "Alessio", materia: "Tedesco 4-5 Ex", aula: "Aula 3", edificio: "Via Trentino", giorno: "Martedì", inizio: "13:10", fine: "14:45"},
+        {persona: "Alessio", materia: "Linguistica Applicata", aula: "Laboratorio 3", edificio: "Via Trentino", giorno: "Martedì", inizio: "14:50", fine: "16:20"},
+        {persona: "Alessio", materia: "Teorie e Tecniche della Comunicazione Orale", aula: "Laboratorio 6", edificio: "Via Trentino", giorno: "Mercoledì", inizio: "08:30", fine: "10:00"},
+        {persona: "Alessio", materia: "Tedesco 4", aula: "Aula 3", edificio: "Via Trentino", giorno: "Mercoledì", inizio: "13:10", fine: "14:45"},
+        {persona: "Alessio", materia: "Tedesco 4-5 Ex", aula: "Laboratorio 3", edificio: "Via Trentino", giorno: "Mercoledì", inizio: "16:25", fine: "17:55"},
+        {persona: "Alessio", materia: "Inglese 4 Ex", aula: "Laboratorio 5", edificio: "Via Trentino", giorno: "Giovedì", inizio: "10:05", fine: "11:35"},
+        {persona: "Alessio", materia: "Teorie e Tecniche della Comunicazione Orale", aula: "Laboratorio 1", edificio: "Via Trentino", giorno: "Giovedì", inizio: "11:40", fine: "13:10"},
+        {persona: "Alessio", materia: "Interpretazione Consecutiva dall'Inglese all'Italiano 1", aula: "Didattica a Distanza", edificio: "Didattica a Distanza", giorno: "Giovedì", inizio: "18:00", fine: "19:30"},
+        
     ];
     return out;
 }
