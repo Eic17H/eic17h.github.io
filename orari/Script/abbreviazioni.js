@@ -29,7 +29,7 @@ function abbreviaMaterie(nome){
         case 'Economia': return 'EDI';
         case 'Storia e Critica del Cinema': return 'Cinema';
         case 'Linguaggi della Televisione e dei Nuovi Media': return 'LingMedia';
-        case "Interpretazione Consecutiva dall'Inglese all'Italiano 1": return 'IngEngIta1';
+        case "Interpretazione Consecutiva dall'Inglese all'Italiano 1": return 'IntEngIta1';
         case "Teorie e Tecniche della Comunicazione Orale": return 'ComOrale';
         case "Linguistica Applicata": return 'LingApp';
     }
