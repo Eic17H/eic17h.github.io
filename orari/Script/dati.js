@@ -9,7 +9,7 @@ function getDati() {
         //{persona: "Lorenzo", materia: "Big Data", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "17:00", fine: "18:30"},
         {persona: "Lorenzo", materia: "Image Processing", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "11:00", fine: "12:45"},
         //{persona: "Lorenzo", materia: "Big Data", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "17:00", fine: "18:30"},
-        {persona: "Lorenzo", materia: "Image Processing", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "11:00", fine: "12:45"},
+        {persona: "Lorenzo", materia: "Image Processing Ex", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "11:00", fine: "12:45"},
         //{persona: "Lorenzo", materia: "Big Data", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "17:00", fine: "18:30"},
         
         {persona: "Vargiu", materia: "Sistemi Operativi Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "17:00", fine: "19:30"},
