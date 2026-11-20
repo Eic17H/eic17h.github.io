@@ -32,6 +32,8 @@ function abbreviaMaterie(nome){
         case "Interpretazione Consecutiva dall'Inglese all'Italiano 1": return 'IntEngIta1';
         case "Teorie e Tecniche della Comunicazione Orale": return 'ComOrale';
         case "Linguistica Applicata": return 'LingApp';
+        case "Anatomia umana": return 'Anatom.';
+        case "Microbiologia": return 'Microbio.';
     }
     let regexRules = [
         [/([0-9])-([0-9])/, "$1$2"],
@@ -100,7 +102,7 @@ function abbreviaAule(nome){
         ["Didattica a Distanza", "DaD"],
         [/(.(.?)_.(.?)) - Aula (.).+/, "$1 ($4.)"],
         [/(.(.?)_.(.?)) - Aula (.)/, "$1 ($4)"],
-        ["-", "&#8209;"],
+        [/Aula ([0-9]+) Blocco (.+)/, "Aula $1$2"],
     ]
     let i
     for(i in regexRules) nome = nome.replace(regexRules[i][0], regexRules[i][1])

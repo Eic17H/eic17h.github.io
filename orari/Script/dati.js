@@ -1,16 +1,15 @@
 function getDati() {
     let out = [
-        {persona: "Lorenzo", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "11:00", fine: "13:30"},
+        {persona: "Lorenzo", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "11:00", fine: "12:00"},
+        {persona: "Lorenzo", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "12:00", fine: "13:30", opzionale: true},
         {persona: "Lorenzo", materia: "Decision Science", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "17:00", fine: "18:45"},
         {persona: "Lorenzo", materia: "Graphics Algorithms", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "11:00", fine: "12:45"},
         {persona: "Lorenzo", materia: "Decision Science", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "17:00", fine: "18:45"},
         {persona: "Lorenzo", materia: "Graphics Algorithms", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "9:00", fine: "10:45"},
-        {persona: "Lorenzo", materia: "Data Mining", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "11:00", fine: "13:30"},
-        //{persona: "Lorenzo", materia: "Big Data", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "17:00", fine: "18:30"},
+        {persona: "Lorenzo", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "11:00", fine: "12:00"},
+        {persona: "Lorenzo", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "12:00", fine: "13:30", opzionale: true},
         {persona: "Lorenzo", materia: "Image Processing", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "11:00", fine: "12:45"},
-        //{persona: "Lorenzo", materia: "Big Data", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "17:00", fine: "18:30"},
         {persona: "Lorenzo", materia: "Image Processing Ex", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "11:00", fine: "12:45"},
-        //{persona: "Lorenzo", materia: "Big Data", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "17:00", fine: "18:30"},
         
         {persona: "Vargiu", materia: "Sistemi Operativi Ex", aula: "Laboratorio T", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "17:00", fine: "19:30"},
         {persona: "Vargiu", materia: "AI Learning Foundation", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "11:00", fine: "12:45"},
@@ -24,10 +23,12 @@ function getDati() {
         {persona: "Vargiu", materia: "Dati e Modelli", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "14:15", fine: "16:00"},
         {persona: "Vargiu", materia: "Diritto", aula: "Aula Magna di Matematica", edificio: "Palazzo delle Scienze", giorno: "Venerdì", inizio: "16:15", fine: "18:15"},
         
-        {persona: "Sechi", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "11:00", fine: "13:30"},
+        {persona: "Sechi", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "11:00", fine: "12:00"},
+        {persona: "Sechi", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "12:00", fine: "13:30", opzionale: true},
         {persona: "Sechi", materia: "Decision Science", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Lunedì", inizio: "17:00", fine: "18:45"},
         {persona: "Sechi", materia: "Decision Science", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "17:00", fine: "18:45"},
-        {persona: "Sechi", materia: "Data Mining", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "11:00", fine: "13:30"},
+        {persona: "Sechi", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "11:00", fine: "12:00"},
+        {persona: "Sechi", materia: "Data Mining", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Mercoledì", inizio: "12:00", fine: "13:30", opzionale: true},
         {persona: "Sechi", materia: "Cloud Infrastructures & Security", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "15:00", fine: "16:45"},
         {persona: "Sechi", materia: "Cloud Infrastructures & Security Ex", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "15:00", fine: "16:45"},
         
@@ -56,6 +57,11 @@ function getDati() {
         {persona: "Alessio", materia: "Inglese 4 Ex", aula: "Laboratorio 5", edificio: "Via Trentino", giorno: "Giovedì", inizio: "10:05", fine: "11:35"},
         {persona: "Alessio", materia: "Teorie e Tecniche della Comunicazione Orale", aula: "Laboratorio 1", edificio: "Via Trentino", giorno: "Giovedì", inizio: "11:40", fine: "13:10"},
         {persona: "Alessio", materia: "Interpretazione Consecutiva dall'Inglese all'Italiano 1", aula: "Didattica a Distanza", edificio: "Didattica a Distanza", giorno: "Giovedì", inizio: "18:00", fine: "19:30"},
+        
+        {persona: "Zanzu", materia: "Microbiologia", aula: "Aula 16 Blocco I", edificio: "Cittadella", giorno: "Martedì", inizio: "11:00", fine: "13:00"},
+        {persona: "Zanzu", materia: "Microbiologia", aula: "Aula 16 Blocco I", edificio: "Cittadella", giorno: "Mercoledì", inizio: "09:00", fine: "11:00"},
+        {persona: "Zanzu", materia: "Anatomia umana", aula: "Aula 16 Blocco I", edificio: "Cittadella", giorno: "Mercoledì", inizio: "11:00", fine: "13:00"},
+        {persona: "Zanzu", materia: "Microbiologia", aula: "Aula 16 Blocco I", edificio: "Cittadella", giorno: "Giovedì", inizio: "11:00", fine: "13:00"},
         
     ];
     return out;
