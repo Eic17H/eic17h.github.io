@@ -32,6 +32,8 @@ function getDati() {
         {persona: "Sechi", materia: "Cloud Infrastructures & Security", aula: "Aula C", edificio: "Palazzo delle Scienze", giorno: "Martedì", inizio: "15:00", fine: "16:45"},
         {persona: "Sechi", materia: "Cloud Infrastructures & Security Ex", aula: "Laboratorio M", edificio: "Palazzo delle Scienze", giorno: "Giovedì", inizio: "15:00", fine: "16:45"},
         
+        /*
+
         {persona: "Swami", materia: "Tecnica del Cinema e dell'Audiovisivo", aula: "Aula 5", edificio: "Magistero", giorno: "Lunedì", inizio: "10:05", fine: "11:35"},
         {persona: "Swami", materia: "Tecnica del Cinema e dell'Audiovisivo", aula: "Aula 2B", edificio: "Magistero", giorno: "Martedì", inizio: "10:05", fine: "11:35"},
         {persona: "Swami", materia: "Tecnica del Cinema e dell'Audiovisivo", aula: "Aula 5", edificio: "Magistero", giorno: "Giovedì", inizio: "10:05", fine: "11:35"},
@@ -58,6 +60,8 @@ function getDati() {
         {persona: "Alessio", materia: "Teorie e Tecniche della Comunicazione Orale", aula: "Laboratorio 1", edificio: "Via Trentino", giorno: "Giovedì", inizio: "11:40", fine: "13:10"},
         {persona: "Alessio", materia: "Interpretazione Consecutiva dall'Inglese all'Italiano 1", aula: "Didattica a Distanza", edificio: "Didattica a Distanza", giorno: "Giovedì", inizio: "18:00", fine: "19:30"},
         
+        */
+
         {persona: "Zanzu", materia: "Microbiologia", aula: "Aula 16 Blocco I", edificio: "Cittadella", giorno: "Martedì", inizio: "11:00", fine: "13:00"},
         {persona: "Zanzu", materia: "Microbiologia", aula: "Aula 16 Blocco I", edificio: "Cittadella", giorno: "Mercoledì", inizio: "09:00", fine: "11:00"},
         {persona: "Zanzu", materia: "Anatomia umana", aula: "Aula 16 Blocco I", edificio: "Cittadella", giorno: "Mercoledì", inizio: "11:00", fine: "13:00"},
